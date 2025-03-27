@@ -65,7 +65,7 @@ void CAsmHint::DrawItem(LPDRAWITEMSTRUCT lpDIS)
 }
 
 
-// CAsmDlg 대화 상자
+// CAsmDlg 对话框
 
 IMPLEMENT_DYNAMIC(CAsmDlg, CDialog)
 CAsmDlg::CAsmDlg(CWnd* pParent /*=NULL*/)
@@ -97,7 +97,7 @@ BEGIN_MESSAGE_MAP(CAsmDlg, CDialog)
 	ON_CBN_EDITCHANGE(IDC_ASMCB, OnCbnEditchangeAsmcb)
 END_MESSAGE_MAP()
 
-// CAsmDlg 메시지 핸들러
+// CAsmDlg 消息处理程序
 
 void CAsmDlg::OnBnClickedOk()
 {
@@ -209,7 +209,7 @@ BOOL CAsmDlg::OnInitDialog()
 	UpdateData(FALSE);
 
 	return TRUE;  // return TRUE unless you set the focus to a control
-	// 예외: OCX 속성 페이지는 FALSE를 반환해야 합니다.
+	// 异常: OCX 属性页应返回 FALSE
 }
 
 struct ASMDESC
@@ -221,23 +221,23 @@ struct ASMDESC
 // 어셈블리 명령어 포맷 도움말
 ASMDESC g_AsmDesc[] =
 {
-	{ "adc", "adc{cond}{s} Rd, Rn\nadc{cond}{s} Rd, Rn, Op2\nadc Rd,Rs\nAdd with Carry" },
+	{ "adc", "adc{cond}{s} Rd, Rn\nadc{cond}{s} Rd, Rn, Op2\nadc Rd,Rs\n带进位的加法" },
 	{ "add", "add{cond}{s} Rd, Rn\tadd{cond}{s} Rd, Rn, Op2\nadd Rd,Rs,Imm3bit\tadd Rd,Imm8bit\nadd Rd,Rs,Rn\t\tadd R0-14,R8-15\nadd R8-14,R0-15\tadd R15,R0-15\nadd Rd,PC,Imm8bit*4\tadd Rd,SP,Imm8bit*4\nadd Rd,SP,Imm7bit*4\tadd Rd,SP,-Imm7bit*4" },
 	{ "and", "and{cond}{s} Rd, Rn\nand{cond}{s} Rd, Rn, Op2\nand Rd,Rs" },
-	{ "asr", "asr Rd, Rs\nasr Rd, Rs, shift\nRd/Rs = R0-R7\nshift = 0-31\n우측으로 산술 시프트 연산" },
+	{ "asr", "asr Rd, Rs\nasr Rd, Rs, shift\nRd/Rs = R0-R7\nshift = 0-31\n算术右移" },
 	{ "b", "b{cond} offset\nAsm\toffset = -32M..+32M (step:4)\nThumb\toffset = $+4-256..$+4+254 (step:2)" },
-	{ "bls", "부호 없는 작거나 같음" },
-	{ "ble", "부호 있는 작거나 같음" },
-	{ "blt", "부호 있는 작음" },
-	{ "beq", "같음" },
-	{ "bge", "부호 있는 크기나 같음" },
-	{ "bgt", "부호 있는 큼" },
-	{ "bhi", "부호 없는 큼" },
-	{ "bcs", "무부호 크거나 같음" },
-	{ "bcc", "무부호 작음" },
-	{ "bmi", "무부호 작음" },
-	{ "bpl", "무부호 크거나 같음" },
-	{ "bne", "같지 않음" },
+	{ "bls", "无符号小于" },
+	{ "ble", "有符号小于等于" },
+	{ "blt", "有符号小于" },
+	{ "beq", "等于" },
+	{ "bge", "有符号大于等于" },
+	{ "bgt", "有符号大于" },
+	{ "bhi", "无符号大于" },
+	{ "bcs", "无符合大于等于" },
+	{ "bcc", "无符合小于" },
+	{ "bmi", "无符合小于" },
+	{ "bpl", "无符合大于等于" },
+	{ "bne", "不等" },
 	{ "bic", "bic{cond}{s} Rd, Rn, Op2\nbic Rd,Rs" },
 	{ "bl", "bl{cond} offset\nAsm\toffset = -32M..+32M (step:4)\nThumb\toffset = (PC+4)-400000h..+3FFFFEh (step:2)" },
 	{ "bx", "bx{cond} Rs" },
@@ -251,8 +251,8 @@ ASMDESC g_AsmDesc[] =
 	{ "ldrh", "ldrh Rd,[Rb,5bit*2]\nldrh Rd,[Rb,Ro]" },
 	{ "ldsb", "ldsb Rd,[Rb,Ro]" },
 	{ "ldsh", "ldsh Rd,[Rb,Ro]" },
-	{ "lsl", "lsl Rd, Rs\nlsl Rd, Rs, Imm5bit\n좌측으로 논리 시프트 연산" },
-	{ "lsr", "lsr Rd, Rs\nlsr Rd, Rs, Imm5bit\n우측으로 논리 시프트 연산" },
+	{ "lsl", "lsl Rd, Rs\nlsl Rd, Rs, Imm5bit\n逻辑左移" },
+	{ "lsr", "lsr Rd, Rs\nlsr Rd, Rs, Imm5bit\n逻辑右移" },
 	{ "mcr", "mcr{cond} p#,<cpopc>,Rd,cn,cm{,<cp>}" },
 	{ "mla", "mla{cond}{s} Rd,Rm,Rs,Rn" },
 	{ "mov", "mov{cond}{s} Rd,Op2\nmov Rd,Imm8bit\nmov Rd,Rs\nmov R0-14,R8-15\nmov R8-14,R0-15\nmov R15,R0-15" },
@@ -262,12 +262,12 @@ ASMDESC g_AsmDesc[] =
 	{ "mul", "mul{cond}{s} Rd,Rm,Rs\nmul Rd,Rs" },
 	{ "mvn", "mvn{cond}{s} Rd,Op2\nmvn Rd,Rs" },
 	{ "neg", "neg Rd,Rs" },
-	{ "nop", "nop\n빈 명령" },
+	{ "nop", "nop\n空指令" },
 	{ "orr", "orr{cond}{s} Rd,Rn,Op2\norr Rd,Rs" },
-	{ "ror", "ror Rd,Rs\n오른쪽으로 로테이션" },
-	{ "rsb", "rsb{cond}{s} Rd,Rn,Op2\nRevers Subtract" },
-	{ "rsc", "rsc{cond}{s} Rd,Rn,Op2\nRevers Subtract with Carry" },
-	{ "sbc", "sbc{cond}{s} Rd,Rn,Op2\nsbc Rd,Rs\nSubtract with Carry" },
+	{ "ror", "ror Rd,Rs\n循环右移" },
+	{ "rsb", "rsb{cond}{s} Rd,Rn,Op2\n反向减法" },
+	{ "rsc", "rsc{cond}{s} Rd,Rn,Op2\n带借位的反向减法" },
+	{ "sbc", "sbc{cond}{s} Rd,Rn,Op2\nsbc Rd,Rs\n带借位的减法" },
 	{ "smlal", "smlal{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ "smull", "smull{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ "stc", "stc{cond}{l} p#,cd,<Rs>" },
@@ -276,8 +276,8 @@ ASMDESC g_AsmDesc[] =
 	{ "sub", "sub{cond}{s} Rd,Rn,Op2\nsub Rd,Rs,Imm3Bit\nsub Rd,Imm8bit\nsub Rd,Rs,Rn" },
 	{ "swi", "swi{cond} Imm24bit\nswi Imm8bit" },
 	{ "swp", "swp{cond}{b} Rd,Rm,[Rn]" },
-	{ "teq", "teq{cond} Rn,Op2\n동등성 테스트" },
-	{ "tst", "tst{cond} Rn,Op2\ntst Rd,Rs\n비트 테스트" },
+	{ "teq", "teq{cond} Rn,Op2\n测试等价" },
+	{ "tst", "tst{cond} Rn,Op2\ntst Rd,Rs\n测试位" },
 	{ "umlal", "umlal{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ "umull", "umull{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ NULL, NULL }
