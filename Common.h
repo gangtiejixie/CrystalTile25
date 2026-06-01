@@ -997,7 +997,8 @@ public:
 //#define TF_ABGR32BPP	20	// 32λλͼ
 #define TF_RHYTHM	19	// �������
 #define TF_ASTC4x4	20	// ASTC 4x4
-#define TF_LAST		20
+#define TF_ASTC6x6	21	// ASTC 6x6
+#define TF_LAST		21
 
 #define ColorToWord(color) ((WORD)((((color)&0xF8)>>3) |\
 							(((color)&0xF800)>>6) |\

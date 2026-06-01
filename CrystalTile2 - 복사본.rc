@@ -1680,7 +1680,7 @@ BEGIN
     IDS_SCALELIST           "25\n50\n75\n100\n125\n150\n175\n200\n400\n800\n1000\n2000"
     IDS_LOADMAP             "���ش�M&ap��ַ"
     IDS_LOADTITLE           "���ش�&Tile��ַ"
-    IDS_TILEFORMATLSIT      "��ɫ 1bpp\nNDS  1bpp\nGB   2bpp\n4ɫ  2bpp\nVB   2bpp\nNGP  2bpp\nGBA  4bpp\nN64/MD 4bpp\nGBA2 4bpp\nGBA  8bpp\nSNES 4bpp\nNES  2bpp\nSMS  4bpp\nGBA3 Xbpp\nCT0  Xbpp\n16λ RGBa\n24λ RGB\n32λ RGBa\n�������\nASTC 4x4"
+    IDS_TILEFORMATLSIT      "��ɫ 1bpp\nNDS  1bpp\nGB   2bpp\n4ɫ  2bpp\nVB   2bpp\nNGP  2bpp\nGBA  4bpp\nN64/MD 4bpp\nGBA2 4bpp\nGBA  8bpp\nSNES 4bpp\nNES  2bpp\nSMS  4bpp\nGBA3 Xbpp\nCT0  Xbpp\n16λ RGBa\n24λ RGB\n32λ RGBa\n�������\nASTC 4x4\nASTC 6x6"
 END
 
 STRINGTABLE 

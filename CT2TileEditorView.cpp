@@ -797,7 +797,7 @@ void CT2TileEditorView::OnLButtonDown(UINT nFlags, CPoint point)
 void CT2TileEditorView::SetPixel(UINT nFlags, CPoint point)
 {
 	CT2TileView *pTileView = (CT2TileView*)theApp.GetView(ID_VIEW_TILEVIEW);
-	if(GetDocument()->m_nReadOnly || pTileView->m_nTileFormat==TF_CT0XBPP || pTileView->m_nTileFormat==TF_GBA3XBPP || pTileView->m_nTileFormat==TF_ASTC4x4) return;
+	if(GetDocument()->m_nReadOnly || pTileView->m_nTileFormat==TF_CT0XBPP || pTileView->m_nTileFormat==TF_GBA3XBPP || pTileView->m_nTileFormat==TF_ASTC4x4 || pTileView->m_nTileFormat==TF_ASTC6x6) return;
 
 	UINT Pixel;
 	if(nFlags&MK_LBUTTON)

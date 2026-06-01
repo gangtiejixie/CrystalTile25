@@ -301,6 +301,64 @@ static void DecodeASTC4x4Block(const BYTE* pBlock, UINT* pPixels)
 	}
 }
 
+// ASTC 6x6 block decode helper
+// Decodes a 16-byte ASTC block into 36 RGBA pixels (6x6)
+// This is a simplified decoder that handles void-extent blocks and
+// approximates other blocks by extracting endpoint colors
+static void DecodeASTC6x6Block(const BYTE* pBlock, UINT* pPixels)
+{
+	// Read block mode (first 11 bits)
+	UINT blockMode = pBlock[0] | (pBlock[1] << 8);
+
+	// Check for void-extent block (bits [8:0] == 0x1FC)
+	if ((blockMode & 0x1FF) == 0x1FC)
+	{
+		// Void-extent: constant color block
+		// Color is stored in bytes 8-15 as R16 G16 B16 A16
+		BYTE r = pBlock[8];
+		BYTE g = pBlock[10];
+		BYTE b = pBlock[12];
+		BYTE a = pBlock[14];
+		UINT color = (a << 24) | (r << 16) | (g << 8) | b;
+		for (int i = 0; i < 36; i++)
+			pPixels[i] = color;
+		return;
+	}
+
+	// For non-void-extent blocks, extract approximate colors from endpoints
+	BYTE r0 = pBlock[4];
+	BYTE g0 = pBlock[5];
+	BYTE b0 = pBlock[6];
+	BYTE a0 = pBlock[7];
+	BYTE r1 = pBlock[8];
+	BYTE g1 = pBlock[9];
+	BYTE b1 = pBlock[10];
+	BYTE a1 = pBlock[11];
+
+	// Use weight bits to interpolate between endpoints
+	for (int i = 0; i < 36; i++)
+	{
+		// Simple weight extraction (approximate)
+		int bitOffset = i * 3; // ~3.5 bits per weight for 6x6
+		int byteIdx = 15 - bitOffset / 8;
+		int bitIdx = bitOffset % 8;
+		UINT w = 0;
+		if (byteIdx >= 0 && byteIdx < 16)
+			w = (pBlock[byteIdx] >> bitIdx) & 0x07;
+		// Normalize weight to 0-64 range (w ranges from 0-7)
+		UINT weight = (w * 64) / 7;
+		if (weight > 64) weight = 64;
+		UINT iweight = 64 - weight;
+
+		BYTE r = (BYTE)((r0 * iweight + r1 * weight + 32) >> 6);
+		BYTE g = (BYTE)((g0 * iweight + g1 * weight + 32) >> 6);
+		BYTE b = (BYTE)((b0 * iweight + b1 * weight + 32) >> 6);
+		BYTE a = (BYTE)((a0 * iweight + a1 * weight + 32) >> 6);
+
+		pPixels[i] = (a << 24) | (r << 16) | (g << 8) | b;
+	}
+}
+
 void CT2TileView::SetBits()
 {
 	CT2Doc* pDoc = GetDocument();
@@ -563,6 +621,22 @@ void CT2TileView::SetBits()
 					nPixel = blockPixels[pixInBlockY * 4 + pixInBlockX];
 				}
 				break;
+			case TF_ASTC6x6:
+				{
+					// ASTC 6x6: each 16-byte block covers 6x6 pixels
+					int blockX = nPixelLeft / 6;
+					int blockY = nPixelTop / 6;
+					int blocksPerRow = m_nWidth / 6;
+					int blockIndex = blockY * blocksPerRow + blockX;
+					BYTE* pBlockData = pTile + blockIndex * 16;
+					if (pBlockData + 16 > pEnd) { nPixel = 0; break; }
+					UINT blockPixels[36];
+					DecodeASTC6x6Block(pBlockData, blockPixels);
+					int pixInBlockX = nPixelLeft % 6;
+					int pixInBlockY = nPixelTop % 6;
+					nPixel = blockPixels[pixInBlockY * 6 + pixInBlockX];
+				}
+				break;
 			default:
 				nPixel=0; // ����ɫ
 				break;
@@ -594,7 +668,7 @@ void CT2TileView::SetBits()
 void CT2TileView::SetPixel(WORD nTilePixelNO, UINT nPixel)
 {
 	// ASTC is a compressed format, pixel editing not supported
-	if(m_nTileFormat==TF_ASTC4x4) return;
+	if(m_nTileFormat==TF_ASTC4x4 || m_nTileFormat==TF_ASTC6x6) return;
 
 	CT2Doc* pDoc = GetDocument();
 	int nPixelTop, nPixelLeft;
@@ -892,6 +966,9 @@ void CT2TileView::OnUpdateData()
 	case TF_ASTC4x4:
 		m_nBitCount = 32; // Output is 32bpp RGBA
 		break;
+	case TF_ASTC6x6:
+		m_nBitCount = 32; // Output is 32bpp RGBA
+		break;
 	}
 
 	if(m_nWidth<1) m_nWidth=1;
@@ -912,6 +989,11 @@ void CT2TileView::OnUpdateData()
 	{
 		if(m_nWidth&3) m_nWidth+=4-(m_nWidth&3);
 		if(m_nHeight&3) m_nHeight+=4-(m_nHeight&3);
+	}
+	if(m_nTileFormat==TF_ASTC6x6)
+	{
+		if(m_nWidth%6) m_nWidth+=6-(m_nWidth%6);
+		if(m_nHeight%6) m_nHeight+=6-(m_nHeight%6);
 	}
 
 	int nWidth, nHeight;
@@ -947,6 +1029,9 @@ void CT2TileView::OnUpdateData()
 	if(m_nTileFormat==TF_ASTC4x4)
 		m_nBytePixelCount=4; // treated as 32bpp output
 	else
+	if(m_nTileFormat==TF_ASTC6x6)
+		m_nBytePixelCount=4; // treated as 32bpp output
+	else
 	if(m_nBitCount>8)
 		m_nBytePixelCount = m_nBitCount/8;
 	else
@@ -958,6 +1043,9 @@ void CT2TileView::OnUpdateData()
 	int nSkipSize = (m_nDrawMode>=CT2_DM_MAP?0:m_nSkipSize);
 	if(m_nTileFormat==TF_ASTC4x4)
 		m_nTileSize=((nWidth+3)/4)*((nHeight+3)/4)*16 + nSkipSize;
+	else
+	if(m_nTileFormat==TF_ASTC6x6)
+		m_nTileSize=((nWidth+5)/6)*((nHeight+5)/6)*16 + nSkipSize;
 	else
 		m_nTileSize=(nWidth*nHeight*nBits)/8 + nSkipSize;
 	if(m_nTileSize<1) m_nTileSize=1;
