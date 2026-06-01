@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// ñéÙþ(ñé?ìÑÚÅÍìûú?) resources
+// ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 #ifdef _WIN32
@@ -48,8 +48,8 @@ BEGIN
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
     "LANGUAGE 4, 2\r\n"
     "#pragma code_page(949)\r\n"
-    "#include ""res\\CrystalTile2.rc2""  // Þª Microsoft Visual C++ ??¸®¼Ò½º\r\n"
-    "#include ""afxres.rc""         // ?ñ×?Ëì\r\n"
+    "#include ""res\\CrystalTile2.rc2""  // Þª Microsoft Visual C++ ??ï¿½ï¿½ï¿½Ò½ï¿½\r\n"
+    "#include ""afxres.rc""         // ?ï¿½ï¿½?ï¿½ï¿½\r\n"
     "#endif\r\n"
     "\0"
 END
@@ -120,371 +120,371 @@ END
 
 IDR_MAINFRAME MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "¿­±â...(&O)\tCtrl+O",         ID_FILE_OPEN
-        POPUP "DS ¿¡¹Ä·¹ÀÌÅÍ ÈÄÅ©(&D)"
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
         MENUITEM SEPARATOR
-        MENUITEM "ÃÖ±Ù ÆÄÀÏµé",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½Ïµï¿½",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Á¾·á(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "º¸±â(&V)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&V)"
     BEGIN
-        MENUITEM "±âº» µµ±¸¸ðÀ½(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "Æ¯¼ºÃ¢(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "¿ÜºÎ Åø¹Ù(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "»óÅÂ¹Ù(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "Æ¯ï¿½ï¿½Ã¢(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "ï¿½ï¿½ï¿½Â¹ï¿½(&S)",                  ID_VIEW_STATUS_BAR
     END
-    POPUP "µµ±¸(&T)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&T)"
     BEGIN
-        MENUITEM "LZ77 µ¥ÀÌÅÍ ¾ÐÃà...(&C)",         ID_TOOLS_LZ77COMP
-        MENUITEM "ÆÄÀÏ ºñ±³...(&O)",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "DS Æß¿þ¾î ¼³Á¤...(&D)",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "ÅØ½ºÆ® ÄÚµå º¯È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "ÄÚµå Å×ÀÌºíÀ» CMAPÀ¸·Î º¯È¯...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "ï¿½Ø½ï¿½Æ® ï¿½Úµï¿½ ï¿½ï¿½È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ CMAPï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "¿ÜºÎ µµ±¸...(&E)",             ID_TOOLS_TOOLS
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "Ã¥°¥ÇÇ(&A)"
+    POPUP "Ã¥ï¿½ï¿½ï¿½ï¿½(&A)"
     BEGIN
-        MENUITEM "<Ã¥°¥ÇÇ> Ãß°¡/Á¤¸®...(&A)\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<Ã¥ï¿½ï¿½ï¿½ï¿½> ï¿½ß°ï¿½/ï¿½ï¿½ï¿½ï¿½...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
-    POPUP "µµ¿ò¸»(&H)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&H)"
     BEGIN
-        MENUITEM "CrystalTile2.5 Á¤º¸...(&A)",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5 ï¿½ï¿½ï¿½ï¿½...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_CrystalTile2TYPE MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "¿­±â...(&O)\tCtrl+O",         ID_FILE_OPEN
-        POPUP "DS ¿¡¹Ä·¹ÀÌÅÍ ÈÄÅ©(&D)"
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "´Ý±â(&C)",                    ID_FILE_CLOSE
-        MENUITEM "ÀúÀå(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "´Ù¸¥ ÀÌ¸§À¸·Î ÀúÀå...(&A)",               ID_FILE_SAVE_AS
+        MENUITEM "ï¿½Ý±ï¿½(&C)",                    ID_FILE_CLOSE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "ï¿½Ù¸ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "ÃÖ±Ù ÆÄÀÏµé",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½Ïµï¿½",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Á¾·á(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "ÆíÁý(&E)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&E)"
     BEGIN
-        MENUITEM "½ÇÇà Ãë¼Ò(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "´Ù½Ã ½ÇÇà(&R)",                    ID_EDIT_RESET
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "Àß¶ó³»±â(&T)\tCtrl+X",            ID_EDIT_CUT
-        MENUITEM "º¹»ç(&C)\tCtrl+C",            ID_EDIT_COPY
-        MENUITEM "ºÙ¿©³Ö±â(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "ï¿½ß¶ó³»±ï¿½(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "ï¿½Ù¿ï¿½ï¿½Ö±ï¿½(&P)\tCtrl+V",            ID_EDIT_PASTE
         MENUITEM SEPARATOR
-        MENUITEM "¸ðµÎ ¼±ÅÃ(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
+        MENUITEM "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
         MENUITEM SEPARATOR
-        MENUITEM "ÀÌµ¿(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "ï¿½Ìµï¿½(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
         MENUITEM SEPARATOR
-        MENUITEM "ÀÌ¹ÌÁö·Î ³»º¸³»±â...(&E)\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "ÀÌ¹ÌÁö¸¦ ³»º¸³»±â...(&I)\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "ÄÚµå Å×ÀÌºí °¡Á®¿À±â(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
-        MENUITEM "±Û²Ã ¼³Á¤...(&F)",             ID_TILEEDITOR_FONT
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
+        MENUITEM "ï¿½Û²ï¿½ ï¿½ï¿½ï¿½ï¿½...(&F)",             ID_TILEEDITOR_FONT
         MENUITEM SEPARATOR
-        MENUITEM "¸Þ¸ð¸® ½º³À¼¦ »õ·Î °íÄ§(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä§(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "º¸±â(&V)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&V)"
     BEGIN
-        MENUITEM "±âº» µµ±¸¸ðÀ½(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "Æ¯¼ºÃ¢(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "¿ÜºÎ Åø¹Ù(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "»óÅÂ¹Ù(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "Æ¯ï¿½ï¿½Ã¢(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "ï¿½ï¿½ï¿½Â¹ï¿½(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "Å¸ÀÏ º¸±â(&I)\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "16Áø¼ö ÆíÁý±â(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "ASM º¸±â(&A)\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Å¸ÀÏ ÆíÁý±â(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "¹®ÀÚ¿­ Ã£±â(&S)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM ï¿½ï¿½ï¿½ï¿½(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "ï¿½ï¿½ï¿½Ú¿ï¿½ Ã£ï¿½ï¿½(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        MENUITEM "°ÝÀÚ(&G)\tShift+G",           ID_VIEW_GRID
-        MENUITEM "Å¸ÀÏ Çà ÀÚµ¿¸ÂÃã(&C)",        ID_VIEW_AUTOFITCOL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&G)\tShift+G",           ID_VIEW_GRID
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½(&C)",        ID_VIEW_AUTOFITCOL
         MENUITEM SEPARATOR
-        POPUP "¹è°æ ¹«´Ì"
+        POPUP "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½"
         BEGIN
-            MENUITEM "°í¾çÀÌ",                        ID_VIEW_BK1
-            MENUITEM "Èò ¹ÙÅÁ",                        ID_VIEW_BK2
-            MENUITEM "´ë¸®¼®",                      ID_VIEW_BK3
-            MENUITEM "¹°°á",                        ID_VIEW_BK4
-            MENUITEM "°ËÀº ¹ÙÅÁ",                        ID_VIEW_BK5
-            MENUITEM "±âÅ¸",                        ID_VIEW_BK6
-            MENUITEM "°ÝÀÚ",                        ID_VIEW_BK7
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK1
+            MENUITEM "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK2
+            MENUITEM "ï¿½ë¸®ï¿½ï¿½",                      ID_VIEW_BK3
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK4
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK5
+            MENUITEM "ï¿½ï¿½Å¸",                        ID_VIEW_BK6
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK7
         END
     END
-    POPUP "µµ±¸(&T)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&T)"
     BEGIN
-        MENUITEM "LZ77 µ¥ÀÌÅÍ ¾ÐÃà...(&C)",         ID_TOOLS_LZ77COMP
-        MENUITEM "ÆÄÀÏ ºñ±³...(&O)",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
         POPUP "Tile(&E)"
         BEGIN
-            MENUITEM "<<ÙéÊ¦?î÷îÜÙþ?>>",          ID_TOOLS_ZOOMEXFIRST
+            MENUITEM "<<ï¿½ï¿½Ê¦?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?>>",          ID_TOOLS_ZOOMEXFIRST
         END
-        MENUITEM "NDS ÆÄÀÏ ½Ã½ºÅÛ Á¤º¸...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS ï¿½ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "DS Æß¿þ¾î ¼³Á¤...(&D)",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "ÅØ½ºÆ® ÄÚµå º¯È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "ÄÚµå Å×ÀÌºíÀ» CMAPÀ¸·Î º¯È¯...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "ï¿½Ø½ï¿½Æ® ï¿½Úµï¿½ ï¿½ï¿½È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ CMAPï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "¿ÜºÎ µµ±¸...(&E)",             ID_TOOLS_TOOLS
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "Ã¥°¥ÇÇ(&A)"
+    POPUP "Ã¥ï¿½ï¿½ï¿½ï¿½(&A)"
     BEGIN
-        MENUITEM "<Ã¥°¥ÇÇ> Ãß°¡/Á¤¸®...(&A)\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<Ã¥ï¿½ï¿½ï¿½ï¿½> ï¿½ß°ï¿½/ï¿½ï¿½ï¿½ï¿½...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
     POPUP "Ã¢(&W)"
     BEGIN
-        MENUITEM "»õ Ã¢(&N)",                ID_WINDOW_NEW
-        MENUITEM "°è´Ü½Ä(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "Å¸ÀÏ½Ä(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "¼øÂ÷(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "ï¿½ï¿½ Ã¢(&N)",                ID_WINDOW_NEW
+        MENUITEM "ï¿½ï¿½Ü½ï¿½(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "Å¸ï¿½Ï½ï¿½(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "¼Ó¼º\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "ÆÈ·¹Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "±âº» ¼³Á¤À¸·Î(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "ï¿½Ó¼ï¿½\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "ï¿½È·ï¿½Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "µµ¿ò¸»(&H)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&H)"
     BEGIN
-        MENUITEM "CrystalTile2.5¿¡ ´ëÇÏ¿©...(&A)",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_VIEW_HEXVIEW MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "¿­±â...(&O)\tCtrl+O",         ID_FILE_OPEN
-        POPUP "DS ¿¡¹Ä·¹ÀÌÅÍ ÈÄÅ©(&D)"
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
         END
-        MENUITEM "´Ý±â(&C)",                    ID_FILE_CLOSE
-        MENUITEM "ÀúÀå(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "´Ù¸¥ ÀÌ¸§À¸·Î ÀúÀå...(&A)",               ID_FILE_SAVE_AS
+        MENUITEM "ï¿½Ý±ï¿½(&C)",                    ID_FILE_CLOSE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "ï¿½Ù¸ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "ÃÖ±Ù ÆÄÀÏµé",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½Ïµï¿½",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Á¾·á(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "ÆíÁý(&E)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&E)"
     BEGIN
-        MENUITEM "½ÇÇà Ãë¼Ò(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "´Ù½Ã ½ÇÇà(&R)",                    ID_EDIT_RESET
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "º¹»ç(&C)\tCtrl+C",            ID_EDIT_COPY
-        MENUITEM "ºÙ¿©³Ö±â(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "ï¿½Ù¿ï¿½ï¿½Ö±ï¿½(&P)\tCtrl+V",            ID_EDIT_PASTE
         MENUITEM SEPARATOR
-        MENUITEM "ÀÌ¹ÌÁö·Î ³»º¸³»±â...(&E)\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "ÀÌ¹ÌÁö¸¦ ³»º¸³»±â...(&I)\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "µ¥ÀÌÅÍ¸¦ ÆÈ·¹Æ®·Î º¯È¯(P)",         ID_EDIT_DATA2PAL
-        MENUITEM "ÆÈ·¹Æ®¸¦ µ¥ÀÌÅÍ·Î º¯È¯(&D)",        ID_EDIT_PAL2DATA
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½È·ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½È¯(P)",         ID_EDIT_DATA2PAL
+        MENUITEM "ï¿½È·ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ ï¿½ï¿½È¯(&D)",        ID_EDIT_PAL2DATA
         MENUITEM SEPARATOR
-        MENUITEM "¸Þ¸ð¸® ½º³À¼¦ »õ·Î °íÄ§(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä§(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "Ã£±â(&S)"
+    POPUP "Ã£ï¿½ï¿½(&S)"
     BEGIN
-        MENUITEM "Ã£±â...(&F)\tCtrl+F",         ID_SEARCH_FIND
-        MENUITEM "´ÙÀ½ Ã£±â(&N)\tF3",          ID_SEARCH_FINDNEXT
-        MENUITEM "¹Ù²Ù±â...(&R)\tCtrl+R",         ID_SEARCH_REPLACE
+        MENUITEM "Ã£ï¿½ï¿½...(&F)\tCtrl+F",         ID_SEARCH_FIND
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½(&N)\tF3",          ID_SEARCH_FINDNEXT
+        MENUITEM "ï¿½Ù²Ù±ï¿½...(&R)\tCtrl+R",         ID_SEARCH_REPLACE
         MENUITEM SEPARATOR
-        MENUITEM "ÀÌµ¿(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
-        MENUITEM "ARM&9 Æ÷ÀÎÅÍ",             ID_FSI_GOARM9
-        MENUITEM "ARM&7 Æ÷ÀÎÅÍ",             ID_FSI_GOARM7
+        MENUITEM "ï¿½Ìµï¿½(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "ARM&9 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",             ID_FSI_GOARM9
+        MENUITEM "ARM&7 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",             ID_FSI_GOARM7
         MENUITEM SEPARATOR
-        MENUITEM "¿¬°ü°Ë»ö...(&E)",             ID_SEARCH_RELATIVE
-        MENUITEM "LZ77 ¾ÐÃà °Ë»ö...(&L)",            ID_SEARCH_LZ77
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½...(&E)",             ID_SEARCH_RELATIVE
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½...(&L)",            ID_SEARCH_LZ77
     END
-    POPUP "ÄÚµå(&C)"
+    POPUP "ï¿½Úµï¿½(&C)"
     BEGIN
-        MENUITEM "°íÀ¯¹øÈ£Ç¥ ¼±ÅÃ...(&S)",             ID_TBL_SELTBL
-        MENUITEM "°íÀ¯¹øÈ£Ç¥ »ç¿ë(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
-        MENUITEM "»ç¿ëÀÚ Á¤ÀÇ Á¦¾îÇ¥ »ç¿ë(&C)",        IDC_HEXVIEW_TBLCTRL
-        MENUITEM "ÄÚµå º¯È¯(&S)",                ID_HEXVIEW_SWPCODE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½ï¿½...(&S)",             ID_TBL_SELTBL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½(&C)",        IDC_HEXVIEW_TBLCTRL
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½È¯(&S)",                ID_HEXVIEW_SWPCODE
         MENUITEM SEPARATOR
-        POPUP "ÀÎÄÚµù(&E)"
+        POPUP "ï¿½ï¿½ï¿½Úµï¿½(&E)"
         BEGIN
-            MENUITEM "½Ã½ºÅÛ ÀÎÄÚµù »ç¿ë(&D)",                ID_CODEPAGE_ACP
+            MENUITEM "ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½(&D)",                ID_CODEPAGE_ACP
         END
-        MENUITEM "ÀÎÄÚµù ±Û²Ã ¼³Á¤...(&F)",         ID_FONT_LIST
+        MENUITEM "ï¿½ï¿½ï¿½Úµï¿½ ï¿½Û²ï¿½ ï¿½ï¿½ï¿½ï¿½...(&F)",         ID_FONT_LIST
     END
-    POPUP "º¸±â(&V)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&V)"
     BEGIN
-        MENUITEM "±âº» µµ±¸¸ðÀ½(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "Æ¯¼ºÃ¢(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "¿ÜºÎ Åø¹Ù(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "»óÅÂ¹Ù(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "Æ¯ï¿½ï¿½Ã¢(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "ï¿½ï¿½ï¿½Â¹ï¿½(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "Å¸ÀÏ º¸±â(&I)\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "16Áø¼ö ÆíÁý±â(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "ASM ºä¾î(&A)\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Å¸ÀÏ ÆíÁý±â(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "¹®ÀÚ¿­ Ã£±â(&S)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM ï¿½ï¿½ï¿½(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "ï¿½ï¿½ï¿½Ú¿ï¿½ Ã£ï¿½ï¿½(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        MENUITEM "2¹ÙÀÌÆ®¾¿ Á¤·Ä(&2)",                  ID_VIEW_2BYTEALIGN
-        MENUITEM "4¹ÙÀÌÆ®¾¿ Á¤·Ä(&4)",                  ID_VIEW_4BYTEALIGN
+        MENUITEM "2ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&2)",                  ID_VIEW_2BYTEALIGN
+        MENUITEM "4ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&4)",                  ID_VIEW_4BYTEALIGN
         MENUITEM SEPARATOR
-        MENUITEM "»ö»ó ¹®ÀÚ(&C)",                ID_VIEW_COLORTEXT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&C)",                ID_VIEW_COLORTEXT
         MENUITEM SEPARATOR
-        POPUP "¹è°æ ¹«´Ì"
+        POPUP "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½"
         BEGIN
-            MENUITEM "°í¾çÀÌ",                        ID_VIEW_BK1
-            MENUITEM "Èò ¹ÙÅÁ",                        ID_VIEW_BK2
-            MENUITEM "´ë¸®¼®",                      ID_VIEW_BK3
-            MENUITEM "¹°°á",                        ID_VIEW_BK4
-            MENUITEM "°ËÀº ¹ÙÅÁ",                        ID_VIEW_BK5
-            MENUITEM "±âÅ¸",                        ID_VIEW_BK6
-            MENUITEM "°ÝÀÚ",                        ID_VIEW_BK7
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK1
+            MENUITEM "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK2
+            MENUITEM "ï¿½ë¸®ï¿½ï¿½",                      ID_VIEW_BK3
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK4
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK5
+            MENUITEM "ï¿½ï¿½Å¸",                        ID_VIEW_BK6
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK7
         END
     END
-    POPUP "µµ±¸(&T)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&T)"
     BEGIN
-        MENUITEM "¿¬°ü°Ë»ö...(&R)",             ID_SEARCH_RELATIVE
-        MENUITEM "ÆÄÀÏ ºñ±³...(&O)",             ID_TOOLS_FILECOMP
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½...(&R)",             ID_SEARCH_RELATIVE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "LZ77 ¾ÐÃà °Ë»ö...(&L)",            ID_SEARCH_LZ77
-        MENUITEM "LZ77 ¾ÐÃà ÇØÁ¦...(&U)",         ID_TOOLS_LZ77UNCOMP
-        MENUITEM "LZ77 µ¥ÀÌÅÍ ¾ÐÃà...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½...(&L)",            ID_SEARCH_LZ77
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&U)",         ID_TOOLS_LZ77UNCOMP
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&C)",         ID_TOOLS_LZ77COMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS ÆÄÀÏ ½Ã½ºÅÛ Á¤º¸...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS ï¿½ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "DS Æß¿þ¾î ¼³Á¤...(&D)",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "ÅØ½ºÆ® ÄÚµå º¯È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "ÄÚµå Å×ÀÌºíÀ» CMAPÀ¸·Î º¯È¯...(&P)",          ID_TOOLS_TBL2CMAP
-        MENUITEM "Ä¡Æ® °Ë»ö...(&F)",           ID_TOOLS_CHEATSSERACH
+        MENUITEM "ï¿½Ø½ï¿½Æ® ï¿½Úµï¿½ ï¿½ï¿½È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ CMAPï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "Ä¡Æ® ï¿½Ë»ï¿½...(&F)",           ID_TOOLS_CHEATSSERACH
         MENUITEM SEPARATOR
-        MENUITEM "CRC16 Ã¼Å©¼¶ °è»ê(&1)",            ID_TOOLS_GETCRC16
+        MENUITEM "CRC16 Ã¼Å©ï¿½ï¿½ ï¿½ï¿½ï¿½(&1)",            ID_TOOLS_GETCRC16
         MENUITEM SEPARATOR
-        MENUITEM "¿ÜºÎ µµ±¸...(&E)",             ID_TOOLS_TOOLS
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "Ã¥°¥ÇÇ(&A)"
+    POPUP "Ã¥ï¿½ï¿½ï¿½ï¿½(&A)"
     BEGIN
-        MENUITEM "<Ã¥°¥ÇÇ> Ãß°¡/Á¤¸®...(&A)\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<Ã¥ï¿½ï¿½ï¿½ï¿½> ï¿½ß°ï¿½/ï¿½ï¿½ï¿½ï¿½...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
     POPUP "Ã¢(&W)"
     BEGIN
-        MENUITEM "»õ Ã¢(&N)",                ID_WINDOW_NEW
-        MENUITEM "°è´Ü½Ä(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "Å¸ÀÏ½Ä(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "¼øÂ÷(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "ï¿½ï¿½ Ã¢(&N)",                ID_WINDOW_NEW
+        MENUITEM "ï¿½ï¿½Ü½ï¿½(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "Å¸ï¿½Ï½ï¿½(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "¼Ó¼º\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "ÆÈ·¹Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "±âº» ¼³Á¤À¸·Î(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "ï¿½Ó¼ï¿½\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "ï¿½È·ï¿½Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "µµ¿ò¸»(&H)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&H)"
     BEGIN
-        MENUITEM "CrystalTile2.5¿¡ ´ëÇÏ¿©...(&A)",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_VIEW_TILEEDITORVIEW MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "¿­±â...(&O)\tCtrl+O",         ID_FILE_OPEN
-        POPUP "DS ¿¡¹Ä·¹ÀÌÅÍ ÈÄÅ©(&D)"
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "´Ý±â(&C)",                    ID_FILE_CLOSE
-        MENUITEM "ÀúÀå(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "´Ù¸¥ ÀÌ¸§À¸·Î ÀúÀå...(&A)",               ID_FILE_SAVE_AS
+        MENUITEM "ï¿½Ý±ï¿½(&C)",                    ID_FILE_CLOSE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "ï¿½Ù¸ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "ÃÖ±Ù ÆÄÀÏµé",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½Ïµï¿½",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Á¾·á(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "ÆíÁý(&E)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&E)"
     BEGIN
-        MENUITEM "½ÇÇà Ãë¼Ò(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "´Ù½Ã ½ÇÇà(&R)",                    ID_EDIT_RESET
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "ÀÌµ¿(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "ï¿½Ìµï¿½(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
         MENUITEM SEPARATOR
-        MENUITEM "ÅØ½ºÆ® »ðÀÔ(&E)\tCtrl+E",        ID_TILEEDITOR_TEXT
-        MENUITEM "ÄÚµå Å×ÀÌºí °¡Á®¿À±â(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
+        MENUITEM "ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½(&E)\tCtrl+E",        ID_TILEEDITOR_TEXT
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
         MENUITEM SEPARATOR
-        MENUITEM "¸Þ¸ð¸® ½º³À¼¦ »õ·Î °íÄ§(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä§(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "º¸±â(&V)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&V)"
     BEGIN
-        MENUITEM "±âº» µµ±¸¸ðÀ½(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "Æ¯¼ºÃ¢(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "¿ÜºÎ Åø¹Ù(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "»óÅÂ¹Ù(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "Æ¯ï¿½ï¿½Ã¢(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "ï¿½ï¿½ï¿½Â¹ï¿½(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "Å¸ÀÏ º¸±â(&I)\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "16Áø¼ö ÆíÁý±â(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "ASM ºä¾î(&A)\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Å¸ÀÏ ÆíÁý±â(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "¹®ÀÚ¿­ Ã£±â(&S)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM ï¿½ï¿½ï¿½(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "ï¿½ï¿½ï¿½Ú¿ï¿½ Ã£ï¿½ï¿½(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        MENUITEM "°ÝÀÚ(&G)\tShift+G",           ID_VIEW_GRID
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&G)\tShift+G",           ID_VIEW_GRID
         MENUITEM SEPARATOR
-        POPUP "¹è°æ ¹«´Ì"
+        POPUP "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½"
         BEGIN
-            MENUITEM "°í¾çÀÌ",                        ID_VIEW_BK1
-            MENUITEM "Èò ¹ÙÅÁ",                        ID_VIEW_BK2
-            MENUITEM "´ë¸®¼®",                      ID_VIEW_BK3
-            MENUITEM "¹°°á",                        ID_VIEW_BK4
-            MENUITEM "°ËÀº ¹ÙÅÁ",                        ID_VIEW_BK5
-            MENUITEM "±âÅ¸",                        ID_VIEW_BK6
-            MENUITEM "°ÝÀÚ",                        ID_VIEW_BK7
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK1
+            MENUITEM "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK2
+            MENUITEM "ï¿½ë¸®ï¿½ï¿½",                      ID_VIEW_BK3
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK4
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK5
+            MENUITEM "ï¿½ï¿½Å¸",                        ID_VIEW_BK6
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK7
         END
     END
-    POPUP "µµ±¸(&T)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&T)"
     BEGIN
-        MENUITEM "LZ77 µ¥ÀÌÅÍ ¾ÐÃà...(&C)",         ID_TOOLS_LZ77COMP
-        MENUITEM "ÆÄÀÏ ºñ±³...(&O)",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS ÆÄÀÏ ½Ã½ºÅÛ Á¤º¸...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS ï¿½ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "DS Æß¿þ¾î ¼³Á¤...(&D)",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "ÅØ½ºÆ® ÄÚµå º¯È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "ÄÚµå Å×ÀÌºíÀ» CMAPÀ¸·Î º¯È¯...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "ï¿½Ø½ï¿½Æ® ï¿½Úµï¿½ ï¿½ï¿½È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ CMAPï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "¿ÜºÎ µµ±¸...(&E)",             ID_TOOLS_TOOLS
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "Ã¥°¥ÇÇ(&A)"
+    POPUP "Ã¥ï¿½ï¿½ï¿½ï¿½(&A)"
     BEGIN
-        MENUITEM "<Ã¥°¥ÇÇ> Ãß°¡/Á¤¸®...(&A)\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<Ã¥ï¿½ï¿½ï¿½ï¿½> ï¿½ß°ï¿½/ï¿½ï¿½ï¿½ï¿½...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
     POPUP "Ã¢(&W)"
     BEGIN
-        MENUITEM "»õ Ã¢(&N)",                ID_WINDOW_NEW
-        MENUITEM "°è´Ü½Ä(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "Å¸ÀÏ½Ä(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "¼øÂ÷(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "ï¿½ï¿½ Ã¢(&N)",                ID_WINDOW_NEW
+        MENUITEM "ï¿½ï¿½Ü½ï¿½(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "Å¸ï¿½Ï½ï¿½(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "¼Ó¼º\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "ÆÈ·¹Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "±âº» ¼³Á¤À¸·Î(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "ï¿½Ó¼ï¿½\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "ï¿½È·ï¿½Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "µµ¿ò¸»(&H)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&H)"
     BEGIN
-        MENUITEM "CrystalTile2.5¿¡ ´ëÇÏ¿©...(&A)",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½...(&A)",    ID_APP_ABOUT
     END
 END
 
@@ -492,42 +492,42 @@ IDR_CT2POPMENU MENU
 BEGIN
     POPUP "SETCOLOR"
     BEGIN
-        MENUITEM "¹®ÀÚ»ö(&T)",                  ID_SETCOLOR_TEXTCOLOR
-        MENUITEM "¹è°æ»ö(&B)",                  ID_SETCOLOR_BKCOLOR
-        MENUITEM "À½¿µ/»ö ¼±ÅÃ(&S)",             ID_SETCOLOR_SHADOWCOLOR
+        MENUITEM "ï¿½ï¿½ï¿½Ú»ï¿½(&T)",                  ID_SETCOLOR_TEXTCOLOR
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&B)",                  ID_SETCOLOR_BKCOLOR
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&S)",             ID_SETCOLOR_SHADOWCOLOR
     END
     POPUP "PALETTE"
     BEGIN
         MENUITEM "TLP",                         ID_PALETTE_PAL1
-        MENUITEM "Á¶ÇÕ",                        ID_PALETTE_PAL2
-        MENUITEM "¹«Áö°³",                        ID_PALETTE_PAL3
-        MENUITEM "¼®¾ç",                        ID_PALETTE_PAL4
-        MENUITEM "È¸»ö°è¿­",                        ID_PALETTE_PAL5
-        MENUITEM "È¸»ö°è¿­2",                       ID_PALETTE_PAL6
-        MENUITEM "½Ã½ºÅÛ(Windows)",               ID_PALETTE_PAL7
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_PALETTE_PAL2
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",                        ID_PALETTE_PAL3
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_PALETTE_PAL4
+        MENUITEM "È¸ï¿½ï¿½ï¿½è¿­",                        ID_PALETTE_PAL5
+        MENUITEM "È¸ï¿½ï¿½ï¿½è¿­2",                       ID_PALETTE_PAL6
+        MENUITEM "ï¿½Ã½ï¿½ï¿½ï¿½(Windows)",               ID_PALETTE_PAL7
     END
     POPUP "ARM"
     BEGIN
-        MENUITEM "ARM9:ARM ¸ðµå",                ID_ARM_ARM9_ARM
-        MENUITEM "ARM9:THUMB ¸ðµå",              ID_ARM_ARM9_THUMB
-        MENUITEM "ARM7:ARM ¸ðµå",                ID_ARM_ARM7_ARM
-        MENUITEM "ARM7:THUMB ¸ðµå",              ID_ARM_ARM7_THUMB
+        MENUITEM "ARM9:ARM ï¿½ï¿½ï¿½",                ID_ARM_ARM9_ARM
+        MENUITEM "ARM9:THUMB ï¿½ï¿½ï¿½",              ID_ARM_ARM9_THUMB
+        MENUITEM "ARM7:ARM ï¿½ï¿½ï¿½",                ID_ARM_ARM7_ARM
+        MENUITEM "ARM7:THUMB ï¿½ï¿½ï¿½",              ID_ARM_ARM7_THUMB
     END
     POPUP "FSIPOP"
     BEGIN
-        MENUITEM "³»º¸³»±â...(&E)",             ID_FSI_EXPORT
-        MENUITEM "°¡Á®¿À±â...(&I)",             ID_FSI_IMPORT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_FSI_EXPORT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)",             ID_FSI_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "MAP ÀÌ¹ÌÁö ºÐ¼®(&M)",                ID_FSI_SETMAP
+        MENUITEM "MAP ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Ð¼ï¿½(&M)",                ID_FSI_SETMAP
         MENUITEM "?",                           ID_FSI_LOADDATA
         MENUITEM SEPARATOR
-        MENUITEM "NTFR ±Û²Ã ³Êºñ »ç¿ë(&E)",        ID_FSIPOP_LOADNTFRWH
-        MENUITEM "NTFR ±Û²Ã ³Êºñ º¯°æ...(&N)",        ID_FSIPOP_SETNTFRWH
+        MENUITEM "NTFR ï¿½Û²ï¿½ ï¿½Êºï¿½ ï¿½ï¿½ï¿½(&E)",        ID_FSIPOP_LOADNTFRWH
+        MENUITEM "NTFR ï¿½Û²ï¿½ ï¿½Êºï¿½ ï¿½ï¿½ï¿½ï¿½...(&N)",        ID_FSIPOP_SETNTFRWH
         MENUITEM SEPARATOR
-        MENUITEM "°ÔÀÓ ¾ÆÀÌÄÜ º¸±â(&G)",            33297
-        MENUITEM "¾ÆÀÌÄÜ ÆÈ·¹Æ® ¼öÁ¤(&P)",          33299
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&G)",            33297
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È·ï¿½Æ® ï¿½ï¿½ï¿½ï¿½(&P)",          33299
         MENUITEM SEPARATOR
-        MENUITEM "Á¦¸ñ Á¤º¸...(&T)",             ID_FSI_GAMEINFO
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&T)",             ID_FSI_GAMEINFO
         MENUITEM " ",                           ID_TOOLS_SFI
     END
 END
@@ -536,340 +536,340 @@ IDR_LZ77SEARCH MENU
 BEGIN
     POPUP "&LZ77"
     BEGIN
-        MENUITEM "ÀÏ°ý ¾ÐÃà ÇØÁ¦(&A)",                ID_LZ77_UNCOMPALL
-        MENUITEM "¼±ÅÃ Ç×¸ñ ¾ÐÃà ÇØÁ¦(&S)",            ID_LZ77_UNCOMPSEL
-        MENUITEM "ÁßÁö(&B)",                    ID_LZ77_BREAK
+        MENUITEM "ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&A)",                ID_LZ77_UNCOMPALL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&S)",            ID_LZ77_UNCOMPSEL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&B)",                    ID_LZ77_BREAK
         MENUITEM SEPARATOR
-        MENUITEM "¼±ÅÃ Ç×¸ñ »èÁ¦(&D)\tDel",       ID_LZ77_DELETE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ ï¿½ï¿½ï¿½ï¿½(&D)\tDel",       ID_LZ77_DELETE
         MENUITEM SEPARATOR
-        MENUITEM "¸®½ºÆ® ÀúÀå...(&S)",             IDC_LZ77SAVEBTN
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½...(&S)",             IDC_LZ77SAVEBTN
     END
-    MENUITEM "Ã£±â(&F)",                    IDC_FINDBTN
-    MENUITEM "´ÙÀ½ Ã£±â(&N)",                  IDC_NEXTBTN
+    MENUITEM "Ã£ï¿½ï¿½(&F)",                    IDC_FINDBTN
+    MENUITEM "ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½(&N)",                  IDC_NEXTBTN
 END
 
 IDR_NDSFSI MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "³»º¸³»±â...(&E)",             ID_FSI_EXPORT
-        MENUITEM "Æ¯Á¤ÆÄÀÏ ³»º¸³»±â...(&K)",         ID_FSI_EXPORTEX
-        MENUITEM "°¡Á®¿À±â...(&I)",             ID_FSI_IMPORT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_FSI_EXPORT
+        MENUITEM "Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&K)",         ID_FSI_EXPORTEX
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)",             ID_FSI_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "MAP ÀÌ¹ÌÁö ºÐ¼®(&M)",                ID_FSI_SETMAP
+        MENUITEM "MAP ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Ð¼ï¿½(&M)",                ID_FSI_SETMAP
         MENUITEM "?",                           ID_FSI_LOADDATA
         MENUITEM SEPARATOR
-        MENUITEM "ROM ºÐÇØ...(&S)",              ID_FSI_SPLITROM
-        MENUITEM "ROM ¸¸µé±â...(&B)",              ID_FSI_CREATEROM
-        MENUITEM "¿ë·® ÁÙÀÌ±â(&F)",                    ID_FSI_FIX
+        MENUITEM "ROM ï¿½ï¿½ï¿½ï¿½...(&S)",              ID_FSI_SPLITROM
+        MENUITEM "ROM ï¿½ï¿½ï¿½ï¿½ï¿½...(&B)",              ID_FSI_CREATEROM
+        MENUITEM "ï¿½ë·® ï¿½ï¿½ï¿½Ì±ï¿½(&F)",                    ID_FSI_FIX
         MENUITEM SEPARATOR
-        MENUITEM "»õ·Î°íÄ§(&R)",                    ID_FSI_REFALSH
+        MENUITEM "ï¿½ï¿½ï¿½Î°ï¿½Ä§(&R)",                    ID_FSI_REFALSH
     END
-    POPUP "ÆíÁý(&E)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&E)"
     BEGIN
-        MENUITEM "CRC °Ë»ç...(&R)",           ID_FSI_CHECKCRC16
-        MENUITEM "Á¦¸ñ Á¤º¸...(&T)",             ID_FSI_GAMEINFO
+        MENUITEM "CRC ï¿½Ë»ï¿½...(&R)",           ID_FSI_CHECKCRC16
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&T)",             ID_FSI_GAMEINFO
         MENUITEM " ",                           ID_TOOLS_SFI
         MENUITEM SEPARATOR
-        MENUITEM "Å¬¸³º¸µå·Î º¹»ç(&C)",        ID_FSI_COPYTOCLIPBOARD
+        MENUITEM "Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&C)",        ID_FSI_COPYTOCLIPBOARD
         MENUITEM SEPARATOR
-        POPUP "ÆÄÀÏ ±¸Á¶ Å©±â º¯°æ(&S)"
+        POPUP "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&S)"
         BEGIN
-            MENUITEM "<Å©±â È®Àå>>",                ID_FSI_SETFILESIZE
+            MENUITEM "<Å©ï¿½ï¿½ È®ï¿½ï¿½>>",                ID_FSI_SETFILESIZE
         END
         MENUITEM SEPARATOR
-        MENUITEM "NTFR ±Û²Ã ³Êºñ »ç¿ë(&E)",        ID_FSIPOP_LOADNTFRWH
-        MENUITEM "NTFR ±Û²Ã ³Êºñ º¯°æ...(&N)",        ID_FSIPOP_SETNTFRWH
-        MENUITEM "NTFR °íÀ¯¹øÈ£Ç¥ ³»º¸³»±â...(&T)",        ID_FSIPOP_EXPORTTBL
+        MENUITEM "NTFR ï¿½Û²ï¿½ ï¿½Êºï¿½ ï¿½ï¿½ï¿½(&E)",        ID_FSIPOP_LOADNTFRWH
+        MENUITEM "NTFR ï¿½Û²ï¿½ ï¿½Êºï¿½ ï¿½ï¿½ï¿½ï¿½...(&N)",        ID_FSIPOP_SETNTFRWH
+        MENUITEM "NTFR ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&T)",        ID_FSIPOP_EXPORTTBL
         MENUITEM SEPARATOR
-        MENUITEM "°ÔÀÓ ¾ÆÀÌÄÜ º¸±â(&G)",            ID_FSIPOP_SHOWICON
-        MENUITEM "¾ÆÀÌÄÜ ÆÈ·¹Æ® ¼öÁ¤(&P)",          ID_FSIPOP_UPDATEICONPAL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&G)",            ID_FSIPOP_SHOWICON
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È·ï¿½Æ® ï¿½ï¿½ï¿½ï¿½(&P)",          ID_FSIPOP_UPDATEICONPAL
     END
-    POPUP "ÇØ´õ(&G)"
+    POPUP "ï¿½Ø´ï¿½(&G)"
     BEGIN
-        MENUITEM "ÁÖ¼Ò ÀÌµ¿(&O)",                ID_FSI_GO
-        MENUITEM "ÆÄÀÏ ÀÌµ¿(&F)",                ID_FSI_GOFILE
-        POPUP "ÀÌµ¿(&G)"
+        MENUITEM "ï¿½Ö¼ï¿½ ï¿½Ìµï¿½(&O)",                ID_FSI_GO
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½(&F)",                ID_FSI_GOFILE
+        POPUP "ï¿½Ìµï¿½(&G)"
         BEGIN
-            MENUITEM "<<ÇØ´õ ÀÌµ¿>>",              ID_FSI_GOTOHEADER
+            MENUITEM "<<ï¿½Ø´ï¿½ ï¿½Ìµï¿½>>",              ID_FSI_GOTOHEADER
         END
         MENUITEM SEPARATOR
-        MENUITEM "ARM&9 Æ÷ÀÎÅÍ",             ID_FSI_GOARM9
-        MENUITEM "ARM&7 Æ÷ÀÎÅÍ",             ID_FSI_GOARM7
+        MENUITEM "ARM&9 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",             ID_FSI_GOARM9
+        MENUITEM "ARM&7 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",             ID_FSI_GOARM7
         MENUITEM SEPARATOR
-        MENUITEM "ÆÄÀÏ Ã£±â...(&R)",             ID_FSI_FIND
-        MENUITEM "´ÙÀ½ Ã£±â(&N)\tF3",          ID_FSI_NEXT
-        MENUITEM "´ÙÀ½ ÀÇ½É ÆÄÀÏ(&!)\tF2",      ID_FSI_GOHAN
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½...(&R)",             ID_FSI_FIND
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½(&N)\tF3",          ID_FSI_NEXT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½Ç½ï¿½ ï¿½ï¿½ï¿½ï¿½(&!)\tF2",      ID_FSI_GOHAN
     END
 END
 
 IDR_VIEW_SCRIPTVIEW MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "¿­±â...(&O)\tCtrl+O",         ID_FILE_OPEN
-        POPUP "DS ¿¡¹Ä·¹ÀÌÅÍ ÈÄÅ©(&D)"
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "´Ý±â(&C)",                    ID_FILE_CLOSE
-        MENUITEM "ÀúÀå(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "´Ù¸¥ ÀÌ¸§À¸·Î ÀúÀå...(&A)",               ID_FILE_SAVE_AS
+        MENUITEM "ï¿½Ý±ï¿½(&C)",                    ID_FILE_CLOSE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "ï¿½Ù¸ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "ÃÖ±Ù ÆÄÀÏµé",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½Ïµï¿½",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Á¾·á(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "ÆíÁý(&E)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&E)"
     BEGIN
-        MENUITEM "º¹»ç(&C)\tCtrl+C",            ID_EDIT_COPY
-        MENUITEM "¼±ÅÃ Ç×¸ñ »èÁ¦(&D)\tDel",       ID_EDIT_DELETE
-        MENUITEM "¼±ÅÃ Ç×¸ñ Á¦¿Ü »èÁ¦(&V)",            ID_SCRIPTVIEW_INVALIDATEDELETE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ ï¿½ï¿½ï¿½ï¿½(&D)\tDel",       ID_EDIT_DELETE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&V)",            ID_SCRIPTVIEW_INVALIDATEDELETE
 
         MENUITEM SEPARATOR
-        MENUITEM "¸ðµÎ ¼±ÅÃ(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
+        MENUITEM "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
         MENUITEM SEPARATOR
-        MENUITEM "´Ù¸¥ ÇüÅÂ·Î ³»º¸³»±â...(&X)",           ID_EDIT_EXPORT_EX
-        MENUITEM "ÀÌ¹ÌÁö·Î ³»º¸³»±â...(&E)\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "ÀÌ¹ÌÁö¸¦ ³»º¸³»±â...(&I)\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½Â·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&X)",           ID_EDIT_EXPORT_EX
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "¹®¼­ ¿­±â...(&O)\tAlt+O",      ID_SCRIPTVIEW_OPENSCRIPT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&O)\tAlt+O",      ID_SCRIPTVIEW_OPENSCRIPT
     END
     POPUP "??(&I)"
     BEGIN
-        MENUITEM "Àß¸øµÈ Æ÷ÀÎÅÍ(&P)",                ID_SCRIPTVIEW_FILTERPOINT
-        MENUITEM "Â¦¼ö ±æÀÌÀÇ ¹®Àå(&S)",          ID_SCRIPTVIEW_FILTERSITEM
-        MENUITEM "È¦¼ö ±æÀÌÀÇ ¹®ÀÚ(&D)",          ID_SCRIPTVIEW_FILTERDITEM
-        MENUITEM "ÃÖ¼Ò ±æÀÌº¸´Ù ÂªÀº ¹®Àå(&L)",    ID_SCRIPTVIEW_FILTERMIN
-        MENUITEM "ÃÖ´ë ±æÀÌº¸´Ù ±ä ¹®Àå(&H)",    ID_SCRIPTVIEW_FILTERMAX
-        MENUITEM "ÁÖ¼Ò°¡ È¦¼öÀÎ ¹®Àå(&A)",          ID_SCRIPTVIEW_FILTERSADDRESS
-        MENUITEM "ÁÖ¼Ò°¡ Â¦¼öÀÎ ¹®Àå(&O)",          ID_SCRIPTVIEW_FILTERDADDRESS
-        MENUITEM "°£´ÜÇÑ ¹®¹ý °Ë»ç(&T)",            ID_SCRIPTVIEW_FILTERCHECKWORD
+        MENUITEM "ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&P)",                ID_SCRIPTVIEW_FILTERPOINT
+        MENUITEM "Â¦ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&S)",          ID_SCRIPTVIEW_FILTERSITEM
+        MENUITEM "È¦ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&D)",          ID_SCRIPTVIEW_FILTERDITEM
+        MENUITEM "ï¿½Ö¼ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ Âªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&L)",    ID_SCRIPTVIEW_FILTERMIN
+        MENUITEM "ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&H)",    ID_SCRIPTVIEW_FILTERMAX
+        MENUITEM "ï¿½Ö¼Ò°ï¿½ È¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&A)",          ID_SCRIPTVIEW_FILTERSADDRESS
+        MENUITEM "ï¿½Ö¼Ò°ï¿½ Â¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&O)",          ID_SCRIPTVIEW_FILTERDADDRESS
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½(&T)",            ID_SCRIPTVIEW_FILTERCHECKWORD
 
-        MENUITEM "Æ¯Á¤ ¹®Àå Æ÷ÇÔ(&W)",            ID_SCRIPTVIEW_FILTERSPECWORD
-        MENUITEM "¹ÝÀü¼±ÅÃ(&U)",                    ID_SCRIPTVIEW_FILTERACHECK
-        MENUITEM "°Ë»ö Ç×¸ñ(&C)",                ID_SCRIPTVIEW_CHECKALL
-        MENUITEM "°Ë»ö Ãë¼Ò(&N)",                ID_SCRIPTVIEW_FILTERUNCHECK
-        MENUITEM "°Ë»öµÈ ÇÁ·ÎÁ§Æ®¸¦ »èÁ¦(&R)",            ID_SCRIPTVIEW_DELCHECKITEM
-        MENUITEM "°Ë»öµÈ ÇÁ·ÎÁ§Æ®¸¦ ³»º¸³»±â(&E)",            ID_SCRIPTVIEW_EXPORTCHECKITEM
+        MENUITEM "Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&W)",            ID_SCRIPTVIEW_FILTERSPECWORD
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&U)",                    ID_SCRIPTVIEW_FILTERACHECK
+        MENUITEM "ï¿½Ë»ï¿½ ï¿½×¸ï¿½(&C)",                ID_SCRIPTVIEW_CHECKALL
+        MENUITEM "ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½(&N)",                ID_SCRIPTVIEW_FILTERUNCHECK
+        MENUITEM "ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&R)",            ID_SCRIPTVIEW_DELCHECKITEM
+        MENUITEM "ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&E)",            ID_SCRIPTVIEW_EXPORTCHECKITEM
 
     END
-    POPUP "Ã£±â(&S)"
+    POPUP "Ã£ï¿½ï¿½(&S)"
     BEGIN
-        MENUITEM "â¤ßãÊÅÜâ(&S)",                ID_SEARCH_TEXT
-        MENUITEM "ÙÍ?ÝëÕáâ¤ßã...(&F)",         ID_SEARCH_TEXTEX
-        MENUITEM "?í®???â¤ßã(&A)",          ID_SEARCH_ALIGN2
-        MENUITEM "ô¨ð¶??í®?¹®ÀÚ(&W)",        ID_SEARCH_NOWORD
-        MENUITEM "Íóð¤Ý¬?áÖ(&E)",              ID_SEARCH_CTRLENDONLY
-        MENUITEM "??ò¦?(&P)",                ID_SCRIPTVIEW_FINDPOINT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&S)",                ID_SEARCH_TEXT
+        MENUITEM "ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&F)",         ID_SEARCH_TEXTEX
+        MENUITEM "?ï¿½ï¿½???ï¿½ï¿½ï¿½(&A)",          ID_SEARCH_ALIGN2
+        MENUITEM "ï¿½ï¿½ï¿½??ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½(&W)",        ID_SEARCH_NOWORD
+        MENUITEM "ï¿½ï¿½ï¿½Ý¬?ï¿½ï¿½(&E)",              ID_SEARCH_CTRLENDONLY
+        MENUITEM "??ï¿½?(&P)",                ID_SCRIPTVIEW_FINDPOINT
         MENUITEM SEPARATOR
-        MENUITEM "Ã£±â?ÙÍ(&F)\tCtrl+F",        IDC_EDIT_FINDTEXT
-        MENUITEM "´ÙÀ½ Ã£±â(&N)\tF3",          ID_EDIT_FIND
+        MENUITEM "Ã£ï¿½ï¿½?ï¿½ï¿½(&F)\tCtrl+F",        IDC_EDIT_FINDTEXT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½(&N)\tF3",          ID_EDIT_FIND
     END
-    POPUP "ÄÚµå(&C)"
+    POPUP "ï¿½Úµï¿½(&C)"
     BEGIN
-        MENUITEM "°íÀ¯¹øÈ£Ç¥ ¼±ÅÃ...(&S)",             ID_TBL_SELTBL
-        MENUITEM "°íÀ¯¹øÈ£Ç¥ »ç¿ë(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
-        MENUITEM "»ç¿ëÀÚ Á¤ÀÇ Á¦¾îÇ¥ »ç¿ë(&C)",        IDC_HEXVIEW_TBLCTRL
-        MENUITEM "ÄÚµå º¯È¯(&S)",                ID_HEXVIEW_SWPCODE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½ï¿½...(&S)",             ID_TBL_SELTBL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½(&C)",        IDC_HEXVIEW_TBLCTRL
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½È¯(&S)",                ID_HEXVIEW_SWPCODE
         MENUITEM SEPARATOR
-        POPUP "ÀÎÄÚµù(&E)"
+        POPUP "ï¿½ï¿½ï¿½Úµï¿½(&E)"
         BEGIN
-            MENUITEM "½Ã½ºÅÛ ÀÎÄÚµù »ç¿ë(&D)",                ID_CODEPAGE_ACP
+            MENUITEM "ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½(&D)",                ID_CODEPAGE_ACP
         END
         MENUITEM SEPARATOR
         MENUITEM "??...(&O)",                 ID_TBL_TOTALWORD
     END
-    POPUP "º¸±â(&V)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&V)"
     BEGIN
-        MENUITEM "±âº» µµ±¸¸ðÀ½(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "Æ¯¼ºÃ¢(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "¿ÜºÎ Åø¹Ù(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "»óÅÂ¹Ù(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "Æ¯ï¿½ï¿½Ã¢(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "ï¿½ï¿½ï¿½Â¹ï¿½(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "Å¸ÀÏ º¸±â(&I)\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "16Áø¼ö ÆíÁý±â(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "ASM ºä¾î(&A)\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Å¸ÀÏ ÆíÁý±â(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "¹®ÀÚ¿­ Ã£±â(&S)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM ï¿½ï¿½ï¿½(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "ï¿½ï¿½ï¿½Ú¿ï¿½ Ã£ï¿½ï¿½(&S)\tF9",            ID_VIEW_SCRIPTVIEW
     END
-    POPUP "µµ±¸(&T)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&T)"
     BEGIN
-        MENUITEM "LZ77 µ¥ÀÌÅÍ ¾ÐÃà...(&C)",         ID_TOOLS_LZ77COMP
-        MENUITEM "ÆÄÀÏ ºñ±³...(&O)",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS ÆÄÀÏ ½Ã½ºÅÛ Á¤º¸...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS ï¿½ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "DS Æß¿þ¾î ¼³Á¤...(&D)",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "ÅØ½ºÆ® ÄÚµå º¯È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "ÄÚµå Å×ÀÌºíÀ» CMAPÀ¸·Î º¯È¯...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "ï¿½Ø½ï¿½Æ® ï¿½Úµï¿½ ï¿½ï¿½È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ CMAPï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "¿ÜºÎ µµ±¸...(&E)",             ID_TOOLS_TOOLS
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_TOOLS_TOOLS
     END
     POPUP "Ã¢(&W)"
     BEGIN
-        MENUITEM "»õ Ã¢(&N)",                ID_WINDOW_NEW
-        MENUITEM "°è´Ü½Ä(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "Å¸ÀÏ½Ä(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "¼øÂ÷(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "ï¿½ï¿½ Ã¢(&N)",                ID_WINDOW_NEW
+        MENUITEM "ï¿½ï¿½Ü½ï¿½(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "Å¸ï¿½Ï½ï¿½(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "¼Ó¼º\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "ÆÈ·¹Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "±âº» ¼³Á¤À¸·Î(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "ï¿½Ó¼ï¿½\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "ï¿½È·ï¿½Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "µµ¿ò¸»(&H)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&H)"
     BEGIN
-        MENUITEM "CrystalTile2.5¿¡ ´ëÇÏ¿©...(&A)",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_VIEW_ASMVIEW MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "¿­±â...(&O)\tCtrl+O",         ID_FILE_OPEN
-        POPUP "DS ¿¡¹Ä·¹ÀÌÅÍ ÈÄÅ©(&D)"
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "´Ý±â(&C)",                    ID_FILE_CLOSE
-        MENUITEM "ÀúÀå(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "´Ù¸¥ ÀÌ¸§À¸·Î ÀúÀå...(&A)",               ID_FILE_SAVE_AS
+        MENUITEM "ï¿½Ý±ï¿½(&C)",                    ID_FILE_CLOSE
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "ï¿½Ù¸ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "ÃÖ±Ù ÆÄÀÏµé",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½Ïµï¿½",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "Á¾·á(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "ÆíÁý(&E)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&E)"
     BEGIN
-        MENUITEM "½ÇÇà Ãë¼Ò(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "´Ù½Ã ½ÇÇà(&R)",                    ID_EDIT_RESET
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "ÀÌ¹ÌÁö·Î ³»º¸³»±â...(&E)\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "ÀÌ¹ÌÁö¸¦ ³»º¸³»±â...(&I)\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "¸Þ¸ð¸® ½º³À¼¦ »õ·Î °íÄ§(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä§(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "Ã£±â(&S)"
+    POPUP "Ã£ï¿½ï¿½(&S)"
     BEGIN
-        MENUITEM "ÀÌµ¿(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
-        MENUITEM "ARM&9 Æ÷ÀÎÅÍ",             ID_FSI_GOARM9
-        MENUITEM "ARM&7 Æ÷ÀÎÅÍ",             ID_FSI_GOARM7
+        MENUITEM "ï¿½Ìµï¿½(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "ARM&9 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",             ID_FSI_GOARM9
+        MENUITEM "ARM&7 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",             ID_FSI_GOARM7
         MENUITEM SEPARATOR
-        MENUITEM "ÃßÀû(&F)\tAlt+éÓ",            ID_ASM_FOLLOW
-        MENUITEM "ÃßÀû Ãë¼Ò(&U)\tAlt+ñ§",        ID_ASM_UNFOLLOW
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&F)\tAlt+ï¿½ï¿½",            ID_ASM_FOLLOW
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(&U)\tAlt+ï¿½",        ID_ASM_UNFOLLOW
     END
-    POPUP "º¸±â(&V)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&V)"
     BEGIN
-        MENUITEM "±âº» µµ±¸¸ðÀ½(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "Æ¯¼ºÃ¢(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "¿ÜºÎ Åø¹Ù(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "»óÅÂ¹Ù(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "Æ¯ï¿½ï¿½Ã¢(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "ï¿½ï¿½ï¿½Â¹ï¿½(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "Å¸ÀÏ º¸±â(&I)\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "16Áø¼ö ÆíÁý±â(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "ASM ºä¾î(&A)\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Å¸ÀÏ ÆíÁý±â(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "¹®ÀÚ¿­ Ã£±â(&S)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM ï¿½ï¿½ï¿½(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "ï¿½ï¿½ï¿½Ú¿ï¿½ Ã£ï¿½ï¿½(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        POPUP "¹è°æ ¹«´Ì"
+        POPUP "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½"
         BEGIN
-            MENUITEM "°í¾çÀÌ",                        ID_VIEW_BK1
-            MENUITEM "Èò ¹ÙÅÁ",                        ID_VIEW_BK2
-            MENUITEM "´ë¸®¼®",                      ID_VIEW_BK3
-            MENUITEM "¹°°á",                        ID_VIEW_BK4
-            MENUITEM "°ËÀº ¹ÙÅÁ",                        ID_VIEW_BK5
-            MENUITEM "±âÅ¸",                        ID_VIEW_BK6
-            MENUITEM "°ÝÀÚ",                        ID_VIEW_BK7
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK1
+            MENUITEM "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK2
+            MENUITEM "ï¿½ë¸®ï¿½ï¿½",                      ID_VIEW_BK3
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK4
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK5
+            MENUITEM "ï¿½ï¿½Å¸",                        ID_VIEW_BK6
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½",                        ID_VIEW_BK7
         END
     END
-    POPUP "µµ±¸(&T)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&T)"
     BEGIN
-        MENUITEM "LZ77 µ¥ÀÌÅÍ ¾ÐÃà...(&C)",         ID_TOOLS_LZ77COMP
-        MENUITEM "ÆÄÀÏ ºñ±³...(&O)",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS ÆÄÀÏ ½Ã½ºÅÛ Á¤º¸...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS ï¿½ï¿½ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "DS Æß¿þ¾î ¼³Á¤...(&D)",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "ÅØ½ºÆ® ÄÚµå º¯È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "ÄÚµå Å×ÀÌºíÀ» CMAPÀ¸·Î º¯È¯...(&P)",          ID_TOOLS_TBL2CMAP
-        MENUITEM "Ä¡Æ® °Ë»ö...(&F)",           ID_TOOLS_CHEATSSERACH
+        MENUITEM "ï¿½Ø½ï¿½Æ® ï¿½Úµï¿½ ï¿½ï¿½È¯...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "ï¿½Úµï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ CMAPï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "Ä¡Æ® ï¿½Ë»ï¿½...(&F)",           ID_TOOLS_CHEATSSERACH
         MENUITEM SEPARATOR
-        MENUITEM "¿ÜºÎ µµ±¸...(&E)",             ID_TOOLS_TOOLS
+        MENUITEM "ï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "Ã¥°¥ÇÇ(&A)"
+    POPUP "Ã¥ï¿½ï¿½ï¿½ï¿½(&A)"
     BEGIN
-        MENUITEM "<Ã¥°¥ÇÇ> Ãß°¡/Á¤¸®...(&A)\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<Ã¥ï¿½ï¿½ï¿½ï¿½> ï¿½ß°ï¿½/ï¿½ï¿½ï¿½ï¿½...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
     POPUP "Ã¢(&W)"
     BEGIN
-        MENUITEM "»õ Ã¢(&N)",                ID_WINDOW_NEW
-        MENUITEM "°è´Ü½Ä(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "Å¸ÀÏ½Ä(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "¼øÂ÷(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "ï¿½ï¿½ Ã¢(&N)",                ID_WINDOW_NEW
+        MENUITEM "ï¿½ï¿½Ü½ï¿½(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "Å¸ï¿½Ï½ï¿½(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "¼Ó¼º\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "ÆÈ·¹Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "±âº» ¼³Á¤À¸·Î(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "ï¿½Ó¼ï¿½\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "ï¿½È·ï¿½Æ®(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "µµ¿ò¸»(&H)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&H)"
     BEGIN
-        MENUITEM "CrystalTile2.5¿¡ ´ëÇÏ¿©...(&A)",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_CRYSTALPLAYER MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "³»º¸³»±â...(&E)",                 ID_SFI_EXPORT
-        MENUITEM "°¡Á®¿À±â...(&I)",                 ID_SFI_IMPORT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)",                 ID_SFI_EXPORT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)",                 ID_SFI_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "»õ·Î°íÄ§(&R)",                    ID_SFI_REFLASH
+        MENUITEM "ï¿½ï¿½ï¿½Î°ï¿½Ä§(&R)",                    ID_SFI_REFLASH
     END
-    POPUP "¼Ò¸®(&S)"
+    POPUP "ï¿½Ò¸ï¿½(&S)"
     BEGIN
-        POPUP "½ºÅ×·¹¿À(&S)"
+        POPUP "ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½(&S)"
         BEGIN
-            MENUITEM "¸ð³ë(&M)",                  ID_PLAYER_MONO
-            MENUITEM "½ºÅ×·¹¿À(&S)",                  ID_PLAYER_STEREO
+            MENUITEM "ï¿½ï¿½ï¿½(&M)",                  ID_PLAYER_MONO
+            MENUITEM "ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½(&S)",                  ID_PLAYER_STEREO
         END
-        POPUP "Ýï÷åáã(&B)"
+        POPUP "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&B)"
         BEGIN
             MENUITEM " 4-bit",                      ID_PLAYER_4BIT
             MENUITEM " 8-bit",                      ID_PLAYER_8BIT
             MENUITEM "16-bit",                      ID_PLAYER_16BIT
         END
-        POPUP "óú?áã(&R)"
+        POPUP "ï¿½ï¿½?ï¿½ï¿½(&R)"
         BEGIN
             MENUITEM "&11.025 kHz",                 ID_PLAYER_11KHZ
             MENUITEM "&22.05  kHz",                 ID_PLAYER_22KHZ
             MENUITEM "&44.1   kHz",                 ID_PLAYER_44KHZ
             MENUITEM "4&8     kHz",                 ID_PLAYER_48KHZ
             MENUITEM "&96     kHz",                 ID_PLAYER_96KHZ
-            MENUITEM "í»ïÒ?...(&C)",               ID_PLAYER_NKHZ
+            MENUITEM "ï¿½ï¿½ï¿½ï¿½?...(&C)",               ID_PLAYER_NKHZ
         END
     END
-    MENUITEM "÷ëÛ¯(&P)",                    ID_PLAYER_PLAY
-    MENUITEM "ïÎò­(&S)",                    ID_PLAYER_STOP
+    MENUITEM "ï¿½ï¿½Û¯(&P)",                    ID_PLAYER_PLAY
+    MENUITEM "ï¿½ï¿½ï¿½(&S)",                    ID_PLAYER_STOP
 END
 
 IDR_SFI MENU 
 BEGIN
-    POPUP "ÆÄÀÏ(&F)"
+    POPUP "ï¿½ï¿½ï¿½ï¿½(&F)"
     BEGIN
-        MENUITEM "³»º¸³»±â...(&E)",                 ID_SFI_EXPORT
-        MENUITEM "°¡Á®¿À±â...(&I)",                 ID_SFI_IMPORT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&E)",                 ID_SFI_EXPORT
+        MENUITEM "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...(&I)",                 ID_SFI_IMPORT
         MENUITEM SEPARATOR
         MENUITEM "?",                           ID_FSI_LOADDATA
         MENUITEM SEPARATOR
-        MENUITEM "»õ·Î°íÄ§(&R)",                    ID_SFI_REFLASH
+        MENUITEM "ï¿½ï¿½ï¿½Î°ï¿½Ä§(&R)",                    ID_SFI_REFLASH
     END
-    MENUITEM "ÆíÁý(&E)",                    ID_33306
+    MENUITEM "ï¿½ï¿½ï¿½ï¿½(&E)",                    ID_33306
 END
 
 
@@ -1021,16 +1021,16 @@ END
 IDD_ABOUTBOX DIALOGEX 0, 0, 131, 66
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "CrystalTile2.5 Á¤º¸"
+CAPTION "CrystalTile2.5 ï¿½ï¿½ï¿½ï¿½"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,2,2,20,20
     LTEXT           "",IDC_VERINFO,26,2,98,24
-    LTEXT           "¸ÞÀÏÁÖ¼Ò\nmailto:test@test.com",IDC_MAILTO,51,44,
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½\nmailto:test@test.com",IDC_MAILTO,51,44,
                     28,8
-    LTEXT           "È¨ÆäÀÌÁö",
+    LTEXT           "È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
                     IDC_HOMEPAGE,37,54,56,8
-    LTEXT           "ÀÌ ÇÁ·Î±×·¥Àº Å¸ÀÏ¹× µµÆ®Á¤º¸¸¦ ¼öÁ¤/¿¬±¸ÇÏ±â À§ÇÑ ÅøÀÔ´Ï´Ù.",
+    LTEXT           "ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ Å¸ï¿½Ï¹ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô´Ï´ï¿½.",
                     IDC_STATIC,26,26,89,16
 END
 
@@ -1041,13 +1041,13 @@ EXSTYLE WS_EX_ACCEPTFILES
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     GROUPBOX        "",1119,0,0,379,32,NOT WS_VISIBLE
-    CONTROL         "Äü ¸ðµå(&F)(¼öÁ¤ ½Ã ¹Ù·ÎÀúÀå£¬ÀÛ¾÷ Ãë¼Ò ºÒ°¡´É)",IDC_MAPFILE,
+    CONTROL         "ï¿½ï¿½ ï¿½ï¿½ï¿½(&F)(ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù·ï¿½ï¿½ï¿½ï¿½å£¬ï¿½Û¾ï¿½ ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½)",IDC_MAPFILE,
                     "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,130,32,
                     162,10
     LISTBOX         IDC_MFILELIST,0,42,378,28,LBS_NOINTEGRALHEIGHT | 
                     WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "¿©·¯ ÆÄÀÏ(&M)",IDC_MFILE_OPEN,318,32,46,10
-    LTEXT           "µå·¡±× µå·ÓÀ¸·Î ÆÄÀÏ Ãß°¡£¬´õºíÅ¬¸¯À¸·Î Á¦°Å °¡´É",IDC_STATIC,2,32,121,8
+    PUSHBUTTON      "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(&M)",IDC_MFILE_OPEN,318,32,46,10
+    LTEXT           "ï¿½å·¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½",IDC_STATIC,2,32,121,8
 END
 
 IDD_PALETTEDLG DIALOGEX 0, 0, 116, 82
@@ -1056,46 +1056,46 @@ EXSTYLE WS_EX_ACCEPTFILES
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     GROUPBOX        "",IDC_SETPALPANEL,86,0,28,81
-    CONTROL         "¹®ÀÚ",IDC_SETCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½",IDC_SETCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE | WS_GROUP,90,6,20,10
-    CONTROL         "¹è°æ",IDC_SETBKCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½ï¿½",IDC_SETBKCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,90,16,20,10
-    CONTROL         "À½¿µ",IDC_SETSHADOWCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½",IDC_SETSHADOWCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,90,26,20,10
-    PUSHBUTTON      "ÆÈ·¹Æ®",IDC_DEFPALBTN,90,36,20,10
-    PUSHBUTTON      "°¡Á®¿À±â",IDC_LOADPALBTN,90,46,20,10
-    PUSHBUTTON      "³»º¸³»±â",IDC_SAVEPALBTN,90,56,20,10
-    LTEXT           "Å×½ºÆ®",IDC_STATIC,92,68,18,10
+    PUSHBUTTON      "ï¿½È·ï¿½Æ®",IDC_DEFPALBTN,90,36,20,10
+    PUSHBUTTON      "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",IDC_LOADPALBTN,90,46,20,10
+    PUSHBUTTON      "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",IDC_SAVEPALBTN,90,56,20,10
+    LTEXT           "ï¿½×½ï¿½Æ®",IDC_STATIC,92,68,18,10
 END
 
 IDD_LZ77SEARCH DIALOGEX 0, 0, 172, 130
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
     WS_CAPTION | WS_SYSMENU
-CAPTION "LZ77?Ëßâ¤ßã - "
+CAPTION "LZ77?ï¿½ï¿½ï¿½ï¿½ï¿½ - "
 MENU IDR_LZ77SEARCH
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "ÑÃã·?ò¤(&H):",IDC_STATIC,2,4,46,8
+    LTEXT           "ï¿½ï¿½ï¿½?ï¿½(&H):",IDC_STATIC,2,4,46,8
     EDITTEXT        IDC_FALGEDIT,48,2,14,12,ES_UPPERCASE
-    LTEXT           "?ËßÓÞá³(&R):",IDC_STATIC,66,4,46,8
+    LTEXT           "?ï¿½ï¿½ï¿½ï¿½ï¿½(&R):",IDC_STATIC,66,4,46,8
     EDITTEXT        IDC_SIZELOW,110,2,26,12,ES_UPPERCASE
     LTEXT           "-",IDC_STATIC,139,4,8,8
     EDITTEXT        IDC_SIZEHI,144,2,26,12,ES_UPPERCASE
-    LTEXT           "â¤ßãÜÆ?(&T):",IDC_STATIC,2,16,45,8
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½ï¿½?(&T):",IDC_STATIC,2,16,45,8
     EDITTEXT        IDC_STEPEDIT,48,14,14,12,ES_UPPERCASE | ES_NUMBER
-    CONTROL         "ú¾ù»â¤ßã(&D)",IDC_DOWNCHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&D)",IDC_DOWNCHECK,"Button",BS_AUTOCHECKBOX | 
                     BS_FLAT | WS_TABSTOP,66,16,54,10
     CONTROL         "",IDC_RETLIST,"SysListView32",LVS_REPORT | 
                     LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
                     WS_TABSTOP,2,29,168,99
-    CONTROL         "&LZ77?ò¤",IDC_LZ77CHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "&LZ77?ï¿½",IDC_LZ77CHECK,"Button",BS_AUTOCHECKBOX | 
                     BS_FLAT | WS_TABSTOP,126,16,44,10
 END
 
 IDD_NDSFSI DIALOGEX 0, 0, 166, 172
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
     WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
-CAPTION "NDS ÆÄÀÏ Á¤º¸ - "
+CAPTION "NDS ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ - "
 MENU IDR_NDSFSI
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
@@ -1107,26 +1107,26 @@ END
 IDD_NDSINFO DIALOGEX 0, 0, 228, 98
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "Å¸ÀÌÆ² Á¤º¸ (BIOS¿¡¼­ º¸ÀÌ´Â Á¤º¸)"
+CAPTION "Å¸ï¿½ï¿½Æ² ï¿½ï¿½ï¿½ï¿½ (BIOSï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½)"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    CONTROL         "ÀÏº»¾î",IDC_JPNBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½Ïºï¿½ï¿½ï¿½",IDC_JPNBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE | WS_GROUP,2,2,36,12
-    CONTROL         "¿µ¾î",IDC_USBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½",IDC_USBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,40,2,36,12
-    CONTROL         "ÇÁ¶û½º¾î",IDC_FREBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",IDC_FREBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,78,2,36,12
-    CONTROL         "µ¶ÀÏ¾î",IDC_GEBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½ï¿½Ï¾ï¿½",IDC_GEBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,116,2,36,12
-    CONTROL         "ÀÌÅ»¸®¾Æ¾î",IDC_ITABTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½Å»ï¿½ï¿½ï¿½Æ¾ï¿½",IDC_ITABTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,153,2,36,12
-    CONTROL         "½ºÆäÀÎ¾î",IDC_SPABTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½ï¿½Î¾ï¿½",IDC_SPABTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,190,2,36,12
     EDITTEXT        IDC_NDSINFOEDIT,2,16,224,32,ES_MULTILINE | 
                     ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
                     WS_BORDER | WS_GROUP
-    DEFPUSHBUTTON   "¼öÁ¤(&U)",IDOK,190,70,36,12,WS_DISABLED
-    PUSHBUTTON      "Ãë¼Ò(&C)",IDCANCEL,190,84,36,12
+    DEFPUSHBUTTON   "ï¿½ï¿½ï¿½ï¿½(&U)",IDOK,190,70,36,12,WS_DISABLED
+    PUSHBUTTON      "ï¿½ï¿½ï¿½(&C)",IDCANCEL,190,84,36,12
     EDITTEXT        IDC_ENTRYINFO,2,52,186,44,ES_MULTILINE | ES_AUTOHSCROLL | 
                     ES_READONLY | NOT WS_BORDER
 END
@@ -1136,11 +1136,11 @@ STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD |
     WS_CLIPSIBLINGS
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "¹Ì¸® º¸±â(&P)£º",IDC_STATIC,2,12,34,8
+    LTEXT           "ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½(&P)ï¿½ï¿½",IDC_STATIC,2,12,34,8
     EDITTEXT        IDC_OPENTEXTEDIT,0,24,162,48,ES_MULTILINE | 
                     ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
                     WS_VSCROLL
-    LTEXT           "ÀÎÄÚµù(&E):",IDC_STATIC,68,12,29,8
+    LTEXT           "ï¿½ï¿½ï¿½Úµï¿½(&E):",IDC_STATIC,68,12,29,8
     COMBOBOX        IDC_CODEPAGELIST,130,10,32,30,CBS_DROPDOWNLIST | 
                     WS_VSCROLL | WS_TABSTOP
     GROUPBOX        "",1119,0,0,161,10,NOT WS_VISIBLE
@@ -1149,7 +1149,7 @@ END
 IDD_RELATIVEDLG DIALOGEX 0, 0, 186, 191
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "¿¬°ü°Ë»ö - "
+CAPTION "ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ - "
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     LTEXT           "?(&V):",IDC_STATIC,4,84,20,8
@@ -1157,34 +1157,34 @@ BEGIN
     LISTBOX         IDC_FINDLIST,2,2,128,66,LBS_SORT | LBS_USETABSTOPS | 
                     LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
                     WS_TABSTOP
-    GROUPBOX        "â¤ßã??",IDC_STATIC,132,2,52,78
-    CONTROL         "ÞÌí®?",IDC_4BITRADIO,"Button",BS_AUTORADIOBUTTON | 
+    GROUPBOX        "ï¿½ï¿½ï¿½??",IDC_STATIC,132,2,52,78
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½?",IDC_4BITRADIO,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,134,12,40,8
-    CONTROL         "?í®?",IDC_1BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
+    CONTROL         "?ï¿½ï¿½?",IDC_1BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
                     20,40,8
-    CONTROL         "?í®?",IDC_2BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
+    CONTROL         "?ï¿½ï¿½?",IDC_2BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
                     28,40,8
-    CONTROL         "ÍÔî¸öÇ?",IDC_SWPCHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½ï¿½?",IDC_SWPCHECK,"Button",BS_AUTOCHECKBOX | 
                     WS_GROUP | WS_TABSTOP,134,36,46,8
-    CONTROL         "ä¨?ð¤",IDC_DECRADIO,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½?ï¿½",IDC_DECRADIO,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,134,46,40,8
-    CONTROL         "ä¨×¿?ð¤",IDC_HEXRADIO,"Button",BS_AUTORADIOBUTTON,134,
+    CONTROL         "ï¿½×¿?ï¿½",IDC_HEXRADIO,"Button",BS_AUTORADIOBUTTON,134,
                     54,46,8
-    CONTROL         "í®Ý¬Íú",IDC_STRRADIO,"Button",BS_AUTORADIOBUTTON,134,62,
+    CONTROL         "ï¿½ï¿½Ý¬ï¿½ï¿½",IDC_STRRADIO,"Button",BS_AUTORADIOBUTTON,134,62,
                     36,8
-    CONTROL         "ú¾ù»â¤ßã",IDC_OFFCHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",IDC_OFFCHECK,"Button",BS_AUTOCHECKBOX | 
                     WS_GROUP | WS_TABSTOP,134,70,46,8
-    PUSHBUTTON      "ÜÁðí?Íý(&S)",IDC_SAVEBTN,134,82,44,12
-    DEFPUSHBUTTON   "ñòÊ¥(&A)",IDC_ADDBTN,2,96,36,12
-    PUSHBUTTON      "?ð¶(&D)",IDC_DELBTN,50,96,36,12
-    PUSHBUTTON      "â¤ßã(&F)",IDC_FINDBTN,98,96,36,12
-    PUSHBUTTON      "?ð¶(&C)",IDC_CLRBTN,146,96,36,12
+    PUSHBUTTON      "ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½(&S)",IDC_SAVEBTN,134,82,44,12
+    DEFPUSHBUTTON   "ï¿½ï¿½Ê¥(&A)",IDC_ADDBTN,2,96,36,12
+    PUSHBUTTON      "?ï¿½(&D)",IDC_DELBTN,50,96,36,12
+    PUSHBUTTON      "ï¿½ï¿½ï¿½(&F)",IDC_FINDBTN,98,96,36,12
+    PUSHBUTTON      "?ï¿½(&C)",IDC_CLRBTN,146,96,36,12
     LISTBOX         IDC_RESULTLIST,2,111,182,78,LBS_SORT | LBS_USETABSTOPS | 
                     LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
                     WS_TABSTOP
     EDITTEXT        IDC_STARTEDIT,49,68,36,12
     EDITTEXT        IDC_ENDEDIT,94,68,36,12
-    LTEXT           "â¤ßãÛõ?(&R):",IDC_STATIC,2,70,46,8
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½ï¿½?(&R):",IDC_STATIC,2,70,46,8
     LTEXT           "--",IDC_STATIC,86,70,8,8
 END
 
@@ -1192,16 +1192,16 @@ IDD_FILECOMP DIALOGEX 0, 0, 164, 180
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW
-CAPTION "ÙþËìÝï?£¨ñþÝï?îñ99999?£©"
+CAPTION "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½99999?ï¿½ï¿½"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "ÙþËì&1£º",IDC_STATIC,2,6,28,8
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½&1ï¿½ï¿½",IDC_STATIC,2,6,28,8
     EDITTEXT        IDC_COMP_FILEONE,30,4,104,12,ES_AUTOHSCROLL
     PUSHBUTTON      "...",IDC_COMP_FILEONEBTN,136,4,14,12
-    LTEXT           "ÙþËì&2£º",IDC_STATIC,2,24,28,8
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½&2ï¿½ï¿½",IDC_STATIC,2,24,28,8
     EDITTEXT        IDC_COMP_FILETWO,30,22,104,12,ES_AUTOHSCROLL
     PUSHBUTTON      "...",IDC_COMP_FILETWOBTN,136,22,14,12
-    DEFPUSHBUTTON   "Ýï?",IDC_COMP_COMFILE,150,4,12,30,BS_MULTILINE
+    DEFPUSHBUTTON   "ï¿½ï¿½?",IDC_COMP_COMFILE,150,4,12,30,BS_MULTILINE
     CONTROL         "",IDC_COMPLIST,"SysListView32",LVS_REPORT | 
                     LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,2,36,160,
                     142
@@ -1211,19 +1211,19 @@ IDD_OPTIONBAR DIALOGEX 0, 0, 128, 94
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
-    LTEXT           "Ùù???(&C)",IDC_STATIC,2,0,44,8
+    LTEXT           "ï¿½ï¿½???(&C)",IDC_STATIC,2,0,44,8
     COMBOBOX        IDC_OPTION_CPLIST,2,8,125,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "ò¢ò£ÔÒÜÆ(&A)",IDC_STATIC,2,22,44,8
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&A)",IDC_STATIC,2,22,44,8
     COMBOBOX        IDC_OPTION_OFFSETLIST,2,30,125,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Ùù?¹è°æ(&B)",IDC_STATIC,2,46,44,8
+    LTEXT           "ï¿½ï¿½?ï¿½ï¿½ï¿½(&B)",IDC_STATIC,2,46,44,8
     COMBOBOX        IDC_OPTION_BKLIST,2,54,56,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Ùù??ÆÈ·¹Æ®(&P)",IDC_STATIC,59,46,52,8
+    LTEXT           "ï¿½ï¿½??ï¿½È·ï¿½Æ®(&P)",IDC_STATIC,59,46,52,8
     COMBOBOX        IDC_OPTION_PALLIST,59,54,68,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "¸®¼Ò½ºÙÍ?(&R)",IDC_STATIC,2,70,44,8
+    LTEXT           "ï¿½ï¿½ï¿½Ò½ï¿½ï¿½ï¿½?(&R)",IDC_STATIC,2,70,44,8
     EDITTEXT        IDC_DEF_RESPATH,2,80,112,12,ES_AUTOHSCROLL | ES_READONLY
     PUSHBUTTON      "..",IDC_BUTTON_RESPATH,115,80,12,12
 END
@@ -1237,13 +1237,13 @@ END
 IDD_ASMDLG DIALOGEX 0, 0, 200, 98
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "áóËÇò¦Öµ"
+CAPTION "ï¿½ï¿½ï¿½ï¿½ï¿½Öµ"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     COMBOBOX        IDC_ASMCB,2,2,162,200,CBS_DROPDOWN | CBS_SORT | 
                     WS_VSCROLL | WS_TABSTOP
-    DEFPUSHBUTTON   "?ïÒ",IDOK,166,2,32,12
-    PUSHBUTTON      "ö¢á¼",IDCANCEL,166,14,32,12
+    DEFPUSHBUTTON   "?ï¿½ï¿½",IDOK,166,2,32,12
+    PUSHBUTTON      "ï¿½ï¿½ï¿½",IDCANCEL,166,14,32,12
     LTEXT           "HINT",IDC_ASMHINT,4,18,158,26,0,WS_EX_TRANSPARENT
     CONTROL         "DESC",IDC_ASMDESC,"Static",SS_LEFTNOWORDWRAP | 
                     SS_SUNKEN | WS_GROUP,2,44,196,52,WS_EX_TRANSPARENT
@@ -1255,8 +1255,8 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     LTEXT           "Ù£?(&N)",IDC_STATIC,2,2,26,8
     EDITTEXT        IDC_FAVORITES_DESC,30,0,70,12,ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "ôÕÊ¥",IDC_FAVORITES_ADDBTN,101,0,23,12
-    PUSHBUTTON      "?ð¶",IDC_FAVORITES_DELBTN,101,14,23,12
+    DEFPUSHBUTTON   "ï¿½ï¿½Ê¥",IDC_FAVORITES_ADDBTN,101,0,23,12
+    PUSHBUTTON      "?ï¿½",IDC_FAVORITES_DELBTN,101,14,23,12
     CONTROL         "",IDC_FAVORITES_LIST,"SysListView32",LVS_REPORT | 
                     LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | 
                     LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,2,15,
@@ -1269,16 +1269,16 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION |
 CAPTION "CrystalTile2.5"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "??ìý?(&V)£º",IDC_INPUTDLG_HINT,2,2,160,24
+    LTEXT           "??ï¿½ï¿½?(&V)ï¿½ï¿½",IDC_INPUTDLG_HINT,2,2,160,24
     EDITTEXT        IDC_INPUTDLG_EDIT,2,32,160,12,ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "?ïÒ",IDOK,164,20,32,12
-    PUSHBUTTON      "ö¢á¼",IDCANCEL,164,32,32,12
+    DEFPUSHBUTTON   "?ï¿½ï¿½",IDOK,164,20,32,12
+    PUSHBUTTON      "ï¿½ï¿½ï¿½",IDCANCEL,164,32,32,12
 END
 
 IDD_SFI DIALOGEX 0, 0, 200, 172
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
     WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
-CAPTION "%s - ÙþËìãáãÓ£¨ú°?ÙþËì?£º%d£¬??ÙþËì?£º%d£©"
+CAPTION "%s - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½%dï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½%dï¿½ï¿½"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_SFI_FILELIST,"SysListView32",LVS_REPORT | 
@@ -1289,37 +1289,37 @@ END
 IDD_TOOLSDLG DIALOGEX 0, 0, 210, 154
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "èâÝ»ÍïÎý"
+CAPTION "ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "?ïÒ",IDOK,134,138,36,14
-    PUSHBUTTON      "ö¢á¼",IDCANCEL,172,138,36,14
-    LTEXT           "óø??é»£º",IDC_STATIC,2,2,41,8
+    DEFPUSHBUTTON   "?ï¿½ï¿½",IDOK,134,138,36,14
+    PUSHBUTTON      "ï¿½ï¿½ï¿½",IDCANCEL,172,138,36,14
+    LTEXT           "ï¿½ï¿½??é»£ï¿½",IDC_STATIC,2,2,41,8
     LISTBOX         IDC_TOOLS_LIST,2,10,169,76,LBS_NOINTEGRALHEIGHT | 
                     WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "ôÕÊ¥(&A)",IDC_TOOLS_ADDBTN,172,10,36,14
-    PUSHBUTTON      "?ð¶(&D)",IDC_TOOLS_DELBTN,172,24,36,14
-    PUSHBUTTON      "ß¾ì¹(&U)",IDC_TOOLS_UPBTN,172,58,36,14
-    PUSHBUTTON      "ù»ì¹(&W)",IDC_TOOLS_DOWNBTN,172,72,36,14
-    LTEXT           "??(&T)£º",IDC_STATIC,2,90,34,8
+    PUSHBUTTON      "ï¿½ï¿½Ê¥(&A)",IDC_TOOLS_ADDBTN,172,10,36,14
+    PUSHBUTTON      "?ï¿½(&D)",IDC_TOOLS_DELBTN,172,24,36,14
+    PUSHBUTTON      "ß¾ï¿½(&U)",IDC_TOOLS_UPBTN,172,58,36,14
+    PUSHBUTTON      "ï¿½ï¿½ï¿½(&W)",IDC_TOOLS_DOWNBTN,172,72,36,14
+    LTEXT           "??(&T)ï¿½ï¿½",IDC_STATIC,2,90,34,8
     EDITTEXT        IDC_TOOLS_TITLEEDIT,36,88,134,14,ES_AUTOHSCROLL
-    LTEXT           "Ù¤Öµ(&C)£º",IDC_STATIC,2,106,34,8
+    LTEXT           "Ù¤Öµ(&C)ï¿½ï¿½",IDC_STATIC,2,106,34,8
     EDITTEXT        IDC_TOOLS_COMMANDEDIT,36,104,134,14,ES_AUTOHSCROLL
     PUSHBUTTON      "&...",IDC_TOOLS_PATHBTN,172,104,36,14
-    LTEXT           "??(&R)£º",IDC_STATIC,2,122,34,8
+    LTEXT           "??(&R)ï¿½ï¿½",IDC_STATIC,2,122,34,8
     EDITTEXT        IDC_TOOLS_REDIT,36,120,134,14,ES_AUTOHSCROLL
 END
 
 IDD_NET_DIALOG DIALOGEX 0, 0, 260, 108
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
     WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
-CAPTION "Îß×µ?"
+CAPTION "ï¿½ï¿½×µ?"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     EDITTEXT        IDC_SENDMSGEDIT,0,62,192,46,ES_MULTILINE | 
                     ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
                     WS_VSCROLL
-    PUSHBUTTON      "?áê(&S)",IDC_NET_SENDMSG,192,96,32,12
+    PUSHBUTTON      "?ï¿½ï¿½(&S)",IDC_NET_SENDMSG,192,96,32,12
     EDITTEXT        IDC_MSGLIST,0,0,222,60,ES_MULTILINE | ES_AUTOVSCROLL | 
                     ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
     LISTBOX         IDC_USERLIST,224,0,36,108,LBS_NOINTEGRALHEIGHT | 
@@ -1329,63 +1329,63 @@ END
 IDD_CHEATS DIALOGEX 0, 0, 236, 146
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "ÑÑâ¢ò¦â¤ßãÐï"
+CAPTION "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "?(&V)£º",IDC_STATIC,2,6,26,8
+    LTEXT           "?(&V)ï¿½ï¿½",IDC_STATIC,2,6,26,8
     COMBOBOX        IDC_CHEATS_SEARCHDATA,26,4,52,68,CBS_DROPDOWN | 
                     WS_VSCROLL | WS_TABSTOP
-    DEFPUSHBUTTON   "â¤ßã(&F)",IDC_CHEATS_SEARCH,82,4,32,12
-    PUSHBUTTON      "?êÈ(&R)",IDC_CHEATS_SEARCH2,140,4,32,12
-    PUSHBUTTON      "ÜÁðí(&S)",IDC_CHEATS_SAVE,140,16,32,12
+    DEFPUSHBUTTON   "ï¿½ï¿½ï¿½(&F)",IDC_CHEATS_SEARCH,82,4,32,12
+    PUSHBUTTON      "?ï¿½ï¿½(&R)",IDC_CHEATS_SEARCH2,140,4,32,12
+    PUSHBUTTON      "ï¿½ï¿½ï¿½ï¿½(&S)",IDC_CHEATS_SAVE,140,16,32,12
     CONTROL         "",IDC_CHEATS_LIST,"SysListView32",LVS_REPORT | 
                     LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
                     WS_BORDER | WS_TABSTOP,2,18,132,126
-    GROUPBOX        "?Ëß?úþ(&T):",IDC_STATIC,176,2,58,42
-    CONTROL         "8êÈ",IDC_CHEATS_DATATYPE8,"Button",BS_AUTORADIOBUTTON | 
+    GROUPBOX        "?ï¿½ï¿½?ï¿½ï¿½(&T):",IDC_STATIC,176,2,58,42
+    CONTROL         "8ï¿½ï¿½",IDC_CHEATS_DATATYPE8,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,180,12,28,10
-    CONTROL         "16êÈ",IDC_CHEATS_DATATYPE16,"Button",BS_AUTORADIOBUTTON,
+    CONTROL         "16ï¿½ï¿½",IDC_CHEATS_DATATYPE16,"Button",BS_AUTORADIOBUTTON,
                     180,22,32,10
-    CONTROL         "32êÈ",IDC_CHEATS_DATATYPE32,"Button",BS_AUTORADIOBUTTON,
+    CONTROL         "32ï¿½ï¿½",IDC_CHEATS_DATATYPE32,"Button",BS_AUTORADIOBUTTON,
                     180,31,32,10
     GROUPBOX        "",IDC_STATIC,176,39,58,28
-    CONTROL         "ä¨?ð¤",IDC_CHEATS_DEC,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "ï¿½?ï¿½",IDC_CHEATS_DEC,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,180,44,40,10
-    CONTROL         "ä¨×¿?ð¤",IDC_CHEATS_HEX,"Button",BS_AUTORADIOBUTTON,
+    CONTROL         "ï¿½×¿?ï¿½",IDC_CHEATS_HEX,"Button",BS_AUTORADIOBUTTON,
                     180,55,48,10
     CONTROL         "",IDC_CHEATS_LOCKLIST,"SysListView32",LVS_REPORT | 
                     LVS_SINGLESEL | LVS_EDITLABELS | LVS_ALIGNLEFT | 
                     LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,136,68,98,76
-    PUSHBUTTON      "?ð¶(&D)",IDC_CHEATS_DEL,140,54,32,12
-    PUSHBUTTON      "ôÕÊ¥(&A)",IDC_CHEATS_ADD,140,42,32,12
+    PUSHBUTTON      "?ï¿½(&D)",IDC_CHEATS_DEL,140,54,32,12
+    PUSHBUTTON      "ï¿½ï¿½Ê¥(&A)",IDC_CHEATS_ADD,140,42,32,12
 END
 
 IDD_DS_FIRMWARE DIALOGEX 0, 0, 234, 78
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "DSÍ³ËìéÄ?¼³Á¤(Ùþí®ù±?î¤BIOSí®?ñéðíî¤)"
+CAPTION "DSÍ³ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½BIOSï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½)"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "öè?Í³Ëì...(&O)",IDC_BUTTON_OPENFIRMWARE,168,3,64,12
+    PUSHBUTTON      "ï¿½ï¿½?Í³ï¿½ï¿½...(&O)",IDC_BUTTON_OPENFIRMWARE,168,3,64,12
     LTEXT           "??(&N 10):",IDC_STATIC,2,4,40,8
     EDITTEXT        IDC_DSFIRMWARE_NICKNAME,48,2,116,12,ES_AUTOHSCROLL
-    LTEXT           "ãáãÓ(&M 26):",IDC_STATIC,2,18,40,8
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½(&M 26):",IDC_STATIC,2,18,40,8
     EDITTEXT        IDC_DSFIRMWARE_MESSAGE,48,17,116,12,ES_AUTOHSCROLL
-    LTEXT           "ßæìí(&B m:d):",IDC_STATIC,2,34,43,8
+    LTEXT           "ï¿½ï¿½ï¿½ï¿½(&B m:d):",IDC_STATIC,2,34,43,8
     EDITTEXT        IDC_DSFIRMWARE_BIRTHDAY,48,33,116,12,ES_AUTOHSCROLL | 
                     ES_NUMBER
-    LTEXT           "?ßä(&C 0-15):",IDC_STATIC,2,50,46,8
+    LTEXT           "?ï¿½ï¿½(&C 0-15):",IDC_STATIC,2,50,46,8
     EDITTEXT        IDC_DSFIRMWARE_COLOR,48,48,116,12,ES_AUTOHSCROLL | 
                     ES_NUMBER
-    LTEXT           "?åë(&L):",IDC_STATIC,2,64,28,8
+    LTEXT           "?ï¿½ï¿½(&L):",IDC_STATIC,2,64,28,8
     COMBOBOX        IDC_COMBO_DS_FIRMWARE_LANG,48,63,116,78,CBS_DROPDOWNLIST | 
                     WS_VSCROLL | WS_TABSTOP
-    CONTROL         "éÄ?¼³Á¤ìé",IDC_RADIO_DSFIRMWARE_1,"Button",
+    CONTROL         "ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",IDC_RADIO_DSFIRMWARE_1,"Button",
                     BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,168,20,56,10
-    CONTROL         "éÄ?¼³Á¤ì£",IDC_RADIO_DSFIRMWARE_2,"Button",
+    CONTROL         "ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½",IDC_RADIO_DSFIRMWARE_2,"Button",
                     BS_AUTORADIOBUTTON | WS_DISABLED,168,32,56,10
-    DEFPUSHBUTTON   "¼öÁ¤(&U)",IDOK,168,48,64,12,WS_DISABLED
-    PUSHBUTTON      "÷Üõó(&X)",IDCANCEL,168,64,64,12
+    DEFPUSHBUTTON   "ï¿½ï¿½ï¿½ï¿½(&U)",IDOK,168,48,64,12,WS_DISABLED
+    PUSHBUTTON      "ï¿½ï¿½ï¿½ï¿½(&X)",IDCANCEL,168,64,64,12
 END
 
 
@@ -1412,8 +1412,8 @@ BEGIN
         BLOCK "080404b0"
         BEGIN
             VALUE "Comments", "github.com"
-            VALUE "CompanyName", "ô¸ÞÅ?ûù?"
-            VALUE "FileDescription", "í®???Ðï£»ñ«é©éÄéÍßæà÷¡¢?Ê×¡¢ì¤Ðà??ïÃ?í®?"
+            VALUE "CompanyName", "ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?"
+            VALUE "FileDescription", "ï¿½ï¿½???ï¿½ï£»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½×¡ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½?ï¿½ï¿½?"
             VALUE "FileVersion", "2022.02.10"
             VALUE "InternalName", "CrystalTile2.5.exe"
             VALUE "LegalCopyright", "Crystal (C) 2004-2007"
@@ -1668,389 +1668,389 @@ STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "CrystalTile2.5"
     IDR_CrystalTile2TYPE    "\nCrystalTile25\nCrystalTile25\n\n\nCrystalTile25.Document\nCrystalTile25.Document"
-    IDS_TOOLBAR             "±âº» µµ±¸¸ðÀ½"
+    IDS_TOOLBAR             "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
     ID_PROGRESSBAR          " "
-    IDS_OPENFILE            "ÆÄÀÏÀ» ¿©´Â Áß..."
-    IDS_SAVEFILE            "ÆÄÀÏÀ» ¾²´Â Áß..."
-    IDS_OPENROMFILTER       "Áö¿øÇÏ´Â ÆÄÀÏ \000*.gb;*.gbc;*.gba;*.nds;*.ids;*.ds;*.srl;*.z64;*.n64;*.v64;*.fc;*.nes;*sfc;*.smc;*.sms;*.sdat;*.bin;*.nscr;*.pac;*.sdat;utility.bin;*.narc\000GBA Roms(*.gba)\000*.gba\000Nds Roms(*.nds;*.ids;*.ds;*.srl)\000*.nds;*.ids;*.ds;*.srl\000Nintendo 64 Roms(*.z64;*.n64;*.v64)\000*.z64;*.n64;*.v64\000¾ÐÃà ÆÄÀÏ (*.pac;*.sdat;utility.bin;*.narc)\000*.pac;*.sdat;utility.bin;*.narc\000¸ðµç ÆÄÀÏ (*.*)\000*.*"
+    IDS_OPENFILE            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½..."
+    IDS_SAVEFILE            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½..."
+    IDS_OPENROMFILTER       "ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ \000*.gb;*.gbc;*.gba;*.nds;*.ids;*.ds;*.srl;*.z64;*.n64;*.v64;*.fc;*.nes;*sfc;*.smc;*.sms;*.sdat;*.bin;*.nscr;*.pac;*.sdat;utility.bin;*.narc\000GBA Roms(*.gba)\000*.gba\000Nds Roms(*.nds;*.ids;*.ds;*.srl)\000*.nds;*.ids;*.ds;*.srl\000Nintendo 64 Roms(*.z64;*.n64;*.v64)\000*.z64;*.n64;*.v64\000ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (*.pac;*.sdat;utility.bin;*.narc)\000*.pac;*.sdat;utility.bin;*.narc\000ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (*.*)\000*.*"
     ID_ROMINFO              " "
-    IDS_OPTIONTREE          "¼Ó¼º"
-    IDS_TREETAB             "¼Ó¼º\nÆÈ·¹Æ®\nºÏ¸¶Å©\n¼³Á¤\n¸®¼Ò½º"
-    IDS_LOADPAL             "ÆÈ·¹Æ® ºÒ·¯¿À±â(&P)"
+    IDS_OPTIONTREE          "ï¿½Ó¼ï¿½"
+    IDS_TREETAB             "ï¿½Ó¼ï¿½\nï¿½È·ï¿½Æ®\nï¿½Ï¸ï¿½Å©\nï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½Ò½ï¿½"
+    IDS_LOADPAL             "ï¿½È·ï¿½Æ® ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½(&P)"
     IDS_SCALELIST           "25\n50\n75\n100\n125\n150\n175\n200\n400\n800\n1000\n2000"
-    IDS_LOADMAP             "MapÁÖ¼Ò ºÒ·¯¿À±â(&A)"
-    IDS_LOADTITLE           "TileÁÖ¼Ò ºÒ·¯¿À±â(&T)"
-    IDS_TILEFORMATLSIT      "1bpp Ç¥ÁØ\n1bpp NDS\n2bpp Ç¥ÁØ\n2bpp GB\n2bpp NES\n2bpp VB\n2bpp NGP\n4bpp N64/MD\n4bpp GBA\n4bpp GBA2\n4bpp SMS\n4bpp SNES\n4bpp SMS\n8bpp GBA\nXbpp GBA\nXbpp CT0\n16bpp RGBa\n24bpp RGB\n32bpp RGBa\n1bpp ¸®µëÃµ±¹ Àü¿ë"//°íÄ¥ÇÊ¿ä ÀÖÀ½
+    IDS_LOADMAP             "Mapï¿½Ö¼ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½(&A)"
+    IDS_LOADTITLE           "Tileï¿½Ö¼ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½(&T)"
+    IDS_TILEFORMATLSIT      "1bpp Ç¥ï¿½ï¿½\n1bpp NDS\n2bpp Ç¥ï¿½ï¿½\n2bpp GB\n2bpp NES\n2bpp VB\n2bpp NGP\n4bpp N64/MD\n4bpp GBA\n4bpp GBA2\n4bpp SMS\n4bpp SNES\n4bpp SMS\n8bpp GBA\nXbpp GBA\nXbpp CT0\n16bpp RGBa\n24bpp RGB\n32bpp RGBa\n1bpp ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\nASTC 4x4"//ï¿½ï¿½Ä¥ï¿½Ê¿ï¿½ ï¿½ï¿½ï¿½ï¿½
 END
 
 STRINGTABLE 
 BEGIN
     AFX_IDS_APP_TITLE       "CrystalTile2.5"
-    AFX_IDS_IDLEMESSAGE     "https://github.com/Wintiger0222/CrystalTile25 [»ç¿ë °¡´É ¸Þ¸ð¸®£º%dMb]"
+    AFX_IDS_IDLEMESSAGE     "https://github.com/Wintiger0222/CrystalTile25 [ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ð¸®£ï¿½%dMb]"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_FILE_OPEN            "öè??êóÙþ?\nöè?"
-    ID_FILE_CLOSE           "??üÀ?Ùþ?\n??"
-    ID_FILE_SAVE            "ÜÁðíüÀ?Ùþ?\nÜÁðí"
-    ID_FILE_SAVE_AS         "éÄãæÙ£?ÜÁðíüÀ?Ùþ?\n?ðí?"
+    ID_FILE_OPEN            "ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½?\nï¿½ï¿½?"
+    ID_FILE_CLOSE           "??ï¿½ï¿½?ï¿½ï¿½?\n??"
+    ID_FILE_SAVE            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?\nï¿½ï¿½ï¿½ï¿½"
+    ID_FILE_SAVE_AS         "ï¿½ï¿½ï¿½ï¿½Ù£?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?\n?ï¿½ï¿½?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_APP_ABOUT            "?ãÆïïßíãáãÓ¡¢÷úÜâ?ûú÷ú?\n?éÍ"
-    ID_APP_EXIT             "÷Üõó?éÄïïßí£»ð«ãÆÜÁðíÙþ?\n÷Üõó"
+    ID_APP_ABOUT            "?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?\n?ï¿½ï¿½"
+    ID_APP_EXIT             "ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?\nï¿½ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_FILE_MRU_FILE1       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE2       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE3       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE4       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE5       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE6       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE7       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE8       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
-    ID_FILE_MRU_FILE9       "ÀÌ ¹®¼­¸¦ ¿±´Ï´Ù."
+    ID_FILE_MRU_FILE1       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE2       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE3       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE4       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE5       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE6       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE7       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE8       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
+    ID_FILE_MRU_FILE9       "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_NEXT_PANE            "ï·?Óðù»ìé??Ì«\nù»ìé?Ì«"
-    ID_PREV_PANE            "ï·?üÞß¾ìé??Ì«\nß¾ìé?Ì«"
+    ID_NEXT_PANE            "ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??Ì«\nï¿½ï¿½ï¿½ï¿½?Ì«"
+    ID_PREV_PANE            "ï¿½?ï¿½ï¿½ß¾ï¿½ï¿½??Ì«\nß¾ï¿½ï¿½?Ì«"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_WINDOW_NEW           "?üÀ?Ùþ?öè??ìé??Ï¢\nãæËï?Ï¢"
-    ID_WINDOW_ARRANGE       "î¤?Ï¢î¼Ý»ÛÉÖª??\nÛÉÖª??"
-    ID_WINDOW_CASCADE       "ì¤ñì?Û°ãÒÛÉÖª?Ï¢\n???Ï¢"
-    ID_WINDOW_TILE_HORZ     "ì¤Þªñì?îÜøÁ?Û°ãÒÛÉÖª?Ï¢\nøÁ??Ï¢"
-    ID_WINDOW_TILE_VERT     "ì¤Þªñì?îÜøÁ?Û°ãÒÛÉÖª?Ï¢\nøÁ??Ï¢"
-    ID_WINDOW_SPLIT         "?üÀ??Ï¢?ÝÂ?Òý??Ì«\n?ÝÂ"
+    ID_WINDOW_NEW           "?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½ï¿½??Ï¢\nï¿½ï¿½ï¿½ï¿½?Ï¢"
+    ID_WINDOW_ARRANGE       "ï¿½?Ï¢ï¿½Ý»ï¿½ï¿½Öª??\nï¿½ï¿½Öª??"
+    ID_WINDOW_CASCADE       "ï¿½ï¿½ï¿½?Û°ï¿½ï¿½ï¿½ï¿½Öª?Ï¢\n???Ï¢"
+    ID_WINDOW_TILE_HORZ     "ï¿½Þªï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?Û°ï¿½ï¿½ï¿½ï¿½Öª?Ï¢\nï¿½ï¿½??Ï¢"
+    ID_WINDOW_TILE_VERT     "ï¿½Þªï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?Û°ï¿½ï¿½ï¿½ï¿½Öª?Ï¢\nï¿½ï¿½??Ï¢"
+    ID_WINDOW_SPLIT         "?ï¿½ï¿½??Ï¢?ï¿½ï¿½?ï¿½ï¿½??Ì«\n?ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_CLEAR           "?ð¶?ïÒ?é»\n?ð¶"
-    ID_EDIT_CLEAR_ALL       "?ð¶îïÝ»?é»\nîïÝ»?ð¶"
-    ID_EDIT_COPY            "?ð¤?ïÒ?é»??ÐìÛ¯Óðîò?÷ùß¾\n?ð¤"
-    ID_EDIT_CUT             "îòï·?ïÒ?é»??ÐìÛ¯Óðîò?÷ùß¾\nîòï·"
-    ID_EDIT_FIND            "î¤â¤ßãÓðîÜÊÅÜâÖªøúñéÃ£±âò¦ïÒîÜ¹®ÀÚ\nÃ£±â"
-    ID_EDIT_PASTE           "?ìýîò?÷ù?é»\nïÄ?"
-    ID_EDIT_REPEAT          "ñì?ß¾ìéðÃíÂ\nñì?"
-    ID_EDIT_REPLACE         "éÄ±âÅ¸¹®ÀÚ¹Ù²Ù±â÷åïÒîÜ¹®ÀÚ\n¹Ù²Ù±â"
-    ID_EDIT_SELECT_ALL      "?ïÒïÚ?Ùþ?\nîï?"
-    ID_EDIT_UNDO            "ôÌá¼ß¾ìéðÃíÂ\nôÌá¼"
-    ID_EDIT_REDO            "üá?ß¾ó­ôÌá¼îÜðÃíÂ\nñìñ®"
+    ID_EDIT_CLEAR           "?ï¿½?ï¿½ï¿½?ï¿½\n?ï¿½"
+    ID_EDIT_CLEAR_ALL       "?ï¿½ï¿½ï¿½Ý»?ï¿½\nï¿½ï¿½Ý»?ï¿½"
+    ID_EDIT_COPY            "?ï¿½?ï¿½ï¿½?ï¿½??ï¿½ï¿½Û¯ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ß¾\n?ï¿½"
+    ID_EDIT_CUT             "ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½??ï¿½ï¿½Û¯ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ß¾\nï¿½ï¿½ï¿½"
+    ID_EDIT_FIND            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½\nÃ£ï¿½ï¿½"
+    ID_EDIT_PASTE           "?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½\nï¿½ï¿½?"
+    ID_EDIT_REPEAT          "ï¿½ï¿½?ß¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½?"
+    ID_EDIT_REPLACE         "ï¿½Ä±ï¿½Å¸ï¿½ï¿½ï¿½Ú¹Ù²Ù±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½\nï¿½Ù²Ù±ï¿½"
+    ID_EDIT_SELECT_ALL      "?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?\nï¿½ï¿½?"
+    ID_EDIT_UNDO            "ï¿½ï¿½ï¿½ß¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½"
+    ID_EDIT_REDO            "ï¿½ï¿½?ß¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_TOOLBAR         "±âº» µµ±¸¸ðÀ½¸¦ Ç¥½ÃÇÏ°Å³ª ¼û±é´Ï´Ù\n¿ÜºÎ Åø¹Ù Æ² Àß¶ó³»±â"
-    ID_VIEW_STATUS_BAR      "¼Ó¼º Ã¢À» Ç¥½ÃÇÏ°Å³ª ¼û±è´Ï´Ù.\n¼Ó¼º Ã¢ Àß¶ó³»±â"
+    ID_VIEW_TOOLBAR         "ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½\nï¿½Üºï¿½ ï¿½ï¿½ï¿½ï¿½ Æ² ï¿½ß¶ó³»±ï¿½"
+    ID_VIEW_STATUS_BAR      "ï¿½Ó¼ï¿½ Ã¢ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\nï¿½Ó¼ï¿½ Ã¢ ï¿½ß¶ó³»±ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    AFX_IDS_SCSIZE          "ÌÚËÇ?Ï¢ÓÞá³"
-    AFX_IDS_SCMOVE          "ÌÚËÇ?Ï¢êÈöÇ"
-    AFX_IDS_SCMINIMIZE      "??Ï¢?á³???"
-    AFX_IDS_SCMAXIMIZE      "ÞÅ?Ï¢õÌÓÞûù?ãÆ"
-    AFX_IDS_SCNEXTWINDOW    "ï·?Óðù»ìé?Ùþ??Ï¢"
-    AFX_IDS_SCPREVWINDOW    "ï·?Óðîñìé?Ùþ??Ï¢"
-    AFX_IDS_SCCLOSE         "??üÀ??Ï¢?ð«ãÆÜÁðíÙþ?"
+    AFX_IDS_SCSIZE          "ï¿½ï¿½ï¿½ï¿½?Ï¢ï¿½ï¿½ï¿½"
+    AFX_IDS_SCMOVE          "ï¿½ï¿½ï¿½ï¿½?Ï¢ï¿½ï¿½ï¿½ï¿½"
+    AFX_IDS_SCMINIMIZE      "??Ï¢?ï¿½???"
+    AFX_IDS_SCMAXIMIZE      "ï¿½ï¿½?Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    AFX_IDS_SCNEXTWINDOW    "ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½??Ï¢"
+    AFX_IDS_SCPREVWINDOW    "ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½??Ï¢"
+    AFX_IDS_SCCLOSE         "??ï¿½ï¿½??Ï¢?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?"
 END
 
 STRINGTABLE 
 BEGIN
-    AFX_IDS_SCRESTORE       "??Ï¢üá?ÓðïáßÈÓÞá³"
-    AFX_IDS_SCTASKLIST      "Ì­üÀìò?Öªøú"
-    AFX_IDS_MDICHILD        "Ì­üÀó®?Ï¢"
+    AFX_IDS_SCRESTORE       "??Ï¢ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    AFX_IDS_SCTASKLIST      "Ì­ï¿½ï¿½ï¿½ï¿½?Öªï¿½ï¿½"
+    AFX_IDS_MDICHILD        "Ì­ï¿½ï¿½ï¿½?Ï¢"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_TILEVIEW        "Ctrl+Shift+W: »óÀ§ ¸Þ´º Ctrl+W: ÇÏÀ§ ¸Þ´º; Tab/´õºí Å¬¸¯: Tile ÆíÁý±â\nTile º¸±â"
-    ID_VIEW_HEXVIEW         "Ctrl+Shift+W: »óÀ§ ¸Þ´º Ctrl+W: ÇÏÀ§ ¸Þ´º; Ctrl+H\n16Áø¼ö ÆíÁý±â"
-    ID_VIEW_ASMVIEW         "Ctrl+Shift+W: »óÀ§ ¸Þ´º Ctrl+W: ÇÏÀ§ ¸Þ´º\nAsm º¸±â"
-    ID_VIEW_TILEEDITORVIEW  "Ctrl+Shift+W: »óÀ§ ¸Þ´º Ctrl+W: ÇÏÀ§ ¸Þ´º Tab/Esc: Tile º¸±â\nTile ÆíÁý±â"
-    ID_VIEW_SCRIPTVIEW      "Ctrl+Shift+W: »óÀ§ ¸Þ´º Ctrl+W: ÇÏÀ§ ¸Þ´º\n½ºÅ©¸³Æ® º¸±â"
-    ID_VIEW_GRID            "°ÝÀÚ Ç¥½Ã À¯¹Â ¼³Á¤; Shift+G\n°ÝÀÚ"
-    ID_TTB_PAL              "»ö ¸ÂÃß±â, ÆÈ·¹Æ® ÆÄÀÏÀ» ºÒ·¯¿À°Å³ª ³»º¸³À´Ï´Ù. »ö ¼±ÅÃ\nÆÈ·¹Æ®"
+    ID_VIEW_TILEVIEW        "Ctrl+Shift+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ Ctrl+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½; Tab/ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½: Tile ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nTile ï¿½ï¿½ï¿½ï¿½"
+    ID_VIEW_HEXVIEW         "Ctrl+Shift+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ Ctrl+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½; Ctrl+H\n16ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    ID_VIEW_ASMVIEW         "Ctrl+Shift+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ Ctrl+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½\nAsm ï¿½ï¿½ï¿½ï¿½"
+    ID_VIEW_TILEEDITORVIEW  "Ctrl+Shift+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ Ctrl+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ Tab/Esc: Tile ï¿½ï¿½ï¿½ï¿½\nTile ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    ID_VIEW_SCRIPTVIEW      "Ctrl+Shift+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ Ctrl+W: ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½\nï¿½ï¿½Å©ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½"
+    ID_VIEW_GRID            "ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½; Shift+G\nï¿½ï¿½ï¿½ï¿½"
+    ID_TTB_PAL              "ï¿½ï¿½ ï¿½ï¿½ï¿½ß±ï¿½, ï¿½È·ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\nï¿½È·ï¿½Æ®"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_DIBFILTER           "±×·¡ÇÈ ÆÄÀÏ(*.bmp;*.jpeg;*.gif)\000*.bmp;*.jpg;*.jpe;*.jpeg;*.gif"
+    IDS_DIBFILTER           "ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(*.bmp;*.jpeg;*.gif)\000*.bmp;*.jpg;*.jpe;*.jpeg;*.gif"
     ID_TILEEDITOR_OFFSET    " "
-    IDS_ARM9_FOOTER         "¿øº» ÆÄÀÏÀÇ ³¡ºÎºÐÀº 0xDEC00621ÀÔ´Ï´Ù.\n°¡Á®¿À´Â ÆÄÀÏÀÇ ³¡ºÎºÐÀ» 0xDEC00621·Î ¸ÂÃß°Ú½À´Ï´Ù.\n0xDEC00621·Î ¼öÁ¤ÇÏ½Ã°Ú½À´Ï±î?"
-    IDS_SAVEAS              "ÆÄÀÏÀÌ ¼öÁ¤µÇ¾ú½À´Ï´Ù!\nÁ¤¸»·Î Á¾·áÇÏ½Ã°Ú½À´Ï±î? (Ãë¼Ò¸¦ ´­·¯ ÀúÀåÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.)"
-    IDS_PALFILTER           "Áö¿øÇÏ´Â ÆÈ·¹Æ®\000*.bmp;*.pal;*.act;*.nclr\000á¶ì¤ÙþËì(*.*)\000*.*"
-    IDS_PAL_EXPORTPAL       "Windows¿ë ÆÈ·¹Æ®(*.pal)\000*.pal\000Adobe Color Table(*.act)\000*.act\000ºñÆ®¸Ê ÆÈ·¹Æ®(*.bmp)\000*.bmp\000ÀÌÁø ÆÄÀÏ(*.bin)\000*.bin"
+    IDS_ARM9_FOOTER         "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ 0xDEC00621ï¿½Ô´Ï´ï¿½.\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ 0xDEC00621ï¿½ï¿½ ï¿½ï¿½ï¿½ß°Ú½ï¿½ï¿½Ï´ï¿½.\n0xDEC00621ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ã°Ú½ï¿½ï¿½Ï±ï¿½?"
+    IDS_SAVEAS              "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ã°Ú½ï¿½ï¿½Ï±ï¿½? (ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.)"
+    IDS_PALFILTER           "ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½È·ï¿½Æ®\000*.bmp;*.pal;*.act;*.nclr\000ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(*.*)\000*.*"
+    IDS_PAL_EXPORTPAL       "Windowsï¿½ï¿½ ï¿½È·ï¿½Æ®(*.pal)\000*.pal\000Adobe Color Table(*.act)\000*.act\000ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½È·ï¿½Æ®(*.bmp)\000*.bmp\000ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(*.bin)\000*.bin"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_EXPORT          "³»º¸³»±â\n³»º¸³»±â"
+    ID_EDIT_EXPORT          "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_IMPORT          "°¡Á®¿À±â (¸¸¾à Àß¸ø ÀÔ·ÂµÇ¸é CtrlÅ°¸¦ ´­·¯ÁÖ¼¼¿ä)\n°¡Á®¿À±â"
+    ID_EDIT_IMPORT          "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ ï¿½Ô·ÂµÇ¸ï¿½ CtrlÅ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½)\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_AUTOFITCOL      "Tile Å©±â¸¦ ÀÚµ¿À¸·Î È­¸é¿¡ ¸ÂÃä´Ï´Ù.; Çà:Shift+¡è¡é ¿­:Shift+¡ç¡æ"
-    ID_TILEEDITOR_TBL       "°íÀ¯¹øÈ£Ç¥ (Ansi/Unicode Çü½Ä ¹®ÀÚ ÀÚµ¿ ÀÎ½Ä); Ctrl+T\n°íÀ¯¹øÈ£Ç¥ °¡Á®¿À±â"
+    ID_VIEW_AUTOFITCOL      "Tile Å©ï¿½â¸¦ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.; ï¿½ï¿½:Shift+ï¿½ï¿½ï¿½ ï¿½ï¿½:Shift+ï¿½ï¿½ï¿½"
+    ID_TILEEDITOR_TBL       "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ (Ansi/Unicode ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ ï¿½Î½ï¿½); Ctrl+T\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_TBLFILTER           "°íÀ¯¹øÈ£Ç¥ ÆÄÀÏ(*.txt;*.tbl)\000*.txt;*.tbl\000¸ðµç ÆÄÀÏ(*.*)\000*.*"
-    IDS_IMPROTTBL           "±â·Ï Áß ÀÔ´Ï´Ù..."
-    IDS_OPENMODE            "\nÀÐ±â ¸ðµå\n¸ÅÇÎ ¸ðµå\nÀÐ±â ¸ÅÇÎ ¸ðµå"
-    IDS_LINECOL             "Çà·Ä:%dX%d=%d Å©±â:%d/%Xh"
+    IDS_TBLFILTER           "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½ï¿½(*.txt;*.tbl)\000*.txt;*.tbl\000ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(*.*)\000*.*"
+    IDS_IMPROTTBL           "ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô´Ï´ï¿½..."
+    IDS_OPENMODE            "\nï¿½Ð±ï¿½ ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½\nï¿½Ð±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½"
+    IDS_LINECOL             "ï¿½ï¿½ï¿½:%dX%d=%d Å©ï¿½ï¿½:%d/%Xh"
     IDC_HEXVIEW_BITS        " "
-    IDS_NOTFIND             "ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ¸¦ Ã£Áö ¸øÇß½À´Ï´Ù!"
-    IDS_REPLACECOUNT        "%dÇ×À» ´ëÃ¼ ÇÏ¿´½À´Ï´Ù!"
-    IDS_LZ77HEADTEXT        "¹øÈ£ ÁÖ¼Ò        Å©±â£¨10Áø¹ý£©"
-    IDS_LZ77SEARCHSTOP      "°Ë»ö °á°ú°¡ 9999°³°¡ ³Ñ½À´Ï´Ù. °­Á¦Á¾·á ÇÕ´Ï´Ù!"
-    IDS_LZ77SEARCHCOUNT     "%d°³ÀÇ °Ë»ö°á°ú°¡ ÀÖ½À´Ï´Ù."
-    IDS_LZ77UNCOMP          "¹Ù·Î ¿©½Ã°Ú½À´Ï±î?"
-    IDS_AGBCOMP             "AGBCOMP ¼Ð ÆÄÀÏÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù!\nÀ§Ä¡¸¦ ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é\n¼ÒÇÁÆ®¿þ¾î°¡ ÀÖ´Â µð·¢Åä¸®¿¡\nAgbcompÀÇ ¾ÐÃàÀ» ÇØÁ¦ÇÕ´Ï´Ù"
-    IDS_ALLFILE             "¸ðµç ÆÄÀÏ(*.*)\000*.*"
+    IDS_NOTFIND             "ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½!"
+    IDS_REPLACECOUNT        "%dï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!"
+    IDS_LZ77HEADTEXT        "ï¿½ï¿½È£ ï¿½Ö¼ï¿½        Å©ï¿½â£¨10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_LZ77SEARCHSTOP      "ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 9999ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ´Ï´ï¿½!"
+    IDS_LZ77SEARCHCOUNT     "%dï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½."
+    IDS_LZ77UNCOMP          "ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½Ã°Ú½ï¿½ï¿½Ï±ï¿½?"
+    IDS_AGBCOMP             "AGBCOMP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!\nï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½î°¡ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ä¸®ï¿½ï¿½\nAgbcompï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½"
+    IDS_ALLFILE             "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(*.*)\000*.*"
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_SETCOLORBTN         "¹®ÀÚ»öÀ» ¼±ÅÃÇÏ¼¼¿ä."
-    IDC_SETBKCOLORBTN       "¹è°æ»öÀ» ¼±ÅÃÇÏ¼¼¿ä."
+    IDC_SETCOLORBTN         "ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½."
+    IDC_SETBKCOLORBTN       "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TBL_SELTBL           "Íóð¤Ý¬Ì«ãÒ:>Íóð¤Ý¬,Íóð¤Ý¬?Óø ??Óø?0?ãÀ?áÖÍóð¤Ý¬"
-    ID_VIEW_2BYTEALIGN      "2í®???\n2í®???"
-    ID_VIEW_4BYTEALIGN      "4í®???\n4í®???"
-    ID_VIEW_COLORTEXT       "??Ëß??à÷?ßä\nóôßä?ãÆ"
-    IDC_HEXVIEW_SETBITS     "ì£?ð¤êÈ¼³Á¤\nì£?ð¤êÈ¼³Á¤"
+    ID_TBL_SELTBL           "ï¿½ï¿½ï¿½Ý¬Ì«ï¿½ï¿½:>ï¿½ï¿½ï¿½Ý¬,ï¿½ï¿½ï¿½Ý¬?ï¿½ï¿½ ??ï¿½ï¿½?0?ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½Ý¬"
+    ID_VIEW_2BYTEALIGN      "2ï¿½ï¿½???\n2ï¿½ï¿½???"
+    ID_VIEW_4BYTEALIGN      "4ï¿½ï¿½???\n4ï¿½ï¿½???"
+    ID_VIEW_COLORTEXT       "??ï¿½ï¿½??ï¿½ï¿½?ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    IDC_HEXVIEW_SETBITS     "ï¿½?ï¿½ï¿½È¼ï¿½ï¿½ï¿½\nï¿½?ï¿½ï¿½È¼ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_HEXVIEW_SWPCODE      "??îÜÍÔí®?ûúî¸í®???\n????"
+    ID_HEXVIEW_SWPCODE      "??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½???\n????"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_DATA2PAL        "ÎÃ?á¶î¤îÜ?Ëß????ÆÈ·¹Æ®£¨?ßäêÈ?ì¤??Û°ãÒ?ñ×£©\n?Ëß????ÆÈ·¹Æ®"
-    ID_EDIT_PAL2DATA        "?îñ?ÆÈ·¹Æ®????Ëß??ìýÓðÎÃ?á¶î¤êÈ£¨?ßäêÈ?ì¤??Û°ãÒ?ñ×£¬??ÎÃ?å¥Ê¦ì¤áóËÇ?ßä?Ëß£©\n?ÆÈ·¹Æ®????Ëß"
-    ID_HEXVIEW_IMPORT       "°¡Á®¿À±â¹®ÀÚ?îÜ¹®ÀÚÓð?îñÎÃ??"
+    ID_EDIT_DATA2PAL        "ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½????ï¿½È·ï¿½Æ®ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½??Û°ï¿½ï¿½?ï¿½×£ï¿½\n?ï¿½ï¿½????ï¿½È·ï¿½Æ®"
+    ID_EDIT_PAL2DATA        "?ï¿½ï¿½?ï¿½È·ï¿½Æ®????ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½È£ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½??Û°ï¿½ï¿½?ï¿½×£ï¿½??ï¿½ï¿½?ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½ß£ï¿½\n?ï¿½È·ï¿½Æ®????ï¿½ï¿½"
+    ID_HEXVIEW_IMPORT       "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¹®ï¿½ï¿½?ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½??"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_COMP                "??èÇà÷£¡\n??ÙþËìÜÁðíî¤ê«?ËßÙþËìÔÒìéÙÍ?ù»\n?î¤Ù£í®ý¨õÚÊ¥Öõ¡°_LZ¡±îÜBINÙþËì¡£\n¹Ù·Î ¿©½Ã°Ú½À´Ï±î?"
-    IDS_NDSFSIHEADER        "ÙþËìÙ£\nÙþËì?\nø¶ì¹ò¢ò£\n\ní­ÀÌµ¿ãáãÓ\nÙþËìÙÚâû"
-    IDS_CRCOK               "üù??Ùé?"
-    IDS_CRCERROR            "üù????£¡\nãÀÜúáóïá£¿\n\t??:\tïá?:\nÜÁ??:\t%04X\t%04X\n¡¡ßÂ?:\t%04X\t%04X\nÀÌµ¿:\t%04X\t%04X\n¡¡??:\t%04X\t%04X"
-    IDS_SCRIPTVIEW_HEADER   "ò¦?\nò¢ò£\n?Óø\n¹®ÀÚ"
-    IDS_SCRIPTIVEW_SEARCHING "ïáî¤â¤ßã¹®ÀÚ..."
-    IDS_SCRIPTFILE          "¹®ÀÚÙþËì(*.txt)\000*.txt"
-    IDS_SCRIPTIVEW_FINDPOINT "ïáî¤â¤?ò¦?..."
-    IDS_LZ77SEARCH_SEARCHING "ïáî¤â¤ßãLZ77..."
+    IDS_COMP                "??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½\n?ï¿½Ù£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¥ï¿½ï¿½ï¿½ï¿½_LZï¿½ï¿½ï¿½ï¿½BINï¿½ï¿½ï¿½ì¡£\nï¿½Ù·ï¿½ ï¿½ï¿½ï¿½Ã°Ú½ï¿½ï¿½Ï±ï¿½?"
+    IDS_NDSFSIHEADER        "ï¿½ï¿½ï¿½ï¿½Ù£\nï¿½ï¿½ï¿½ï¿½?\nï¿½ï¿½ï¿½ï¿½ï¿½\n\nï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_CRCOK               "ï¿½ï¿½??ï¿½ï¿½?"
+    IDS_CRCERROR            "ï¿½ï¿½????ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á£¿\n\t??:\tï¿½ï¿½?:\nï¿½ï¿½??:\t%04X\t%04X\nï¿½ï¿½ï¿½ï¿½?:\t%04X\t%04X\nï¿½Ìµï¿½:\t%04X\t%04X\nï¿½ï¿½??:\t%04X\t%04X"
+    IDS_SCRIPTVIEW_HEADER   "ï¿½?\nï¿½ï¿½\n?ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½"
+    IDS_SCRIPTIVEW_SEARCHING "ï¿½ï¿½ï¿½ï¿½ï¿½ã¹®ï¿½ï¿½..."
+    IDS_SCRIPTFILE          "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(*.txt)\000*.txt"
+    IDS_SCRIPTIVEW_FINDPOINT "ï¿½ï¿½ï¿½ï¿½?ï¿½?..."
+    IDS_LZ77SEARCH_SEARCHING "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LZ77..."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SCRIPTVIEW_FINDPOINT "??ò¦?£¨åýÍýROM?ÓÞì»ó¦?ÙÍ?ÒýîÜ???îÜáÜÓø??Ø·£©\n??ò¦?"
-    ID_SCRIPTVIEW_INVALIDATEDELETE "?ð¶ò¦?ò¢ò£ÙéüùîÜ?ÙÍ"
+    ID_SCRIPTVIEW_FINDPOINT "??ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ROM?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½???ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??Ø·ï¿½ï¿½\n??ï¿½?"
+    ID_SCRIPTVIEW_INVALIDATEDELETE "?ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_NDSFSI         "?Ê×NDSÙþËìãáãÓ\nNDSÙþËì"
-    ID_SEARCH_TEXT          "â¤ßãROMñéîÜÊÅÜâ?Ëß\nâ¤ßãÊÅÜâ"
-    ID_SEARCH_TEXTEX        "î¤ò¦ïÒÙÍ??ú¼ÝëÕáâ¤ßã£¬?ó¦ÜÁðíðíî¤ò¦?îÜ¹®ÀÚÓðScriptÙÍ?"
+    ID_TOOLS_NDSFSI         "?ï¿½ï¿½NDSï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nNDSï¿½ï¿½ï¿½ï¿½"
+    ID_SEARCH_TEXT          "ï¿½ï¿½ï¿½ROMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    ID_SEARCH_TEXTEX        "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã£¬?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½Scriptï¿½ï¿½?"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_NODEFHINT           "??Ú±ïÒ?îÜí®Ý¬£¡ì¤ý¨î¢ó­??ãÀÜúð«ãÆ£¿"
-    IDS_DEFNEWCODE          "??Ú±ïÒ?îÜí®Ý¬?\nãÀÜúî¤?øúí»?ïÒ?£¿"
-    IDS_SWPEXTBL            "???³»º¸³»±â?øúý¨î¢?ú¼£¡"
-    IDS_SWPIMTBL            "???°¡Á®¿À±â?øúý¨î¢?ú¼£¡"
-    IDS_IMPORTSCRIPT        "ó®ðÃíÂÜôð«ÍêôÌ?£¡\nãÀÜú°¡Á®¿À±â£¿"
-    IDS_NEWCODE             "ßæà÷ÖõãæîÜ??£¬ãÀÜúõÚÊ¥Óð?øúØÇÚ­£¿"
-    IDS_CODEPAGEHINT        "\t - ÄÚµåÆäÀÌÁö %d"
-    IDS_DEFCODEPAGE         "½Ã½ºÅÛÙù?"
-    IDS_INVALIDCHAR         "?ÙþËìñéîÜÙ»ÞÁUnicodeí®Ý¬?Üôù¬ÜÁðí\né©ÜÁðíá¶êóãáãÓ?ÞÅéÄUnicode??\nûäÞÅéÄ??éÍ?¹®ÀÚîÜ??£¡"
-    IDS_IMBMPERROR          "°¡Á®¿À±â?ø¸ã÷?£¡"
-    IDS_FILETOOBIG          "ÙþËì?ÓÞ£¡??ìýãæêÈöÇ(&V)£º\n?êÈöÇÊ¦ì¤ÍÅ?Û¯±âÅ¸ÙþËì\nûäñìãæ?ËïROM?ð¶ËÛÙééÄîÜÍö?áïø¸"
-    IDS_FILEOFFERROR        "ãæîÜÙþËìêÈöÇî¤ì«êóÙþËì\n%sñé\nì«?ðíî¤£¨Îß?£©£¡\nãÀÜúñìãæ?ìýìé?ãæ?£¿"
+    IDS_NODEFHINT           "??Ú±ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½Ý¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½"
+    IDS_DEFNEWCODE          "??Ú±ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½Ý¬?\nï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½"
+    IDS_SWPEXTBL            "???ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½"
+    IDS_SWPIMTBL            "???ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½"
+    IDS_IMPORTSCRIPT        "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¿"
+    IDS_NEWCODE             "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¥ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½Ú­ï¿½ï¿½"
+    IDS_CODEPAGEHINT        "\t - ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ %d"
+    IDS_DEFCODEPAGE         "ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½?"
+    IDS_INVALIDCHAR         "?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù»ï¿½ï¿½Unicodeï¿½ï¿½Ý¬?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½Unicode??\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½"
+    IDS_IMBMPERROR          "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    IDS_FILETOOBIG          "ï¿½ï¿½ï¿½ï¿½?ï¿½Þ£ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(&V)ï¿½ï¿½\n?ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½?Û¯ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ROM?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½"
+    IDS_FILEOFFERROR        "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n%sï¿½ï¿½\nï¿½?ï¿½ï¿½î¤£ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SCRIPTVIEW_OPENSCRIPT "öè?ñýîñÜÁðíîÜÊÅÜâÙþËì£¨???ùêÎÁîÜ??Ì«ãÒ£©"
-    ID_SCRIPTVIEW_FILTERPOINT "??ò¦?ò¢ò£??îÜ?ÙÍ"
-    ID_SCRIPTVIEW_FILTERSITEM "??Â¦¼ö ±æÀÌÀÇ ¹®ÀåîÜ?ÙÍ"
-    ID_SCRIPTVIEW_FILTERDITEM "??È¦¼ö ±æÀÌÀÇ ¹®ÀÚîÜ?ÙÍ"
-    ID_SCRIPTVIEW_FILTERMIN "??ÃÖ¼Ò ±æÀÌº¸´Ù ÂªÀº ¹®ÀåîÜ?ÙÍ"
-    ID_SCRIPTVIEW_FILTERMAX "??ÃÖ´ë ±æÀÌº¸´Ù ±ä ¹®ÀåîÜ?ÙÍ"
-    ID_SCRIPTVIEW_FILTERSADDRESS "??ÁÖ¼Ò°¡ È¦¼öÀÎ ¹®ÀåîÜ?ÙÍ"
-    ID_SCRIPTVIEW_FILTERDADDRESS "??ÁÖ¼Ò°¡ Â¦¼öÀÎ ¹®ÀåîÜ?ÙÍ"
+    ID_SCRIPTVIEW_OPENSCRIPT "ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì£¨???ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??Ì«ï¿½Ò£ï¿½"
+    ID_SCRIPTVIEW_FILTERPOINT "??ï¿½?ï¿½ï¿½??ï¿½ï¿½?ï¿½ï¿½"
+    ID_SCRIPTVIEW_FILTERSITEM "??Â¦ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    ID_SCRIPTVIEW_FILTERDITEM "??È¦ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    ID_SCRIPTVIEW_FILTERMIN "??ï¿½Ö¼ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ Âªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    ID_SCRIPTVIEW_FILTERMAX "??ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    ID_SCRIPTVIEW_FILTERSADDRESS "??ï¿½Ö¼Ò°ï¿½ È¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    ID_SCRIPTVIEW_FILTERDADDRESS "??ï¿½Ö¼Ò°ï¿½ Â¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SCRIPTVIEW_FILTERCHECKWORD "?Ù»ÞÁ??¹®ÀÚ?ú¼??£¨êóïÃå°òª£©"
+    ID_SCRIPTVIEW_FILTERCHECKWORD "?Ù»ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½òª£©"
     ID_SCRIPTVIEW_FILTERSPECWORD 
-                            "??¹®ÀÚñéÆ¯Á¤ ¹®Àå Æ÷ÇÔîÜ?ÙÍ£¨Ùþí®î¤Ã£±â?ñé?ìý£©"
+                            "??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½"
     ID_SCRIPTVIEW_FILTERACHECK 
-                            "???ÙÍ???????£»????ÙÍ??????"
-    ID_SCRIPTVIEW_CHECKALL  "??á¶êó?ÙÍ£»åýÍýðíî¤ÍÔÕÕîÜ?ÙÍ???ÍÔÕÕ?ÙÍ"
+                            "???ï¿½ï¿½???????ï¿½ï¿½????ï¿½ï¿½??????"
+    ID_SCRIPTVIEW_CHECKALL  "??ï¿½ï¿½ï¿½?ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½???ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
     ID_SCRIPTVIEW_FILTERUNCHECK 
-                            "ö¢á¼á¶êó?ÙÍîÜ????£»åýÍýðíî¤ÍÔÕÕîÜ?ÙÍ?ö¢á¼ÍÔÕÕ?ÙÍîÜ????"
+                            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½????ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½????"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_ZOOMEXFIRST    "??éÍTileÙ¼ãÒ£¬?ÙÍ?Ùþ?ÎÃ?îÜÊ¦?Tile?î÷Óð?îñÙþ?"
+    ID_TOOLS_ZOOMEXFIRST    "??ï¿½ï¿½TileÙ¼ï¿½Ò£ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½Ê¦?Tile?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_RELATIVE_FINDCOUNT  "?Óð%d?Ý¬ùê?ËìîÜ?ÙÍ"
-    IDS_RELATIVE_COUNTOUT   "â¤ßãÓðÓÞéÍ9999?Ý¬ùê?ËìîÜ?ÙÍ£¡\nË­ú¼ÁßÁö£¡"
-    IDS_SIZETOOLONG         "Ùþ??Ëß?ÓÞ\nÙéÛö°¡Á®¿À±âîïÝ»?ËßÓðÎÃ??\n?ù¬Ë­ð¤ï¸?£¡"
-    IDS_FILEISMODIFTED      "Ùþ?Ê¦Òöî¤èâÝ»ù¬áóËÇãÀÜúñìãæ?ìý£¿"
-    IDS_COMPHEADER          "ò¢ò£\n?Óø\n?£¨ÙþËì1£©\n?£¨ÙþËì2£©"
-    IDS_SIZERROR            "ÙþËìÓÞá³ÜôÔÒ£¡\nãÀÜúäÎõÌá³ÙþËì?ú¼Ýï?£¿"
-    IDS_FILEXIANGTONG       "ÔÒìé?ÙþËì£¡£¡£¡\nÙéëò?£¡£¡£¡"
-    IDS_COMPING             "ïáî¤Ýï?ÙþËì..."
-    IDS_NDSHEADER           "ÀÌµ¿"
-    IDS_HEXVIEW_HEADER      "ø¶ì¹ò¢ò£\néÄ??øú"
-    IDS_CRYSTALBAR_HIDE     "í»??íú\ní»??íú"
-    IDS_OTHERBAR            "??¼³Á¤(^1)"
+    IDS_RELATIVE_FINDCOUNT  "?ï¿½ï¿½%d?Ý¬ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    IDS_RELATIVE_COUNTOUT   "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½9999?Ý¬ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½Í£ï¿½\nË­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_SIZETOOLONG         "ï¿½ï¿½??ï¿½ï¿½?ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý»?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??\n?ï¿½ï¿½Ë­ï¿½ï¿½?ï¿½ï¿½"
+    IDS_FILEISMODIFTED      "ï¿½ï¿½?Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½"
+    IDS_COMPHEADER          "ï¿½ï¿½\n?ï¿½ï¿½\n?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½\n?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½"
+    IDS_SIZERROR            "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò£ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    IDS_FILEXIANGTONG       "ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ì£¡ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_COMPING             "ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½..."
+    IDS_NDSHEADER           "ï¿½Ìµï¿½"
+    IDS_HEXVIEW_HEADER      "ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½??ï¿½ï¿½"
+    IDS_CRYSTALBAR_HIDE     "ï¿½ï¿½??ï¿½ï¿½\nï¿½ï¿½??ï¿½ï¿½"
+    IDS_OTHERBAR            "??ï¿½ï¿½ï¿½ï¿½(^1)"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_FILECOMP       "ì£?ð¤Ýï???ÙþËìñý?îÜó¬?"
+    ID_TOOLS_FILECOMP       "ï¿½?ï¿½ï¿½ï¿½???ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SEARCH_CTRLENDONLY   "ñþâ¤ßãäÎ?áÖÍóð¤Ý¬ïáßÈ?áÖîÜ¹®ÀÚ£¨ñþî¤ÞÅéÄ?øú?êóüù£»ïÒ?£º>Ctrl,0£©\nÍóð¤Ý¬?áÖ"
-    ID_TBL_TOTALWORD        "??¹®ÀÚñéá¶õó??îÜí®Ý¬?ßæà÷Ùþ?"
-    ID_TOOLS_TEXTCPCHANGE   "??¹®ÀÚîÜ??"
+    ID_SEARCH_CTRLENDONLY   "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½Ý¬ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½>Ctrl,0ï¿½ï¿½\nï¿½ï¿½ï¿½Ý¬?ï¿½ï¿½"
+    ID_TBL_TOTALWORD        "??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½Ý¬?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?"
+    ID_TOOLS_TEXTCPCHANGE   "??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??"
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_ENTRYINFO           "CPU:  ìýÏ¢ÓÛ?  RAMìýÏ¢  RAMÜùÜâ ÓÞá³\r\nARM9:%08X %08X %08X %08X\r\nARM7:%08X %08X %08X %08X\r\nÊ¥??ïï:?ð¤""ÓÞá³""í®?îÜ""ìýÏ¢ÓÛ?""Óð""RAMÜùÜâ""\r\nPC=RAMìýÏ¢"
+    IDC_ENTRYINFO           "CPU:  ï¿½ï¿½Ï¢ï¿½ï¿½?  RAMï¿½ï¿½Ï¢  RAMï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½\r\nARM9:%08X %08X %08X %08X\r\nARM7:%08X %08X %08X %08X\r\nÊ¥??ï¿½ï¿½:?ï¿½""ï¿½ï¿½ï¿½""ï¿½ï¿½?ï¿½ï¿½""ï¿½ï¿½Ï¢ï¿½ï¿½?""ï¿½ï¿½""RAMï¿½ï¿½ï¿½ï¿½""\r\nPC=RAMï¿½ï¿½Ï¢"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_ASMVIEW_HEADER      "ÓÛ?í®?\nARM9:ARM ¸ðµå\nARM9:THUMB ¸ðµå\nARM7:ARM ¸ðµå\nARM7:THUMB ¸ðµå"
-    IDC_ARM_BASEADDRESS     "Ðñò£"
-    IDS_ASMERROR            "Ùéüùò¦Öµ£¡"
-    IDS_FAVORITESBAR        "ºÏ¸¶Å©(^6)"
-    IDS_IMPORTSPECFILE_ERROR "NDSÀÌµ¿ÙþËì?ÓÞ£¬ÙéÛö°¡Á®¿À±â£¡"
-    IDS_SDATINFOHEADER      "¼Ò¸®ÙþËì\n??ø¶ì¹\nßÓ?ø¶ì¹\nÓÞá³\nÍØÙÍãáãÓ"
-    IDS_FSI_FIND            "??ìýé©Ã£±âîÜ??í®£¨Üôò¨ò¥÷×ÛÕÝ¬£©£º"
-    IDS_SEARCHTEXT_COUNT    "â¤ßãÓð%d?¹®ÀÚ\nÍì%dí®"
-    IDS_ASMEXPORT           "?é©³»º¸³»±â?ú¼??ÓÛ?£¿"
-    IDS_FSI_SETHEADER       "áóËÇ?? "
-    IDS_FSI_SETSTRUCTSIZE   "??ìýãæîÜ??ÓÞá³\nåýÍýÙþËìÛ¯Üôù»Ê¦Òöé©ì¹?ÙþËì"
-    IDS_FSI_GOTOHEADER      "ÇØ´õÓð "
+    IDS_ASMVIEW_HEADER      "ï¿½ï¿½?ï¿½ï¿½?\nARM9:ARM ï¿½ï¿½ï¿½\nARM9:THUMB ï¿½ï¿½ï¿½\nARM7:ARM ï¿½ï¿½ï¿½\nARM7:THUMB ï¿½ï¿½ï¿½"
+    IDC_ARM_BASEADDRESS     "ï¿½ï¿½ï¿½"
+    IDS_ASMERROR            "ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½"
+    IDS_FAVORITESBAR        "ï¿½Ï¸ï¿½Å©(^6)"
+    IDS_IMPORTSPECFILE_ERROR "NDSï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½Þ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¡"
+    IDS_SDATINFOHEADER      "ï¿½Ò¸ï¿½ï¿½ï¿½ï¿½ï¿½\n??ï¿½ï¿½ï¿½\nï¿½ï¿½?ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_FSI_FIND            "??ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¬ï¿½ï¿½ï¿½ï¿½"
+    IDS_SEARCHTEXT_COUNT    "ï¿½ï¿½ï¿½ï¿½ï¿½%d?ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½%dï¿½ï¿½"
+    IDS_ASMEXPORT           "?é©³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½??ï¿½ï¿½?ï¿½ï¿½"
+    IDS_FSI_SETHEADER       "ï¿½ï¿½ï¿½ï¿½?? "
+    IDS_FSI_SETSTRUCTSIZE   "??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û¯ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½"
+    IDS_FSI_GOTOHEADER      "ï¿½Ø´ï¿½ï¿½ï¿½ "
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_SETSHADOWCOLORBTN   "À½¿µ/»ö ¼±ÅÃ"
+    IDC_SETSHADOWCOLORBTN   "ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_RESET           "½ÇÇà Ãë¼ÒÇÑ ¸í·ÉÀ» ´Ù½Ã ½ÇÇàÇÕ´Ï´Ù.\nº¹±¸"
+    ID_EDIT_RESET           "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.\nï¿½ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_VALEDIT             "µ¿½Ã¿¡ ¿©·¯Ç×¸ñÀ» ÀÔ·Â½Ã ¡°,¡±·Î ±¸ºÐÇÕ´Ï´Ù."
+    IDC_VALEDIT             "ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½×¸ï¿½ï¿½ï¿½ ï¿½Ô·Â½ï¿½ ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_SFI            "ÆÄÀÏ ³»ºÎÀÇ ÇÏÀ§ ÆÄÀÏµéÀ» °Ë»öÇÕ´Ï´Ù."
+    ID_TOOLS_SFI            "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½Õ´Ï´ï¿½."
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_FSI_EXPORTFILEEX    "³»º¸³»±âøÐùß÷åïÒ??í®îÜÙþËì"
-    IDS_PLAYER_NKHZ         "??ìýóú?áã"
-    IDS_NDSHEADERINFO       "NDSÀÌµ¿\nARM9 CPUò¦Öµ\nARM7 CPUò¦Öµ\nARM9 Overlayøú\nARM7 Overlayøú\nÙþËìÙÍ?øú\nÙþËìÝÂÛÕøú\nêý?ãáãÓ\nÚ±ò±ÙþËì\nTileÙþËì\n¼Ò¸®ÙþËì\n??ÙþËì\n?ÊîîÜNdsRom\n?ÆÈ·¹Æ®\n¹®ÀÚÙþËì\nMAPÙ¼ãÒîÜ???Ëß£¬?NCGR¡¢NCLRÛÕùêÞÅéÄ\n??ÙþËì(ìéÚõãÀLZ77)\nCT2??ãÀ??ûùêó?ð¾îÜÊ¦ë÷ÙþËì\nOverlayÙþËì\nCrystalTileÊ¦??ÙþËì"
-    IDS_NDSCWDH_INFO        "<CWDH í®Ý¬?:%d WDH[0]:%02X-%02X-%02X ?ËßØßß²í®?ìé?:0x10+Index*3>"
-    IDS_NDSCGLP_INFO        "<CGLP Tile?ÍÔ:%dx%d ÓÞá³:%d êÈ?:%d(%d)>"
-    IDS_NEWTOOL             "ãæÍïÎý"
-    IDS_EXEC                "Ê¦?ú¼ÙþËì(*.exe)\000*.exe\000¸ðµç ÆÄÀÏ(*.*)\000*.*"
-    IDS_MAXTOOL             "õÌÒýôÕÊ¥32?èâÝ»ÍïÎý£¡\né©ôÕÊ¥±âÅ¸ÍïÎý£¬??ð¶ÖªøúÐìñéìé?¡£"
-    IDS_BREAKOPEN           "Ë­ð¤ÁßÁö£¡\nÜôèÇïÚîÜ?ìýðÃíÂ"
-    IDS_BREAKSAVE           "Ë­ð¤ÁßÁö£¡\nÜôèÇïÚîÜÜÁðíðÃíÂ"
-    IDS_TOOLBAREX           "èâÝ»ÍïÎý?"
-    IDS_SETNFTRWH           "Ì«ãÒ:\n8x8\n8,8"
-    IDS_PCMEM_ERROR         "?ìý?ðí?Ëßã÷?£¬èâÝ»ïïßíÊ¦Òöì«÷Üõó£¡"
-    IDS_DSMEM               "DSÙ¼?Ðï[02000000]?ðí?"
+    IDS_FSI_EXPORTFILEEX    "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_PLAYER_NKHZ         "??ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    IDS_NDSHEADERINFO       "NDSï¿½Ìµï¿½\nARM9 CPUï¿½Öµ\nARM7 CPUï¿½Öµ\nARM9 Overlayï¿½ï¿½\nARM7 Overlayï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½\nÚ±ï¿½ï¿½ï¿½ï¿½ï¿½\nTileï¿½ï¿½ï¿½ï¿½\nï¿½Ò¸ï¿½ï¿½ï¿½ï¿½ï¿½\n??ï¿½ï¿½ï¿½ï¿½\n?ï¿½ï¿½ï¿½ï¿½NdsRom\n?ï¿½È·ï¿½Æ®\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nMAPÙ¼ï¿½ï¿½ï¿½ï¿½???ï¿½ß£ï¿½?NCGRï¿½ï¿½NCLRï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n??ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LZ77)\nCT2??ï¿½ï¿½??ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nOverlayï¿½ï¿½ï¿½ï¿½\nCrystalTileÊ¦??ï¿½ï¿½ï¿½ï¿½"
+    IDS_NDSCWDH_INFO        "<CWDH ï¿½ï¿½Ý¬?:%d WDH[0]:%02X-%02X-%02X ?ï¿½ï¿½ï¿½ï¿½ß²ï¿½ï¿½?ï¿½ï¿½?:0x10+Index*3>"
+    IDS_NDSCGLP_INFO        "<CGLP Tile?ï¿½ï¿½:%dx%d ï¿½ï¿½ï¿½:%d ï¿½ï¿½?:%d(%d)>"
+    IDS_NEWTOOL             "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_EXEC                "Ê¦?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(*.exe)\000*.exe\000ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(*.*)\000*.*"
+    IDS_MAXTOOL             "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¥32?ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½Ê¥ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½??ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½"
+    IDS_BREAKOPEN           "Ë­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_BREAKSAVE           "Ë­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_TOOLBAREX           "ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½?"
+    IDS_SETNFTRWH           "Ì«ï¿½ï¿½:\n8x8\n8,8"
+    IDS_PCMEM_ERROR         "?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+    IDS_DSMEM               "DSÙ¼?ï¿½ï¿½[02000000]?ï¿½ï¿½?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_TOOLEX          "?ãÆûä?íúèâÝ»ÍïÎý?\nï·?èâÝ»ÍïÎý?"
+    ID_VIEW_TOOLEX          "?ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½?\nï¿½?ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_MEMREFALSH      "»õ·Î°íÄ§èâÝ»ïïßíîÜ?ðí?Ëß"
+    ID_EDIT_MEMREFALSH      "ï¿½ï¿½ï¿½Î°ï¿½Ä§ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_CHEATSHEADER        "Ä¡¿ìÄ§\n10Áø¼ö\n16Áø¼ö"
-    IDS_CHANGECHEATS        "»õ·Î¿î °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä:\n±âº» 10Áø¼ö, Á¢µÎ»ç¡°0x¡±¸¦ ºÙÀÏ ½Ã 16Áø¼ö·Î ÆÇ´Ü"
-    IDS_ADDCHEATS           "Ä¡Æ® Ãß°¡ EC ÄÚµå\n16Áø¼ö ÁÖ¼Ò:16Áø¼ö °ª\n000000:11 / 000000:4444 / 000000:88888888"
-    IDS_DSMENU2CHS          "¿¡¹Ä·¹ÀÌÅÍÀÇ ¸Þ´º¸¦ Áß±¹¾î °£Ã¼·Î Ç¥½ÃÇÏ°Ú½À´Ï±î?\n¸¸¾à ÄÄÇ»ÅÍ ½Ã½ºÅÛÀÌ Áß±¹¾î °£Ã¼¸¦ Áö¿øÇÏÁö ¾ÊÀ¸¸é ƒÆÁüÀÌ ¹ß»ýÇÒ ¼ö ÀÖ½À´Ï´Ù."
-    IDS_NOPROCESS           "<<¿¡¹Ä·¹ÀÌÅÍ¸¦ ±¸µ¿½ÃÅ² ÈÄ, ROMÀ» ·ÎµåÇØ¾ß ¿¡¹Ä·¹ÀÌÅÍÀÇ 0200:0000(4MB) ¸Þ¸ð¸® ±¸°£À» º¼ ¼ö ÀÖ½À´Ï´Ù.>>"
-    IDS_SFI_MENUTEXT        "%s ¾Ë ¼ö ¾ø´Â ÆÄÀÏ Çü½Ä\n%s ÆÄÀÏ Á¤º¸...(&S)\tF2"
-    IDS_SFI_HEADER          "ÆÄÀÏ¸í\nÀý´ëÀ§Ä¡\n»ó´ëÀ§Ä¡\nÅ©±â"
-    IDS_SFI_UTILITY_HEADER  "ÆÄÀÏ¸í\n¹øÈ£\nÀý´ëÀ§Ä¡\n»ó´ëÀ§Ä¡\nÅ©±â"
+    IDS_CHEATSHEADER        "Ä¡ï¿½ï¿½Ä§\n10ï¿½ï¿½ï¿½ï¿½\n16ï¿½ï¿½ï¿½ï¿½"
+    IDS_CHANGECHEATS        "ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½:\nï¿½âº» 10ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Î»ç¡°0xï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½"
+    IDS_ADDCHEATS           "Ä¡Æ® ï¿½ß°ï¿½ EC ï¿½Úµï¿½\n16ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½:16ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½\n000000:11 / 000000:4444 / 000000:88888888"
+    IDS_DSMENU2CHS          "ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ß±ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï°Ú½ï¿½ï¿½Ï±ï¿½?\nï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç»ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß±ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½."
+    IDS_NOPROCESS           "<<ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å² ï¿½ï¿½, ROMï¿½ï¿½ ï¿½Îµï¿½ï¿½Ø¾ï¿½ ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0200:0000(4MB) ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.>>"
+    IDS_SFI_MENUTEXT        "%s ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n%s ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...(&S)\tF2"
+    IDS_SFI_HEADER          "ï¿½ï¿½ï¿½Ï¸ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡\nï¿½ï¿½ï¿½ï¿½ï¿½Ä¡\nÅ©ï¿½ï¿½"
+    IDS_SFI_UTILITY_HEADER  "ï¿½ï¿½ï¿½Ï¸ï¿½\nï¿½ï¿½È£\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡\nï¿½ï¿½ï¿½ï¿½ï¿½Ä¡\nÅ©ï¿½ï¿½"
     IDS_SFI_NORMAL_IMPORTERR 
-                            "¾Ë ¼ö ¾ø´Â ÆÄÀÏÇü½ÄÀÌ¹Ç·Î\nÅ×ÀÌºí¿¡ ±â·ÏÇÒ ¼ö ¾ø½À´Ï´Ù\n°¡Á®¿Â ÆÄÀÏÀÇ Å©±â´Â ¿øº»ÆÄÀÏº¸´Ù Å¬ ¼ö ¾ø½À´Ï´Ù!"
-    IDS_SFI_IMPORTERR       "°¡Á®¿À±â Àü¿¡\nÆÄÀÏÀ» µû·Î ¿­¾îÁÖ½Ê½Ã¿À"
+                            "ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¹Ç·ï¿½\nï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ Å¬ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!"
+    IDS_SFI_IMPORTERR       "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ê½Ã¿ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_TBL2CMAP       "°íÀ¯¹øÈ£Ç¥ ÆÄÀÏÀ» NFTR ¶óÀÌºê·¯¸® ÆÄÀÏ·Î º¯È¯ÇÏ´Â CMAP ±¸Á¶"
+    ID_TOOLS_TBL2CMAP       "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£Ç¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ NFTR ï¿½ï¿½ï¿½Ìºê·¯ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½ï¿½È¯ï¿½Ï´ï¿½ CMAP ï¿½ï¿½ï¿½ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_OPTIONBAR       "¼Ó¼ºÃ¢À» Ç¥½ÃÇÏ°Å³ª ¼û±è´Ï´Ù.\n¼Ó¼ºÃ¢ Àß¶ó³»±â"
+    ID_VIEW_OPTIONBAR       "ï¿½Ó¼ï¿½Ã¢ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\nï¿½Ó¼ï¿½Ã¢ ï¿½ß¶ó³»±ï¿½"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_NDS_FIRMWARE   "DS Æß¿þ¾îÀÇ »ç¿ëÀÚ Á¤º¸¸¦ ¼³Á¤ÇÕ´Ï´Ù."
+    ID_TOOLS_NDS_FIRMWARE   "DS ï¿½ß¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½."
 END
 
-#endif    // ñéÙþ(ñé?ìÑÚÅÍìûú?) resources
+#endif    // ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -2068,8 +2068,8 @@ END
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
 #pragma code_page(949)
-#include "res\CrystalTile2.rc2"  // Þª Microsoft Visual C++ ???ê¹
-#include "afxres.rc"         // ?ñ×?Ëì
+#include "res\CrystalTile2.rc2"  // Þª Microsoft Visual C++ ???ï¿½
+#include "afxres.rc"         // ?ï¿½ï¿½?ï¿½ï¿½
 #endif
 
 /////////////////////////////////////////////////////////////////////////////

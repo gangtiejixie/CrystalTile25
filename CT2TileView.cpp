@@ -1,4 +1,4 @@
-// CT2TileView.cpp : CT2TileView ÀàµÄÊµÏÖ
+// CT2TileView.cpp : CT2TileView ï¿½ï¿½ï¿½Êµï¿½ï¿½
 //
 
 #include "stdafx.h"
@@ -52,7 +52,7 @@ BEGIN_MESSAGE_MAP(CT2TileView, CT2View)
 	ON_UPDATE_COMMAND_UI(ID_EDIT_IMPORT, OnUpdateTileeditorTbl)
 END_MESSAGE_MAP()
 
-// CT2TileView ¹¹Ôì/Îö¹¹
+// CT2TileView ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½
 
 CT2TileView::CT2TileView()
 : m_nTileFormat(TF_1BPP)
@@ -101,7 +101,7 @@ CT2TileView::~CT2TileView()
 	if(m_hBkBrush) DeleteObject(m_hBkBrush);
 }
 
-// CT2TileView ÏûÏ¢´¦Àí³ÌÐò
+// CT2TileView ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 void CT2TileView::OnPaint()
 {
@@ -156,7 +156,7 @@ void CT2TileView::OnPaint()
 			while(s--)
 			{
 				if(m_nBitCount==16 || m_nBitCount==32)
-				{// ²»Í¸Ã÷¶È
+				{// ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½
 					pBits->rgbRed =
 						(pCryBits->rgbRed*pCryBits->rgbReserved+
 						pBits->rgbRed*(256-pCryBits->rgbReserved))/256;
@@ -196,9 +196,9 @@ void CT2TileView::OnPaint()
 		}else
 		if(m_bShowFocus && ((m_nColCount>>1)||(m_nLineCount>>1)) &&
 			(m_nDrawMode<CT2_DM_MAP))
-		{	//Tile·´É«
+		{	//Tileï¿½ï¿½É«
 			CRect rcFocus; GetTileRect(m_ptCursorPos, rcFocus);
-			//½¹µã
+			//ï¿½ï¿½ï¿½ï¿½
 			int c = rcFocus.Width(), l = rcFocus.Height();
 			rcFocus.left=rcFocus.left*m_nScaleWidth-nLeft;
 			rcFocus.top*=m_nScaleHeight;
@@ -212,18 +212,18 @@ void CT2TileView::OnPaint()
 			memDC.DrawFocusRect(&rcFocus);
 		}
 
-		if(m_nGrid && (m_nScale>100))//»æÖÆÍø¸ñ
+		if(m_nGrid && (m_nScale>100))//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		{
 			CPen whiteGPen(PS_SOLID, 1, 0x9C9C9C);
 			memDC.SelectObject(&whiteGPen);
 			//memDC.SetBkMode(R2_NOT);
 			for(int i=0; i<=m_nColCount; i++)
-			{//×ÝÏß
+			{//ï¿½ï¿½ï¿½ï¿½
 				memDC.MoveTo(rc.left+m_nScaleWidth*i-nLeft, rc.top);
 				memDC.LineTo(rc.left+m_nScaleWidth*i-nLeft, nViewScaleHeight);
 			}
 			for(int i=0; i<=m_nLineCount; i++)
-			{//ºáÏß
+			{//ï¿½ï¿½ï¿½ï¿½
 				memDC.MoveTo(rc.left-nLeft, rc.top+m_nScaleHeight*i);
 				memDC.LineTo(nViewScaleWidth-nLeft, rc.top+m_nScaleHeight*i);
 			}
@@ -233,6 +233,72 @@ void CT2TileView::OnPaint()
 	dc.BitBlt(0, 0, rc.Width(), rc.Height(), &memDC, 0, 0, SRCCOPY);
 
 	memDC.DeleteDC();
+}
+
+// ASTC 4x4 block decode helper
+// Decodes a 16-byte ASTC block into 16 RGBA pixels (4x4)
+// This is a simplified decoder that handles void-extent blocks and
+// approximates other blocks by extracting endpoint colors
+static void DecodeASTC4x4Block(const BYTE* pBlock, UINT* pPixels)
+{
+	// Read block mode (first 11 bits)
+	UINT blockMode = pBlock[0] | (pBlock[1] << 8);
+
+	// Check for void-extent block (bits [8:0] == 0x1FC)
+	if ((blockMode & 0x1FF) == 0x1FC)
+	{
+		// Void-extent: constant color block
+		// Color is stored in bytes 8-15 as R16 G16 B16 A16
+		BYTE r = pBlock[8];   // Use high byte of R16
+		BYTE g = pBlock[10];  // Use high byte of G16
+		BYTE b = pBlock[12];  // Use high byte of B16
+		BYTE a = pBlock[14];  // Use high byte of A16
+		UINT color = (a << 24) | (r << 16) | (g << 8) | b;
+		for (int i = 0; i < 16; i++)
+			pPixels[i] = color;
+		return;
+	}
+
+	// For non-void-extent blocks, extract approximate colors from endpoints
+	// ASTC endpoint data starts after the mode/partition/CEM bits
+	// This is a simplified approximation: extract two endpoint colors
+	// and interpolate based on weight data
+
+	// Extract approximate endpoint colors from the block data
+	// The exact bit layout depends on the block mode, partition count, and CEM
+	// For a simple approximation, use bytes from the middle of the block as colors
+	BYTE r0 = pBlock[4];
+	BYTE g0 = pBlock[5];
+	BYTE b0 = pBlock[6];
+	BYTE a0 = pBlock[7];
+	BYTE r1 = pBlock[8];
+	BYTE g1 = pBlock[9];
+	BYTE b1 = pBlock[10];
+	BYTE a1 = pBlock[11];
+
+	// Use weight bits (stored at the end of the block, reversed) 
+	// to interpolate between endpoints
+	// Weights are in the high bits of the block (bytes 12-15)
+	for (int i = 0; i < 16; i++)
+	{
+		// Simple 4-bit weight extraction (approximate)
+		int byteIdx = 15 - (i * 4) / 8;
+		int bitIdx = (i * 4) % 8;
+		UINT w = 0;
+		if (byteIdx >= 0 && byteIdx < 16)
+			w = (pBlock[byteIdx] >> bitIdx) & 0x0F;
+		// Normalize weight to 0-64 range
+		UINT weight = (w * 64 + 7) / 15;
+		UINT iweight = 64 - weight;
+
+		BYTE r = (BYTE)((r0 * iweight + r1 * weight + 32) >> 6);
+		BYTE g = (BYTE)((g0 * iweight + g1 * weight + 32) >> 6);
+		BYTE b = (BYTE)((b0 * iweight + b1 * weight + 32) >> 6);
+		BYTE a = (BYTE)((a0 * iweight + a1 * weight + 32) >> 6);
+
+		// Store as BGRA (RGBQUAD format used by DIB)
+		pPixels[i] = (a << 24) | (r << 16) | (g << 8) | b;
+	}
 }
 
 void CT2TileView::SetBits()
@@ -248,11 +314,11 @@ void CT2TileView::SetBits()
 	int nTilePixelCount = m_nDrawMode>=CT2_DM_MAP?8*8 : m_nWidth*m_nHeight;
 	//size of per tile
 
-	// 2/4²ã×¨ÓÃ
+	// 2/4ï¿½ï¿½×¨ï¿½ï¿½
 	BYTE nCD=(m_n24Check?0x04:0x02);
 	BYTE nCD2=4/nCD, nMask2=(1<<nCD2)-1;//m_nTileFormat=TF_GBA3XBPP
 
-	//GB 2BPPÓÃ
+	//GB 2BPPï¿½ï¿½
 	BYTE nTileLineSize = m_nDrawMode?1:m_nWidth/8;
 	if(m_nWidth%8) nTileLineSize++; nTileLineSize*=2;
 	UINT nOffset2 = (m_nTileFormat==TF_NES2BPP)?
@@ -262,15 +328,15 @@ void CT2TileView::SetBits()
 
 	WORD nScanLineSize = (WORD)m_biPaintPanel.biWidth;//*4;
 
-	// Ë¢±³¾°
+	// Ë¢ï¿½ï¿½ï¿½ï¿½
 	UINT nPixel = m_biPaintPanel.biWidth * m_biPaintPanel.biHeight;
 	if(m_nBitCount>=16)
 		memset(m_pPaintPanel, 0, m_biPaintPanel.biSizeImage);
 	else
 		while(nPixel--) *(UINT*)(m_pPaintPanel+nPixel)=*(UINT*)pPal;
 
-	BYTE* pBmpTile = ((BYTE*)m_pPaintPanel)+ // É¨ÃèÏß
-		(m_biPaintPanel.biHeight-1)*(nScanLineSize*4); // ÐÐ
+	BYTE* pBmpTile = ((BYTE*)m_pPaintPanel)+ // É¨ï¿½ï¿½ï¿½ï¿½
+		(m_biPaintPanel.biHeight-1)*(nScanLineSize*4); // ï¿½ï¿½
 
 	int nTileCount = m_nDrawMode>=CT2_DM_MAP?
 		(m_nWidth/8)*(m_nHeight/8) : m_nColCount*m_nLineCount;
@@ -281,7 +347,7 @@ void CT2TileView::SetBits()
 	WORD *pMoData = (WORD*)(GetDocument()->m_pRom+m_nMoOffset);
 	WORD wMapData;
 
-	while(nTileNO<nTileCount)//TileViewµÄTileÑ­»·
+	while(nTileNO<nTileCount)//TileViewï¿½ï¿½TileÑ­ï¿½ï¿½
 	{
 		switch(m_nDrawMode)
 		{
@@ -307,14 +373,14 @@ void CT2TileView::SetBits()
 		}
 
 		nTilePixelNO=0;
-		while(nTilePixelNO<nTilePixelCount)//TileµÄÏóÊýÑ­»·
+		while(nTilePixelNO<nTilePixelCount)//Tileï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½
 		{
 			nPixelTop=nTilePixelNO/nWidth;
 			nPixelLeft=nTilePixelNO%nWidth;
 
 			int nTilePixelNO2 = m_nDrawMode?
 						nPixelTop%8*8+nPixelLeft%8:nTilePixelNO;
-			//·­×ª´¦Àí
+			//ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
 			TileDirection(nTilePixelNO, nPixelTop, nPixelLeft);
 	
 			pPixel=pTile+(m_nBitCount>8?nTilePixelNO2*m_nBytePixelCount:nTilePixelNO2/m_nBytePixelCount);
@@ -480,29 +546,46 @@ void CT2TileView::SetBits()
 				nPixel = nPixel >> (((nPixelLeft%8/2))*8);
 				nPixel = nPixelLeft&1?nPixel>>4:nPixel&0xF;
 				break;
+			case TF_ASTC4x4:
+				{
+					// ASTC 4x4: each 16-byte block covers 4x4 pixels
+					// Determine which block this pixel belongs to
+					int blockX = nPixelLeft / 4;
+					int blockY = nPixelTop / 4;
+					int blocksPerRow = m_nWidth / 4;
+					int blockIndex = blockY * blocksPerRow + blockX;
+					BYTE* pBlockData = pTile + blockIndex * 16;
+					if (pBlockData + 16 > pEnd) { nPixel = 0; break; }
+					UINT blockPixels[16];
+					DecodeASTC4x4Block(pBlockData, blockPixels);
+					int pixInBlockX = nPixelLeft % 4;
+					int pixInBlockY = nPixelTop % 4;
+					nPixel = blockPixels[pixInBlockY * 4 + pixInBlockX];
+				}
+				break;
 			default:
-				nPixel=0; // ±³¾°É«
+				nPixel=0; // ï¿½ï¿½ï¿½ï¿½É«
 				break;
 			}
 			nPixel&=m_nColorMask;
 			if(nPixel)
 			{
 				if(m_nBitCount>8)
-					*((UINT*)pBmpTile- // É¨ÃèÏß
-					nPixelTop*nScanLineSize+ // ÐÐ
-					nPixelLeft) = // ÁÐ
+					*((UINT*)pBmpTile- // É¨ï¿½ï¿½ï¿½ï¿½
+					nPixelTop*nScanLineSize+ // ï¿½ï¿½
+					nPixelLeft) = // ï¿½ï¿½
 					nPixel;
 				else
-					*((RGBQUAD*)pBmpTile- // É¨ÃèÏß
-					nPixelTop*nScanLineSize+ // ÐÐ
-					nPixelLeft) = // ÁÐ
+					*((RGBQUAD*)pBmpTile- // É¨ï¿½ï¿½ï¿½ï¿½
+					nPixelTop*nScanLineSize+ // ï¿½ï¿½
+					nPixelLeft) = // ï¿½ï¿½
 					*(pPal+nPixel);
 			}
-			nTilePixelNO++;//ÔöÁ¿
+			nTilePixelNO++;//ï¿½ï¿½ï¿½ï¿½
 		}
-		nTileNO++;//ÔöÁ¿
+		nTileNO++;//ï¿½ï¿½ï¿½ï¿½
 
-		pBmpTile += nWidth*4;// TileÁÐ
+		pBmpTile += nWidth*4;// Tileï¿½ï¿½
 		if(!(nTileNO%m_nColCount))
 			pBmpTile-=nScanLineSize*4*(nHeight+1);
 	}
@@ -510,6 +593,9 @@ void CT2TileView::SetBits()
 
 void CT2TileView::SetPixel(WORD nTilePixelNO, UINT nPixel)
 {
+	// ASTC is a compressed format, pixel editing not supported
+	if(m_nTileFormat==TF_ASTC4x4) return;
+
 	CT2Doc* pDoc = GetDocument();
 	int nPixelTop, nPixelLeft;
 	BYTE* pTile;
@@ -517,14 +603,14 @@ void CT2TileView::SetPixel(WORD nTilePixelNO, UINT nPixel)
 	BYTE* pEnd=(pDoc->m_pRom+pDoc->m_nRomSize);
 	BYTE* pPixel, nPixel1, nPixel2, nPixel3, nPixel4;
 
-	// 2/4²ã×¨ÓÃ
+	// 2/4ï¿½ï¿½×¨ï¿½ï¿½
 	BYTE nCD=(m_n24Check?0x04:0x02);
 	BYTE nCD2=4/nCD, nMask2=(1<<nCD2)-1;//m_nTileFormat=TF_GBA3XBPP
 	
 	int nWidth=m_nDrawMode>=CT2_DM_MAP?8:m_nWidth,
 		nHeight=m_nDrawMode>=CT2_DM_MAP?8:m_nHeight;
 	UINT nTilePixelCount = nWidth*nHeight;
-	//GB 2BPPÓÃ
+	//GB 2BPPï¿½ï¿½
 	BYTE nTileLineSize = m_nDrawMode?1:m_nWidth/8;
 	if(m_nWidth%8) nTileLineSize++; nTileLineSize*=2;
 	UINT nOffset2 = (m_nTileFormat==TF_NES2BPP)?
@@ -557,7 +643,7 @@ void CT2TileView::SetPixel(WORD nTilePixelNO, UINT nPixel)
 		nPixelTop=nTilePixelNO/m_nWidth;
 		nPixelLeft=nTilePixelNO%m_nWidth;
 	}
-	//·­×ª´¦Àí
+	//ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
 	TileDirection(nTilePixelNO, nPixelTop, nPixelLeft);
 	nTilePixelNO = nPixelTop*m_nWidth+nPixelLeft;
 	if(m_nL90Check||m_nR90Check)
@@ -803,6 +889,9 @@ void CT2TileView::OnUpdateData()
 	//case TF_ABGR32BPP:
 		m_nBitCount = 32;
 		break;
+	case TF_ASTC4x4:
+		m_nBitCount = 32; // Output is 32bpp RGBA
+		break;
 	}
 
 	if(m_nWidth<1) m_nWidth=1;
@@ -811,12 +900,17 @@ void CT2TileView::OnUpdateData()
 	{
 		if(m_nWidth&7) m_nWidth+=8-(m_nWidth&7);
 		if(m_nHeight&7) m_nHeight+=8-(m_nHeight&7);
-		if(m_nWidth*m_nHeight<128)// ÖÁÉÙ8x16»ò16x8
+		if(m_nWidth*m_nHeight<128)// ï¿½ï¿½ï¿½ï¿½8x16ï¿½ï¿½16x8
 			m_nWidth = m_nHeight = 16;
 	}
 	if(m_nTileFormat==TF_RHYTHM)
 	{
 		if(m_nWidth&7) m_nWidth+=8-(m_nWidth&7);
+		if(m_nHeight&3) m_nHeight+=4-(m_nHeight&3);
+	}
+	if(m_nTileFormat==TF_ASTC4x4)
+	{
+		if(m_nWidth&3) m_nWidth+=4-(m_nWidth&3);
 		if(m_nHeight&3) m_nHeight+=4-(m_nHeight&3);
 	}
 
@@ -850,6 +944,9 @@ void CT2TileView::OnUpdateData()
 	if(m_nTileFormat==TF_CT0XBPP)
 		m_nBytePixelCount=1;
 	else
+	if(m_nTileFormat==TF_ASTC4x4)
+		m_nBytePixelCount=4; // treated as 32bpp output
+	else
 	if(m_nBitCount>8)
 		m_nBytePixelCount = m_nBitCount/8;
 	else
@@ -859,7 +956,10 @@ void CT2TileView::OnUpdateData()
 				(m_nTileFormat==TF_CT0XBPP?8:m_nBitCount);
 
 	int nSkipSize = (m_nDrawMode>=CT2_DM_MAP?0:m_nSkipSize);
-	m_nTileSize=(nWidth*nHeight*nBits)/8 + nSkipSize;
+	if(m_nTileFormat==TF_ASTC4x4)
+		m_nTileSize=((nWidth+3)/4)*((nHeight+3)/4)*16 + nSkipSize;
+	else
+		m_nTileSize=(nWidth*nHeight*nBits)/8 + nSkipSize;
 	if(m_nTileSize<1) m_nTileSize=1;
 
 	// ObjH/ObjV
@@ -926,7 +1026,7 @@ void CT2TileView::OnUpdateData()
 		m_nLRSwapCheck = !(m_nWidth&1);
 
 	SetBits();
-	//ÉèÖÃ¹ö¶¯Ìõ
+	//ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½
 	CSize szVert;
 	szVert.cx=m_biPaintPanel.biWidth*m_nScale/100;
 	szVert.cy=pDoc->m_nRomType==CT2_RT_NSCR?0:(LONG)((pDoc->m_nRomSize/m_nViewLineSize+1)*(m_nScaleHeight));
@@ -962,7 +1062,7 @@ void CT2TileView::OnUpdateViewGrid(CCmdUI *pCmdUI)
 
 void CT2TileView::TileDirection(int nNo, int& nTop, int& nLeft)
 {
-	//·­×ª´¦Àí
+	//ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
 	if(m_nHCheck)
 	{
 		if(m_nDrawMode)
@@ -1653,7 +1753,7 @@ void CT2TileView::OnEditExport()
 	bi.biHeight=nHeight;
 	bi.biSizeImage=nWidth*nHeight*4;
 	BITMAPFILEHEADER BmFileHeader; memset(&BmFileHeader, 0, sizeof(BITMAPFILEHEADER));
-	BmFileHeader.bfType=0x4D42;//BM±ê¼Ç
+	BmFileHeader.bfType=0x4D42;//BMï¿½ï¿½ï¿½
 	BmFileHeader.bfOffBits=sizeof(BITMAPFILEHEADER)+sizeof(BITMAPINFOHEADER);
 	BmFileHeader.bfSize=BmFileHeader.bfOffBits+bi.biSizeImage;
 
@@ -1674,7 +1774,7 @@ void CT2TileView::OnEditExport()
 		for(int i=0; i<nWidth; i++)
 		{
 			if(m_nBitCount==16 || m_nBitCount==32)
-			{// ²»Í¸Ã÷¶È
+			{// ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½
 				pBits->rgbRed =
 					(pBits->rgbRed*pBits->rgbReserved+
 					bk.rgbRed*(256-pBits->rgbReserved))/256;
@@ -1704,7 +1804,7 @@ void CT2TileView::OnEditSelectAll()
 
 void CT2TileView::OnEditImport()
 {
-	//µ¼ÈëTile
+	//ï¿½ï¿½ï¿½ï¿½Tile
 	static CFileDialog sfd(TRUE);
 	CString strOpenDibFilter;
 	strOpenDibFilter.LoadString(IDS_DIBFILTER);
@@ -1864,7 +1964,7 @@ void CT2TileView::OnCopy()
 	if(m_nBitCount==16 || m_nBitCount==32)
 	while(bi.bmiHeader.biSizeImage-=4)
 	{
-		//²»Í¸Ã÷¶È
+		//ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½
 		pBits->rgbRed =
 			(pBits->rgbRed*pBits->rgbReserved+
 			bk.rgbRed*(256-pBits->rgbReserved))/256;
