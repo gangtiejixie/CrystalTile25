@@ -13,21 +13,21 @@ public:
 };
 
 
-// CAsmDlg 대화 상자
+// CAsmDlg 对话框
 
 class CAsmDlg : public CDialog
 {
 	DECLARE_DYNAMIC(CAsmDlg)
 
 public:
-	CAsmDlg(CWnd* pParent = NULL);   // 표준 생성자
+	CAsmDlg(CWnd* pParent = NULL);   // 标准构造函数
 	virtual ~CAsmDlg();
 
-// 다이얼로그 데이터
+// 对话框数据
 	enum { IDD = IDD_ASMDLG };
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
 
 	DECLARE_MESSAGE_MAP()
 public:

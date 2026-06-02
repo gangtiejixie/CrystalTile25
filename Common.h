@@ -23,7 +23,7 @@
 
 
 
-// ±äÁ¿
+// ï¿½ï¿½ï¿½ï¿½
 extern CString g_strMFile;
 extern UINT g_nMFileSize;
 extern UINT g_nRomType;
@@ -34,7 +34,7 @@ extern CHAR g_szBufferA[_MAX_PATH];
 //extern CHAR g_szBufferA2[_MAX_PATH];
 extern BYTE g_bBreak;
 
-// ½á¹¹
+// ï¿½á¹¹
 
 struct PALETTEFILEHEADER
 {
@@ -68,30 +68,30 @@ struct MAINFRMPOS {
 
 #define CT2_FAVLEN 32
 struct FAVORITES{
-	TCHAR Doc[_MAX_PATH];		// ÎÄµµÃû
-	TCHAR Desc[CT2_FAVLEN];		// ÊéÇ©×¢ÊÍ
-	UINT nOffset;				// Æ«ÒÆ
-	WORD nCurView;				// µ±Ç°ÊÓÍ¼
-	RGBQUAD pPal[256];			// µ÷É«°å
+	TCHAR Doc[_MAX_PATH];		// ï¿½Äµï¿½ï¿½ï¿½
+	TCHAR Desc[CT2_FAVLEN];		// ï¿½ï¿½Ç©×¢ï¿½ï¿½
+	UINT nOffset;				// Æ«ï¿½ï¿½
+	WORD nCurView;				// ï¿½ï¿½Ç°ï¿½ï¿½Í¼
+	RGBQUAD pPal[256];			// ï¿½ï¿½É«ï¿½ï¿½
 
 	// TileView
-	BYTE nTileFormat;			// ÑÕÉ«¸ñÊ½
-	WORD nWidth;				// ¿í¶È
-	WORD nHeight;				// ¸ß¶È
-	WORD nScale;				// Ëõ·Å
-	BYTE nDrawMode:4;			// »æÖÆÄ£Ê½
-	BYTE nHCheck:1;				// Ë®Æ½·­×ª
-	BYTE nVCheck:1;				// ´¹Ö±·­×ª
-	BYTE nL90Check:1;			// ×ó×ª¾ÅÊ®¶È
-	BYTE nR90Check:1;			// ÓÒ×ª¾ÅÊ®¶È
-	BYTE n24Check;				// 2/4²ãµÄTile
-	BYTE nSkipSize;				// Ìø¹ý×Ö½Ú
-	BYTE nPalIndex;				// µ÷É«°åºÅ
-	WORD nColCount;				// TileÊÓÍ¼ÁÐÊý
-	WORD nLineCount;			// TileÊÓÍ¼ÐÐÊý
-	UINT nMoOffset;				// Map/OamµØÖ·
-	WORD nBkPixType;			// µ×ÎÆ
-	BYTE nAutoColFit;			// ×ÔÊÊÓ¦ÐÐÁÐ
+	BYTE nTileFormat;			// ï¿½ï¿½É«ï¿½ï¿½Ê½
+	WORD nWidth;				// ï¿½ï¿½ï¿½ï¿½
+	WORD nHeight;				// ï¿½ß¶ï¿½
+	WORD nScale;				// ï¿½ï¿½ï¿½ï¿½
+	BYTE nDrawMode:4;			// ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+	BYTE nHCheck:1;				// Ë®Æ½ï¿½ï¿½×ª
+	BYTE nVCheck:1;				// ï¿½ï¿½Ö±ï¿½ï¿½×ª
+	BYTE nL90Check:1;			// ï¿½ï¿½×ªï¿½ï¿½Ê®ï¿½ï¿½
+	BYTE nR90Check:1;			// ï¿½ï¿½×ªï¿½ï¿½Ê®ï¿½ï¿½
+	BYTE n24Check;				// 2/4ï¿½ï¿½ï¿½Tile
+	BYTE nSkipSize;				// ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+	BYTE nPalIndex;				// ï¿½ï¿½É«ï¿½ï¿½ï¿½
+	WORD nColCount;				// Tileï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+	WORD nLineCount;			// Tileï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+	UINT nMoOffset;				// Map/Oamï¿½ï¿½Ö·
+	WORD nBkPixType;			// ï¿½ï¿½ï¿½ï¿½
+	BYTE nAutoColFit;			// ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½
 
 	// AsmView
 	UINT nBaseAddress;
@@ -107,46 +107,46 @@ struct FAVORITES{
 };
 
 struct STATEDATA {
-	WORD nSize;					// ±¾½á¹¹´óÐ¡
+	WORD nSize;					// ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½Ð¡
 	// Doc
-	RGBQUAD pPal[256];			// µ÷É«°å
-	UINT nBlockOffset;			// Ó³Éä¿éÆ«ÒÆ
-	BYTE nStateMapFile;			// ÎÄµµ´ò¿ªÄ£Ê½
-	WORD nTblCodePage;			// Âë±í±àÂë¸ñÊ½
-	WORD nScriptCodePage;		// ´¦Àí½Å±¾µÄ±àÂë¸ñÊ½
-	// SHUQIAN Sq[10];				// 10¸öÊéÇ©
-	TCHAR szPathName[3][_MAX_PATH];	// ¶àÎÄ¼þµ¥ÎÄµµ
+	RGBQUAD pPal[256];			// ï¿½ï¿½É«ï¿½ï¿½
+	UINT nBlockOffset;			// Ó³ï¿½ï¿½ï¿½Æ«ï¿½ï¿½
+	BYTE nStateMapFile;			// ï¿½Äµï¿½ï¿½ï¿½Ä£Ê½
+	WORD nTblCodePage;			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+	WORD nScriptCodePage;		// ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ê½
+	// SHUQIAN Sq[10];				// 10ï¿½ï¿½ï¿½ï¿½Ç©
+	TCHAR szPathName[3][_MAX_PATH];	// ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Äµï¿½
 
 	// ChidFrm
-	MAINFRMPOS wpChildFrm;		// ÎÄµµ¿ò¼ÜÎ»ÖÃ
-	WORD nCurView;				// µ±Ç°ÊÓÍ¼
+	MAINFRMPOS wpChildFrm;		// ï¿½Äµï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+	WORD nCurView;				// ï¿½ï¿½Ç°ï¿½ï¿½Í¼
 
 	// CT2View
 
 	// TileView
-	UINT nTileViewOffset;		// Æ«ÒÆ
-	BYTE nTileFormat;			// ÑÕÉ«¸ñÊ½
-	WORD nWidth;				// ¿í¶È
-	WORD nHeight;				// ¸ß¶È
-	WORD nScale;				// Ëõ·Å
-	BYTE nDrawMode:4;			// »æÖÆÄ£Ê½
-	BYTE nHCheck:1;				// Ë®Æ½·­×ª
-	BYTE nVCheck:1;				// ´¹Ö±·­×ª
-	BYTE nL90Check:1;			// ×ó×ª¾ÅÊ®¶È
-	BYTE nR90Check:1;			// ÓÒ×ª¾ÅÊ®¶È
-	BYTE nTileViewGrid:1;		// Íø¸ñ
-	BYTE nSkipSize;				// Ìø¹ý×Ö½Ú
-	BYTE n24Check;				// 2/4²ãµÄTile
-	BYTE nNextSize;				// Ïà¹ØÆ«ÒÆ
-	BYTE nPalIndex;				// µ÷É«°åºÅ
-	WORD nColCount;				// TileÊÓÍ¼ÁÐÊý
-	WORD nLineCount;			// TileÊÓÍ¼ÐÐÊý
-	UINT nMoOffset;				// Map/OamµØÖ·
-	WORD nBkPixType;			// µ×ÎÆ
+	UINT nTileViewOffset;		// Æ«ï¿½ï¿½
+	BYTE nTileFormat;			// ï¿½ï¿½É«ï¿½ï¿½Ê½
+	WORD nWidth;				// ï¿½ï¿½ï¿½ï¿½
+	WORD nHeight;				// ï¿½ß¶ï¿½
+	WORD nScale;				// ï¿½ï¿½ï¿½ï¿½
+	BYTE nDrawMode:4;			// ï¿½ï¿½ï¿½ï¿½Ä£Ê½
+	BYTE nHCheck:1;				// Ë®Æ½ï¿½ï¿½×ª
+	BYTE nVCheck:1;				// ï¿½ï¿½Ö±ï¿½ï¿½×ª
+	BYTE nL90Check:1;			// ï¿½ï¿½×ªï¿½ï¿½Ê®ï¿½ï¿½
+	BYTE nR90Check:1;			// ï¿½ï¿½×ªï¿½ï¿½Ê®ï¿½ï¿½
+	BYTE nTileViewGrid:1;		// ï¿½ï¿½ï¿½ï¿½
+	BYTE nSkipSize;				// ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
+	BYTE n24Check;				// 2/4ï¿½ï¿½ï¿½Tile
+	BYTE nNextSize;				// ï¿½ï¿½ï¿½Æ«ï¿½ï¿½
+	BYTE nPalIndex;				// ï¿½ï¿½É«ï¿½ï¿½ï¿½
+	WORD nColCount;				// Tileï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+	WORD nLineCount;			// Tileï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+	UINT nMoOffset;				// Map/Oamï¿½ï¿½Ö·
+	WORD nBkPixType;			// ï¿½ï¿½ï¿½ï¿½
 
 	// HexView
 	UINT nHexViewOffset;
-	TCHAR lpszTblName[_MAX_PATH];// Âë±íÎÄ¼þÂ·¾¶
+	TCHAR lpszTblName[_MAX_PATH];// ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 
 	// AsmView
 	UINT nAsmViewOffset;
@@ -162,9 +162,9 @@ struct GBAHEADER
 {
 	BYTE	RomEntryPoint[4];	// 32bit ARM branch opcode, eg. "B rom_start"
 	BYTE	NintendoLogo[156];	// compressed bitmap, required!
-	char	GameTitle[12];		// ´óÐ´
-	char	GameCode[4];		// ´óÐ´ AGB-XXXX
-	char	MakerCode[2];		// ´óÐ´ "01"=Nintendo.
+	char	GameTitle[12];		// ï¿½ï¿½Ð´
+	char	GameCode[4];		// ï¿½ï¿½Ð´ AGB-XXXX
+	char	MakerCode[2];		// ï¿½ï¿½Ð´ "01"=Nintendo.
 	BYTE	FixedValue;			// must be 96h, required!
 	BYTE	MainUnitCode;		// 00h for current GBA models
 	BYTE	DeviceType;			// huh ???
@@ -309,7 +309,7 @@ struct NDSSPECREC {
 	CString FileName;
 };
 
-//ndsfile .sdatÎÄ¼þ½á¹¹
+//ndsfile .sdatï¿½Ä¼ï¿½ï¿½á¹¹
 // size:0x40
 struct NDSSDAT
 {
@@ -317,17 +317,17 @@ struct NDSSDAT
 	char unknown1[2];		// 0xFEFF ?
 	BYTE unknown2;			// 0x00
 	BYTE unknown3;			// 0x01
-	UINT nSDATSize;			// .sdatÎÄ¼þ´óÐ¡
-	WORD nSize;				// tagNDSSDAT½á¹¹´óÐ¡(0x40)
+	UINT nSDATSize;			// .sdatï¿½Ä¼ï¿½ï¿½ï¿½Ð¡
+	WORD nSize;				// tagNDSSDATï¿½á¹¹ï¿½ï¿½Ð¡(0x40)
 	WORD wChunkMax;			//
 	UINT nSymbPos;			// 0x40 tagSDATSYMB
-	UINT nSymbSize;			// tagSDATSYMB½á¹¹Êµ¼Ê´óÐ¡
+	UINT nSymbSize;			// tagSDATSYMBï¿½á¹¹Êµï¿½Ê´ï¿½Ð¡
 	UINT nSDatInfoPos;		// tagSDATINFO
-	UINT nSDatInfoSize;		// tagSDATINFO½á¹¹´óÐ¡
+	UINT nSDatInfoSize;		// tagSDATINFOï¿½á¹¹ï¿½ï¿½Ð¡
 	UINT nSDatFatPos;		// tagSDATFAT
-	UINT nSDatFatSize;		// tagSDATFAT½á¹¹´óÐ¡
+	UINT nSDatFatSize;		// tagSDATFATï¿½á¹¹ï¿½ï¿½Ð¡
 	UINT nSDatFileInfoPos;	// tagSDATFILEINFO
-	UINT nRecSize;			// È¥µôÎÄ¼þÍ·½á¹¹µÄÎÄ¼þ´óÐ¡ nSDATSize-nSDatFileInfoPos
+	UINT nRecSize;			// È¥ï¿½ï¿½ï¿½Ä¼ï¿½Í·ï¿½á¹¹ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡ nSDATSize-nSDatFileInfoPos
 	char unknown5[0x10];	// zero ?
 };
 
@@ -335,7 +335,7 @@ struct NDSSDAT
 struct SDATSYMB
 {
 	char falgs[4];			// 'S' 'Y' 'M' 'B'
-	UINT nSize;				// tagSDATSYMB½á¹¹¶ÔÆë´óÐ¡
+	UINT nSize;				// tagSDATSYMBï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
 	UINT nSequences;
 	UINT nSoundEffects;
 	UINT nBanks;
@@ -358,7 +358,7 @@ struct SDATSYMBREC
 struct SDATINFO
 {
 	char falgs[4];			// 'I' 'N' 'F' 'O'
-	UINT nSize;				// tagSDATINFO½á¹¹´óÐ¡
+	UINT nSize;				// tagSDATINFOï¿½á¹¹ï¿½ï¿½Ð¡
 	UINT nSequences;
 	UINT nSoundEffects;
 	UINT nBanks;
@@ -401,7 +401,7 @@ struct SDATFATREC
 struct SDATFAT
 {
 	char flags[4];			// 'F' 'A' 'T' ' '
-	UINT nSize;				// tagSDATFAT½á¹¹´óÐ¡
+	UINT nSize;				// tagSDATFATï¿½á¹¹ï¿½ï¿½Ð¡
 	UINT nFatCount;			// FatCount
 	SDATFATREC rec[1];		// tagSDATFATREC...
 };
@@ -411,8 +411,8 @@ struct SDATFAT
 struct SDATFILEINFO
 {
 	char flags[4];			// 'F' 'I' 'L' 'E'
-	UINT nSoundFileSize;	// È¥µôÎÄ¼þÍ·½á¹¹µÄÎÄ¼þ´óÐ¡ tagSDAT.nSDATSize-tagSDAT.nSDatFileInfoPos
-	UINT nSoundCount;		// ÇúÄ¿ÊýÁ¿
+	UINT nSoundFileSize;	// È¥ï¿½ï¿½ï¿½Ä¼ï¿½Í·ï¿½á¹¹ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡ tagSDAT.nSDATSize-tagSDAT.nSDatFileInfoPos
+	UINT nSoundCount;		// ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½
 	UINT unknown;			// zero ?
 };
 // _FILE
@@ -427,22 +427,22 @@ struct NDSFILEHEADER
 	UINT nFileSize;			// FileSize
 	WORD nSize;				// HEADER SIZE
 	WORD nSubHeaderCount;	// ? 0x0001(NO HEAD) . 0x0002(SUBHEAD) ... count/type ?
-	WORD nSize2;			// ÓÉunknown2¶ø¶¨
+	WORD nSize2;			// ï¿½ï¿½unknown2ï¿½ï¿½ï¿½ï¿½
 };
 
 struct SUBHEADER
 {
 	char falgs[4];			// 'H' 'E' 'A' 'D' / Other...
-	UINT nSize;				// SUBHEADER½á¹¹´óÐ¡
+	UINT nSize;				// SUBHEADERï¿½á¹¹ï¿½ï¿½Ð¡
 	// data... ?
 };
 
 struct SDATSOUNDDATA
 {
 	char flags[4];			// 'D' 'A' 'T' 'A'
-	UINT nSize;				// SDATSOUNDDATA½á¹¹´óÐ¡
+	UINT nSize;				// SDATSOUNDDATAï¿½á¹¹ï¿½ï¿½Ð¡
 	UINT nOffsetBase;		// 0x1C...
-	// ÉùÒôÊý¾Ý...?
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...?
 	/*
 	1c statusByte
 	1d velocity
@@ -456,9 +456,9 @@ struct NDSCMAP
 {
 	char flags[4];
 	UINT nSize;
-	WORD nBeginCode;	// ¿ªÊ¼±àÂë(0000)
-	WORD nEndCode;		// ½áÊø±àÂë(FFFF)
-	WORD nType;			// =1 wCharÓÐÐ§ =0 nOffset£«wCharÓÐÐ§ ? =2 isTbl
+	WORD nBeginCode;	// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½(0000)
+	WORD nEndCode;		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(FFFF)
+	WORD nType;			// =1 wCharï¿½ï¿½Ð§ =0 nOffsetï¿½ï¿½wCharï¿½ï¿½Ð§ ? =2 isTbl
 	WORD unknown;		// zero?
 	UINT nOffset;		// ?
 	WORD wCount;
@@ -502,7 +502,7 @@ struct NDSLABL
 {
 	char LABL[4];	// "LABL"
 	UINT nSize;
-	UINT nNamePos[1];// ±êÇ©ÃûÆ«ÒÆ
+	UINT nNamePos[1];// ï¿½ï¿½Ç©ï¿½ï¿½Æ«ï¿½ï¿½
 };
 // _LABL
 
@@ -519,7 +519,7 @@ struct NDSLABL
 
 enum CT_MACRO_NAME
 {
-	// Í¼Æ¬´¦Àí
+	// Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
 	CT2PALETTE_LOADPAL,
 	CT2PALETTE_LOADDEFPAL,
 	CT2TILEVIEW_EDITIMPORT,
@@ -677,7 +677,7 @@ struct PACFILE_HEADER
 };
 struct PACFILE_FNT
 {
-	BYTE	nFNTCount;	// nIndex*0x200 Ã¿¸öFAT¿é0x200×Ö½Ú
+	BYTE	nFNTCount;	// nIndex*0x200 Ã¿ï¿½ï¿½FATï¿½ï¿½0x200ï¿½Ö½ï¿½
 	BYTE	nFileNameLen;
 	BYTE	nUnknown2;
 	char	FileName[1];
@@ -829,7 +829,7 @@ public:
 	void Close();
 };
 /*
-// ¶¯Ì¬Êý¾Ý½»»»
+// ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½
 class CT2DataExchange
 {
 public:
@@ -848,7 +848,7 @@ public:
 };
 */
 
-// ºê
+// ï¿½ï¿½
 #define FSI_ICON_UNK	0
 #define FSI_ICON_TILE	1
 #define FSI_ICON_SOUND	2
@@ -862,34 +862,34 @@ public:
 #define FSI_ICON_OT		10
 #define FSI_ICON_CT		11
 
-// ´úÂëÒ³ CodePage
+// ï¿½ï¿½ï¿½ï¿½Ò³ CodePage
 // HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage
 // HKEY_LOCAL_MACHINE\SOFTWARE\Classes\MIME\Database\Codepage
 #define CP_UNICODE				1200	// Unicode
 #define CP_UNICODE_BIG_ENDIAN	1201	// Unicode Big Endian
 #define CP_UNICODE_UTF8			65001	// Unicode UTF 8
-#define CP_SHIFTJIS				932		// ANSI/OEM	ÈÕÎÄ Shift-JIS
-#define CP_HZGB2312				52936	// HZ-GB2312¼òÌåÖÐÎÄ
-#define CP_GB18030				54936	// GB18030	¼òÌåÖÐÎÄ
-#define CP_GBK					936		// ANSI/OEM	¼òÌåÖÐÎÄ GBK
-#define CP_BIG5					950		// ANSI/OEM	·±ÌåÖÐÎÄ GBK
+#define CP_SHIFTJIS				932		// ANSI/OEM	ï¿½ï¿½ï¿½ï¿½ Shift-JIS
+#define CP_HZGB2312				52936	// HZ-GB2312ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define CP_GB18030				54936	// GB18030	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define CP_GBK					936		// ANSI/OEM	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GBK
+#define CP_BIG5					950		// ANSI/OEM	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GBK
 
-// ÎÄµµÀàÐÍ
+// ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½
 #define CT2_RT_NORMAL	0
 #define CT2_RT_GBA		1
 #define CT2_RT_NDS		2
 #define CT2_RT_N64		3
 #define CT2_RT_PCMEM	4
-// ¶àÎÄ¼þ
+// ï¿½ï¿½ï¿½Ä¼ï¿½
 #define CT2_RT_MFILE	4
-// MAPÎÄ¼þ
+// MAPï¿½Ä¼ï¿½
 #define CT2_RT_NSCR		5
 
-// ÏµÍ³±àÂë
+// ÏµÍ³ï¿½ï¿½ï¿½ï¿½
 #define CT2_TBL_SYS		0
-// Ê¹ÓÃÓÃ»§Âë±í
+// Ê¹ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½
 #define CT2_TBL_USERTBL	1
-// ÏµÍ³±àÂëÊ¹ÓÃÓÃ»§×Ô¶¨Òå¿ØÖÆ·û
+// ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½
 #define CT2_TBL_USERCTL	2
 
 #define WM_OPENFILE ((WM_USER)+10)
@@ -922,7 +922,7 @@ public:
 					}else\
 						code=0;\
 					}
-// ×Ö·û×ª»»
+// ï¿½Ö·ï¿½×ªï¿½ï¿½
 #define mcharTowchar(lpWchar, lpMchar, nCodePage) MultiByteToWideChar\
 	(nCodePage, 0, (LPCSTR)(lpMchar), -1, (LPWSTR)(lpWchar), 1)
 
@@ -944,59 +944,29 @@ public:
 #define CT2_DM_OAM	4
 
 // TileFormat
-// #define TF_FIRST	0
-// #define TF_1BPP		0	// µ¥É« 1bpp
-// #define TF_NDS1BPP	1	// NDS  1bpp
-// #define TF_GB2BPP	2	// GB   2bpp
-// #define TF_4C2BPP	3	// 4É«  2bpp
-// #define TF_VB2BPP	4	// VB   2bpp
-// #define TF_NGP2BPP	5	// NGP  2bpp
-// #define TF_GBA4BPP	6	// GBA  4bpp
-// #define TF_N644BPP	7	// N64  4bpp
-// #define TF_GBA24BPP	8	// GBA2 4bpp
-// #define TF_GBA8BPP	9	// GBA  8bpp
-// #define TF_SNES4BPP	10	// SNES 4bpp
-// #define TF_NES2BPP	11	// NES  2bpp
-// #define TF_SMS4BPP	12	// SMS  4bpp
-// #define TF_GBA3XBPP	13	// GBA3 Xbpp ²»Ö§³ÖObj
-// #define TF_CT0XBPP	14	// CT0  Xbpp ²»Ö§³ÖObj
-// #define TF_RGBA16BPP	15	// 16Î»Î»Í¼
-// #define TF_RGB24BPP	16	// 24Î»Î»Í¼
-// #define TF_RGBA32BPP	17	// 32Î»Î»Í¼
-// #define TF_RHYTHM	18	// ÐýÂÉÌì¹ú
-// #define TF_LAST		18
-
 #define TF_FIRST	0
-#define TF_1BPP		0	// µ¥É« 1bpp
+#define TF_1BPP		0	// å•è‰² 1bpp
 #define TF_NDS1BPP	1	// NDS  1bpp
-
-#define TF_4C2BPP	2	// 4É«  2bpp
-#define TF_VB2BPP	3	// VB   2bpp
-#define TF_GB2BPP	4	// GB   2bpp
-#define TF_NES2BPP	5	// NES  2bpp
-#define TF_NGP2BPP	6	// NGP  2bpp
-
-#define TF_8C3BPP	7	// 8É«  2bpp
-// #define TF_8CR3BPP	8	// 8É«R  2bpp
-
-#define TF_N644BPP	8	// N64  4bpp
-#define TF_GBA4BPP	9	// GBA  4bpp
-#define TF_GBA24BPP	10	// GBA2 4bpp
-#define TF_SNES4BPP	11	// SNES 4bpp
+#define TF_GB2BPP	2	// GB   2bpp
+#define TF_4C2BPP	3	// 4è‰²  2bpp
+#define TF_VB2BPP	4	// VB   2bpp
+#define TF_NGP2BPP	5	// NGP  2bpp
+#define TF_GBA4BPP	6	// GBA  4bpp
+#define TF_N644BPP	7	// N64  4bpp
+#define TF_GBA24BPP	8	// GBA2 4bpp
+#define TF_GBA8BPP	9	// GBA  8bpp
+#define TF_SNES4BPP	10	// SNES 4bpp
+#define TF_NES2BPP	11	// NES  2bpp
 #define TF_SMS4BPP	12	// SMS  4bpp
-
-#define TF_GBA8BPP	13	// GBA  8bpp
-
-#define TF_GBA3XBPP	14	// GBA3 Xbpp ²»Ö§³ÖObj
-#define TF_CT0XBPP	15	// CT0  Xbpp ²»Ö§³ÖObj
-
-#define TF_RGBA16BPP	16	// 16Î»Î»Í¼
-//#define TF_BGRA16BPP	17	// 16Î»Î»Í¼
-#define TF_RGB24BPP	17	// 24Î»Î»Í¼
-#define TF_RGBA32BPP	18	// 32Î»Î»Í¼
-//#define TF_ABGR32BPP	20	// 32Î»Î»Í¼
-#define TF_RHYTHM	19	// ÐýÂÉÌì¹ú
-#define TF_LAST		19
+#define TF_GBA3XBPP	13	// GBA3 Xbpp
+#define TF_CT0XBPP	14	// CT0  Xbpp
+#define TF_RGBA16BPP	15	// 16ä½ RGBa
+#define TF_RGB24BPP	16	// 24ä½ RGB
+#define TF_RGBA32BPP	17	// 32ä½ RGBa
+#define TF_RHYTHM	18	// æ—‹å¾‹å¤©å›½
+#define TF_ASTC4x4	19	// ASTC 4x4
+#define TF_ASTC6x6	20	// ASTC 6x6
+#define TF_LAST		20
 
 #define ColorToWord(color) ((WORD)((((color)&0xF8)>>3) |\
 							(((color)&0xF800)>>6) |\
@@ -1027,7 +997,7 @@ public:
 							((rgb)>>16)&0xFF |\
 							((rgb)&0xFF00) |\
 							((rgb)&0xFF000000) )
-// Àà
+// ï¿½ï¿½
 class CHyperlink :
 	public CStatic
 {
@@ -1056,7 +1026,7 @@ public:
 	CString PrivateBuild;
 };
 
-// º¯Êý
+// ï¿½ï¿½ï¿½ï¿½
 
 CString LoadStr(UINT nID);
 
@@ -1066,27 +1036,27 @@ BOOL exeProgram(CString lpProgram, CString lpParameters);
 
 BOOL Lz77uncomp(BYTE* pRes, BYTE** pDst, int& nLzSize, int& nBinSize);
 BOOL Lz77uncomp(BYTE* pRes, BYTE* pDst, int& nLzSize, int& nBinSize);
-// ×Ö·û´®×ª»»ÎªÊýÖµ
+// ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½Öµ
 int StrToIntEX(CString& strhex, BOOL bHex=TRUE, BOOL bFix=FALSE);
-//  ÌáÊ¾
+//  ï¿½ï¿½Ê¾
 int Hint(UINT nIDS, UINT nType=MB_OK|MB_ICONINFORMATION);
 int Hint(CString strHint, UINT nType=MB_OK|MB_ICONINFORMATION);
-// ¸üÐÂ²Ëµ¥
+// ï¿½ï¿½ï¿½Â²Ëµï¿½
 void OnInitMenuPopup(CWnd* pTarget, HMENU hMenu, BOOL bDisableIfNoHndler = TRUE);
-// È¡Â·¾¶
+// È¡Â·ï¿½ï¿½
 CString GetPath(HWND hWnd);
 
 void EnumSystemCodePages(UINT **pCodePage, UINT &nCount);
 CString GetCodePageDescription(UINT nCodePage, CString *lpstrFontName=NULL);
 
-// ÔØÈëÄÚ´æÍ¼Æ¬
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Í¼Æ¬
 LPPICTURE LoadPic(HANDLE hHandle, UINT nSize, BOOL bLoadAndFree);
 HANDLE LoadRes(UINT nIDR, DWORD &dwSize, LPCTSTR lpType=NULL);
 
-//Èç¹ûuFlages=SHGFI_SMALLICON|SHGFI_LARGEICON£¬Í¼±ê½«ÊÇÐ¡/´óÍ¼±ê¡£
+//ï¿½ï¿½ï¿½uFlages=SHGFI_SMALLICON|SHGFI_LARGEICONï¿½ï¿½Í¼ï¿½ê½«ï¿½ï¿½Ð¡/ï¿½ï¿½Í¼ï¿½ê¡£
 BOOL LoadSystemImageList(HIMAGELIST& hImages, UINT uFlags = SHGFI_SMALLICON);
 
-//Èç¹ûuFlages=SHGFI_OPENICON|SHGFI_SMALLICON|SHGFI_LARGEICON£¬Ä¿Â¼Í¼±ê½«ÊÇ´ò¿ªµÄ¡£Ð¡/´óÍ¼±ê¡£
+//ï¿½ï¿½ï¿½uFlages=SHGFI_OPENICON|SHGFI_SMALLICON|SHGFI_LARGEICONï¿½ï¿½Ä¿Â¼Í¼ï¿½ê½«ï¿½Ç´ò¿ªµÄ¡ï¿½Ð¡/ï¿½ï¿½Í¼ï¿½ê¡£
 int GetIconIndex(LPCTSTR pszPath, UINT uFlags = SHGFI_SMALLICON);
 
 int GetMenuItemIndex(HMENU hMenu, UINT nID);

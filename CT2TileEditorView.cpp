@@ -1,4 +1,4 @@
-// CT2TileEditorView.cpp : CT2TileEditorView ÀàµÄÊµÏÖ
+// CT2TileEditorView.cpp : CT2TileEditorView ï¿½ï¿½ï¿½Êµï¿½ï¿½
 //
 
 #include "stdafx.h"
@@ -68,11 +68,11 @@ UINT ImportTbl(LPVOID lParam)
 	WORD nObjTileLineCount = pView->m_nObjTileLineCount;
 	UINT nTileSize1_4 = pView->m_nTileSize1_4;
 
-	// 2/4²ã×¨ÓÃ
+	// 2/4ï¿½ï¿½×¨ï¿½ï¿½
 	BYTE nCD=(pView->m_n24Check?0x04:0x02);
 	BYTE nCD2=4/nCD, nMask2=(1<<nCD2)-1;//m_nTileFormat=TF_GBA3XBPP
 
-	//GB 2BPPÓÃ
+	//GB 2BPPï¿½ï¿½
 	BYTE nTileLineSize = nDrawMode?1:nWidth/8;
 	if(nWidth%8) nTileLineSize++; nTileLineSize*=2;
 	UINT nOffset2 = (nTileFormat==TF_NES2BPP)?
@@ -136,7 +136,7 @@ UINT ImportTbl(LPVOID lParam)
 			}
 			nPixelTop=nTilePixelNO/nWidth;
 			nPixelLeft=nTilePixelNO%nWidth;
-			//·­×ª´¦Àí
+			//ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
 			pView->TileDirection(nTilePixelNO, nPixelTop, nPixelLeft);
 			if(nL90Check||nR90Check)
 			{
@@ -370,7 +370,7 @@ BEGIN_MESSAGE_MAP(CT2TileEditorView, CT2View)
 	ON_WM_MOUSEWHEEL()
 END_MESSAGE_MAP()
 
-// CT2TileEditorView ¹¹Ôì/Îö¹¹
+// CT2TileEditorView ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½
 
 CT2TileEditorView::CT2TileEditorView()
 : m_pTileEditor(NULL)
@@ -412,7 +412,7 @@ CT2TileEditorView::~CT2TileEditorView()
 	m_ScaleDC.DeleteDC();
 }
 
-// CT2TileEditorView ÏûÏ¢´¦Àí³ÌÐò
+// CT2TileEditorView ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 void CT2TileEditorView::OnPaint()
 {
@@ -476,7 +476,7 @@ void CT2TileEditorView::OnPaint()
 			while(s--)
 			{
 				if(pTileView->m_nBitCount==16 || pTileView->m_nBitCount==32)
-				{// ²»Í¸Ã÷¶È
+				{// ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½
 					pBits->rgbRed =
 						(pCryBits->rgbRed*pCryBits->rgbReserved+
 						pBits->rgbRed*(256-pCryBits->rgbReserved))/256;
@@ -526,18 +526,18 @@ void CT2TileEditorView::OnPaint()
 		memDC.FillRect(&rc2, &b);
 	}
 
-	if(m_nGrid && (m_nScale>100))//»æÖÆÍø¸ñ
+	if(m_nGrid && (m_nScale>100))//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		CPen whiteGPen(PS_SOLID, 1, (COLORREF)0x9C9C9C);
 		memDC.SelectObject(&whiteGPen);
 		memDC.SetBkMode(R2_NOT);
 		for(int i=0; i<=m_nWidth; i++)
-		{//×ÝÏß
+		{//ï¿½ï¿½ï¿½ï¿½
 			memDC.MoveTo(rc.left+i*m_nScale/100, rc.top);
 			memDC.LineTo(rc.left+i*m_nScale/100, m_nScaleHeight);
 		}
 		for(int i=0; i<=m_nHeight; i++)
-		{//ºáÏß
+		{//ï¿½ï¿½ï¿½ï¿½
 			memDC.MoveTo(rc.left, rc.top+i*m_nScale/100);
 			memDC.LineTo(m_nScaleWidth, rc.top+i*m_nScale/100);
 		}
@@ -797,7 +797,7 @@ void CT2TileEditorView::OnLButtonDown(UINT nFlags, CPoint point)
 void CT2TileEditorView::SetPixel(UINT nFlags, CPoint point)
 {
 	CT2TileView *pTileView = (CT2TileView*)theApp.GetView(ID_VIEW_TILEVIEW);
-	if(GetDocument()->m_nReadOnly || pTileView->m_nTileFormat==TF_CT0XBPP || pTileView->m_nTileFormat==TF_GBA3XBPP) return;
+	if(GetDocument()->m_nReadOnly || pTileView->m_nTileFormat==TF_CT0XBPP || pTileView->m_nTileFormat==TF_GBA3XBPP || pTileView->m_nTileFormat==TF_ASTC4x4 || pTileView->m_nTileFormat==TF_ASTC6x6) return;
 
 	UINT Pixel;
 	if(nFlags&MK_LBUTTON)
@@ -823,7 +823,7 @@ void CT2TileEditorView::SetPixel(UINT nFlags, CPoint point)
 	int nTilePixelNO=(y-rc.top)*100/m_nScale*m_nWidth+
 		(x-rc.left)*100/m_nScale;
 	static int nOldTilePixelNO=-1, nOldPixel=-1;
-	// ÐÞ¸Ä
+	// ï¿½Þ¸ï¿½
 	if((nOldTilePixelNO!=nTilePixelNO) || (nOldPixel!=Pixel))
 	{
 		nOldTilePixelNO=nTilePixelNO; nOldPixel=Pixel;
