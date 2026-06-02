@@ -422,8 +422,8 @@ void CT2TileView::SetBits()
 		default:
 			if ((m_nTileFormat == TF_GBA3XBPP) || (m_nTileFormat == TF_CT0XBPP))
 				pTile = pRom + (nTileNO / nCD) * m_nTileSize;
-			else if (m_nTileFormat == TF_8C3BPP)
-				pTile = pRom + (nTileNO * nWidth * nHeight * 3) / 8 + nTileNO + m_nSkipSize;
+			//else if (m_nTileFormat == TF_8C3BPP)
+			//	pTile = pRom + (nTileNO * nWidth * nHeight * 3) / 8 + nTileNO + m_nSkipSize;
 			else
 				pTile=pRom+nTileNO*m_nTileSize;
 			pTile+=m_nSkipSize;
@@ -470,23 +470,23 @@ void CT2TileView::SetBits()
 			case TF_GBA24BPP:
 				nPixel=( nPixel>> (6-nTilePixelNO2%m_nBytePixelCount*m_nBitCount));
 				break;
-			case TF_8C3BPP://m_nBytePixelCount = 8/3;
-			//01201201
-			//20120120
-			//12012012
-				// ((nTilePixelNO+nTileNO*nWidth*nHeight)/3)*3
-				// nPixel=( nPixel>> (5-nTilePixelNO2%m_nBytePixelCount*m_nBitCount));
-				// pPixel=(pTile+(nTilePixelNO2)*8)/3;
-				//pPixel=(BYTE *)(((UINT)pTile*8+nTilePixelNO2*3)/8);
-				pPixel=(BYTE *)(((UINT)pTile*8+nTilePixelNO2*3)/8);
-				nPixel2= *pPixel;
-				nPixel= *pPixel+1;
-				nPixel |= nPixel2 << 8;
-				//nPixel=( nPixel>> (5-nTilePixelNO2%m_nBytePixelCount*m_nBitCount));
-				nPixel = (nPixel >> (8 - ((UINT)pTile + 8 + (nTilePixelNO2 + 1) * 3 ) % 8));
-				break;
+			//case TF_8C3BPP://m_nBytePixelCount = 8/3;
+			////01201201
+			////20120120
+			////12012012
+			//	// ((nTilePixelNO+nTileNO*nWidth*nHeight)/3)*3
+			//	// nPixel=( nPixel>> (5-nTilePixelNO2%m_nBytePixelCount*m_nBitCount));
+			//	// pPixel=(pTile+(nTilePixelNO2)*8)/3;
+			//	//pPixel=(BYTE *)(((UINT)pTile*8+nTilePixelNO2*3)/8);
+			//	pPixel=(BYTE *)(((UINT)pTile*8+nTilePixelNO2*3)/8);
+			//	nPixel2= *pPixel;
+			//	nPixel= *pPixel+1;
+			//	nPixel |= nPixel2 << 8;
+			//	//nPixel=( nPixel>> (5-nTilePixelNO2%m_nBytePixelCount*m_nBitCount));
+			//	nPixel = (nPixel >> (8 - ((UINT)pTile + 8 + (nTilePixelNO2 + 1) * 3 ) % 8));
+			//	break;
 			
-				break;
+			//	break;
 			case TF_N644BPP:
 				nPixel= nPixel>> (4-nTilePixelNO2%m_nBytePixelCount*m_nBitCount);
                 break;
@@ -934,10 +934,10 @@ void CT2TileView::OnUpdateData()
 	case TF_NES2BPP:
 		m_nBitCount = 2;
 		break;
-	case TF_8C3BPP:
+	//case TF_8C3BPP:
 	// case TF_8CR3BPP:
-		m_nBitCount = 3;
-		break;
+	//	m_nBitCount = 3;
+	//	break;
 	case TF_GBA4BPP:
 	case TF_N644BPP:
 	case TF_GBA24BPP:
@@ -1017,9 +1017,9 @@ void CT2TileView::OnUpdateData()
 	if(m_nTileFormat==TF_SMS4BPP || m_nTileFormat==TF_NES2BPP || m_nTileFormat==TF_GB2BPP || m_nTileFormat==TF_SNES4BPP)
 		m_nBytePixelCount=8;
 	else
-	if(m_nTileFormat==TF_8C3BPP)
-		m_nBytePixelCount=3;
-	else
+	//if(m_nTileFormat==TF_8C3BPP)
+	//	m_nBytePixelCount=3;
+	//else
 	if(m_nTileFormat==TF_GBA3XBPP)
 		m_nBytePixelCount=2;
 	else

@@ -944,61 +944,29 @@ public:
 #define CT2_DM_OAM	4
 
 // TileFormat
-// #define TF_FIRST	0
-// #define TF_1BPP		0	// ��ɫ 1bpp
-// #define TF_NDS1BPP	1	// NDS  1bpp
-// #define TF_GB2BPP	2	// GB   2bpp
-// #define TF_4C2BPP	3	// 4ɫ  2bpp
-// #define TF_VB2BPP	4	// VB   2bpp
-// #define TF_NGP2BPP	5	// NGP  2bpp
-// #define TF_GBA4BPP	6	// GBA  4bpp
-// #define TF_N644BPP	7	// N64  4bpp
-// #define TF_GBA24BPP	8	// GBA2 4bpp
-// #define TF_GBA8BPP	9	// GBA  8bpp
-// #define TF_SNES4BPP	10	// SNES 4bpp
-// #define TF_NES2BPP	11	// NES  2bpp
-// #define TF_SMS4BPP	12	// SMS  4bpp
-// #define TF_GBA3XBPP	13	// GBA3 Xbpp ��֧��Obj
-// #define TF_CT0XBPP	14	// CT0  Xbpp ��֧��Obj
-// #define TF_RGBA16BPP	15	// 16λλͼ
-// #define TF_RGB24BPP	16	// 24λλͼ
-// #define TF_RGBA32BPP	17	// 32λλͼ
-// #define TF_RHYTHM	18	// �������
-// #define TF_LAST		18
-
 #define TF_FIRST	0
-#define TF_1BPP		0	// ��ɫ 1bpp
+#define TF_1BPP		0	// 单色 1bpp
 #define TF_NDS1BPP	1	// NDS  1bpp
-
-#define TF_4C2BPP	2	// 4ɫ  2bpp
-#define TF_VB2BPP	3	// VB   2bpp
-#define TF_GB2BPP	4	// GB   2bpp
-#define TF_NES2BPP	5	// NES  2bpp
-#define TF_NGP2BPP	6	// NGP  2bpp
-
-#define TF_8C3BPP	7	// 8ɫ  2bpp
-// #define TF_8CR3BPP	8	// 8ɫR  2bpp
-
-#define TF_N644BPP	8	// N64  4bpp
-#define TF_GBA4BPP	9	// GBA  4bpp
-#define TF_GBA24BPP	10	// GBA2 4bpp
-#define TF_SNES4BPP	11	// SNES 4bpp
+#define TF_GB2BPP	2	// GB   2bpp
+#define TF_4C2BPP	3	// 4色  2bpp
+#define TF_VB2BPP	4	// VB   2bpp
+#define TF_NGP2BPP	5	// NGP  2bpp
+#define TF_GBA4BPP	6	// GBA  4bpp
+#define TF_N644BPP	7	// N64  4bpp
+#define TF_GBA24BPP	8	// GBA2 4bpp
+#define TF_GBA8BPP	9	// GBA  8bpp
+#define TF_SNES4BPP	10	// SNES 4bpp
+#define TF_NES2BPP	11	// NES  2bpp
 #define TF_SMS4BPP	12	// SMS  4bpp
-
-#define TF_GBA8BPP	13	// GBA  8bpp
-
-#define TF_GBA3XBPP	14	// GBA3 Xbpp ��֧��Obj
-#define TF_CT0XBPP	15	// CT0  Xbpp ��֧��Obj
-
-#define TF_RGBA16BPP	16	// 16λλͼ
-//#define TF_BGRA16BPP	17	// 16λλͼ
-#define TF_RGB24BPP	17	// 24λλͼ
-#define TF_RGBA32BPP	18	// 32λλͼ
-//#define TF_ABGR32BPP	20	// 32λλͼ
-#define TF_RHYTHM	19	// �������
-#define TF_ASTC4x4	20	// ASTC 4x4
-#define TF_ASTC6x6	21	// ASTC 6x6
-#define TF_LAST		21
+#define TF_GBA3XBPP	13	// GBA3 Xbpp
+#define TF_CT0XBPP	14	// CT0  Xbpp
+#define TF_RGBA16BPP	15	// 16位 RGBa
+#define TF_RGB24BPP	16	// 24位 RGB
+#define TF_RGBA32BPP	17	// 32位 RGBa
+#define TF_RHYTHM	18	// 旋律天国
+#define TF_ASTC4x4	19	// ASTC 4x4
+#define TF_ASTC6x6	20	// ASTC 6x6
+#define TF_LAST		20
 
 #define ColorToWord(color) ((WORD)((((color)&0xF8)>>3) |\
 							(((color)&0xF800)>>6) |\
